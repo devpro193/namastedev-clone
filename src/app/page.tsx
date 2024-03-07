@@ -6,6 +6,7 @@ import Instructor from "./instructor";
 import Mission from "./mission";
 import Navbar from "./navbar";
 import Projects from "./projects";
+import Testimonials from "./testimonials";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Instructor />
         <Projects />
         <Companies />
+        <Testimonials />
       </div>
     </main>
   );
