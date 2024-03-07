@@ -30,7 +30,7 @@ export function Collapsible({ title }: { title: string }) {
   return (
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1">
-        <AccordionTrigger className="dark:bg-indigo-900 p-3">
+        <AccordionTrigger className="dark:bg-indigo-900 p-3 font-semibold text-lg">
           {title}
         </AccordionTrigger>
         <AccordionContent className="dark:bg-indigo-900/50 bg-indigo-100/50">
