@@ -11,7 +11,7 @@ export default function Instructor() {
         <hr className="h-1 max-lg:w-full w-20 rounded bg-primary/40" />
       </span>
 
-      <div className="flex overflow-hidden max-lg:flex-col gap-10 max-lg:gap-5 bg-gray-200/90 dark:bg-background shadow-lg rounded-md">
+      <div className="flex overflow-hidden max-lg:flex-col gap-10 max-lg:gap-5 max-lg:my-6 my-3 bg-gray-200/90 dark:bg-background shadow-lg rounded-md">
         <Image
           src={"/public.avif"}
           alt="profile-pic"

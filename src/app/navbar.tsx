@@ -12,21 +12,21 @@ export default function Navbar() {
         width={200}
         height={200}
       />
-      <div className="flex flex-row-reverse items-center px-2 lg:gap-6 gap-3">
+      <div className="flex items-center px-2 lg:gap-6 gap-3">
         <ModeToggle />
         <Button
           size={"sm"}
           variant={"ghost"}
           className="hover:bg-background/20 text-foreground/50"
         >
-          Sign In
+          Course
         </Button>
         <Button
           size={"sm"}
           variant={"ghost"}
           className="hover:bg-background/20 text-foreground/50"
         >
-          Course
+          Sign In
         </Button>
       </div>
     </div>

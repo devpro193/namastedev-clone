@@ -43,7 +43,7 @@ export default function Footer() {
           </svg>
         </section>
       </div>
-      <div className="h-20 bg-zinc-950" />
+      <div className="lg:hidden h-20 bg-zinc-950" />
     </>
   );
 }
