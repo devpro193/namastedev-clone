@@ -3,6 +3,7 @@ import "./globals.css";
 import HeadBanner from "./head-banner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { space_mono } from "@/lib/font";
+import Floating from "./floating";
 
 export const metadata: Metadata = {
   title: "Namaste React",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark">
           <HeadBanner />
           {children}
+          <Floating />
         </ThemeProvider>
       </body>
     </html>
