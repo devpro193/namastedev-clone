@@ -1,4 +1,5 @@
 import Achievements from "./achievements";
+import Companies from "./companies";
 import Course from "./course";
 import Hero from "./hero";
 import Instructor from "./instructor";
@@ -17,6 +18,7 @@ export default function Home() {
         <Course />
         <Instructor />
         <Projects />
+        <Companies />
       </div>
     </main>
   );

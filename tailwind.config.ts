@@ -75,12 +75,17 @@ const config = {
         },
         'gradient': {
           to: { 'background-position': '200% center' },
+        },
+        'loop-scroll': {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'gradient': 'gradient 2s linear infinite',
+        "loop-scroll": "loop-scroll 50s linear infinite"
       },
     },
   },
