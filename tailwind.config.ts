@@ -54,7 +54,10 @@ const config = {
         },
         headBanner: {
           DEFAULT: "#8A0000"
-        }
+        },
+        bannerButton: {
+          DEFAULT: "#28A745"
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -70,10 +73,14 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        'gradient': {
+          to: { 'background-position': '200% center' },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'gradient': 'gradient 2s linear infinite',
       },
     },
   },
