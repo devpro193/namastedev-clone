@@ -19,7 +19,9 @@ function Achieved({
       } flex-1`}
     >
       {children}
-      <span className={`text-foreground/70 font-semibold text-sm`}>
+      <span
+        className={`text-foreground/70 font-semibold text-sm max-lg:text-xs`}
+      >
         {title}
       </span>
       <span className="text-orange-700 font-bold">{amount}+</span>

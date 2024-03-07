@@ -1,4 +1,5 @@
 import Achievements from "./achievements";
+import Course from "./course";
 import Hero from "./hero";
 import Mission from "./mission";
 import Navbar from "./navbar";
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Achievements />
         <Mission />
+        <Course />
       </div>
     </main>
   );
