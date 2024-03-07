@@ -4,6 +4,7 @@ import Hero from "./hero";
 import Instructor from "./instructor";
 import Mission from "./mission";
 import Navbar from "./navbar";
+import Projects from "./projects";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Mission />
         <Course />
         <Instructor />
+        <Projects />
       </div>
     </main>
   );
