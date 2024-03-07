@@ -20,7 +20,7 @@ export default function HeadBanner() {
             Namaste Frontend System Design is here 🚀
           </span>
           <span className="font-bold">
-            Coupon code :{" "}
+            Coupon Code :{" "}
             <Badge
               className="rounded bg-primary-foreground/75"
               variant={"secondary"}

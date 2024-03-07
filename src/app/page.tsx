@@ -1,12 +1,14 @@
+import Achievements from "./achievements";
 import Hero from "./hero";
 import Navbar from "./navbar";
 
 export default function Home() {
   return (
-    <main className="bg-background dark:bg-indigo-950 h-svh">
+    <main className="bg-background dark:bg-indigo-950 min-h-svh transition-all">
       <Navbar />
-      <div className="flex flex-col px-32 py-10">
+      <div className="flex flex-col lg:px-32 lg:py-10 px-6 py-5 gap-10">
         <Hero />
+        <Achievements />
       </div>
     </main>
   );

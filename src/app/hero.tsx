@@ -5,7 +5,7 @@ import { CheckCircle, TimerReset } from "lucide-react";
 
 function CheckTitle({ children }: { children: React.ReactNode }) {
   return (
-    <span className="flex gap-1 items-center">
+    <span className="flex gap-2 items-center">
       <CheckCircle className="h-5 w-5" />
       <p>{children}</p>
     </span>
@@ -14,7 +14,7 @@ function CheckTitle({ children }: { children: React.ReactNode }) {
 
 export default function Hero() {
   return (
-    <div className="flex justify-between gap-10">
+    <div className="flex max-lg:flex-col-reverse justify-between gap-10">
       <div className="flex flex-col gap-6">
         <section className="flex flex-col">
           <h1

@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import HeadBanner from "./head-banner";
 import { ThemeProvider } from "@/components/theme-provider";
-
-const inter = Inter({ subsets: ["latin"] });
+import { space_mono } from "@/lib/font";
 
 export const metadata: Metadata = {
   title: "Namaste React",
@@ -18,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={space_mono.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <HeadBanner />
           {children}
