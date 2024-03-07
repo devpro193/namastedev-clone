@@ -1,6 +1,7 @@
 import Achievements from "./achievements";
 import Companies from "./companies";
 import Course from "./course";
+import Faq from "./faq";
 import Hero from "./hero";
 import Instructor from "./instructor";
 import Mission from "./mission";
@@ -21,6 +22,7 @@ export default function Home() {
         <Projects />
         <Companies />
         <Testimonials />
+        <Faq />
       </div>
     </main>
   );
