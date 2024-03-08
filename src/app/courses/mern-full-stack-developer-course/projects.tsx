@@ -23,7 +23,7 @@ export default function Projects() {
         {/* <hr className="h-1 max-lg:w-full w-20 rounded bg-primary/40" /> */}
       </span>
 
-      <div className="flex flex-col gap-2 p-3 rounded-md dark:bg-indigo-900 bg-gray-200/90 shadow-lg">
+      <div className="flex flex-col gap-2 p-3 rounded-md dark:bg-background bg-gray-200/90 shadow-lg">
         <h4 className="text-xl text-foreground/90 font-semibold text-center">
           All 10 courses package - DSA, MERN, AI, Blockchain, Chat GPT (LIFETIME
           Validity) 🔥
@@ -54,7 +54,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 p-3 rounded-md dark:bg-indigo-900 bg-gray-200/90 shadow-lg">
+      <div className="flex flex-col gap-2 p-3 rounded-md dark:bg-background bg-gray-200/90 shadow-lg">
         <h4 className="text-xl text-foreground/90 font-semibold text-center">
           Full stack package - MERN, Next JS, Projects (LIFETIME Validity)
         </h4>

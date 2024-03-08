@@ -66,7 +66,7 @@ export function Collapsible({
   return (
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1">
-        <AccordionTrigger className="dark:bg-indigo-900 lg:hover:opacity-70 px-3 py-5 border-b">
+        <AccordionTrigger className="dark:bg-background lg:hover:opacity-70 px-3 py-5 border-b">
           <div className="flex items-center gap-2">
             <BookmarkIcon className="h-8 w-8 stroke-1" />
             <div className="flex flex-col items-start justify-start gap-1">

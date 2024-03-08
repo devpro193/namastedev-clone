@@ -20,7 +20,7 @@ function Achieved({
     >
       {children}
       <span
-        className={`text-foreground/70 font-semibold text-sm max-lg:text-xs`}
+        className={`text-foreground/70 font-semibold text-sm text-center max-lg:text-xs`}
       >
         {title}
       </span>
