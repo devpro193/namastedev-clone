@@ -1,9 +1,9 @@
-import { Youtube } from "lucide-react";
+import Reveal from "@/components/framer/reveal";
 import Image from "next/image";
 
 export default function Footer() {
   return (
-    <>
+    <Reveal>
       <div className={`flex justify-between items-start py-5 bg-zinc-950`}>
         <section className="grid gap-2 text-gray-400/70 font-semibold p-5">
           <Image
@@ -56,6 +56,6 @@ export default function Footer() {
         </section>
       </div>
       <div className="lg:hidden h-20 bg-zinc-950" />
-    </>
+    </Reveal>
   );
 }

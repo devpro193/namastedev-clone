@@ -6,32 +6,37 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Reveal from "@/components/framer/reveal";
 
 function Collapsible({ title, answer }: { title: string; answer: string }) {
   return (
-    <Accordion type="single" collapsible>
-      <AccordionItem value="item-1">
-        <AccordionTrigger className="dark:bg-background  rounded-md bg-gray-200/60 p-3 font-semibold shadow-md text-lg">
-          {title}
-        </AccordionTrigger>
-        <AccordionContent className="dark:bg-indigo-900 rounded-b-md bg-indigo-100/50 p-4 items-start text-foreground/70">
-          {answer}
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+    <Reveal>
+      <Accordion type="single" collapsible>
+        <AccordionItem value="item-1">
+          <AccordionTrigger className="dark:bg-background  rounded-md bg-gray-200/60 p-3 font-semibold shadow-md text-lg">
+            {title}
+          </AccordionTrigger>
+          <AccordionContent className="dark:bg-indigo-900 rounded-b-md bg-indigo-100/50 p-4 items-start text-foreground/70">
+            {answer}
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </Reveal>
   );
 }
 
 export default function Faq() {
   return (
     <div className={`grid grid-cols-1 gap-3`}>
-      <span className="flex gap-4 lg:justify-center items-center">
-        <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-        <h2 className={`${satisfy.className} text-4xl`}>
-          Frequently Asked Questions
-        </h2>
-        <hr className="h-1 max-lg:w-40 w-20 rounded bg-primary/40" />
-      </span>
+      <Reveal>
+        <span className="flex gap-4 lg:justify-center items-center">
+          <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
+          <h2 className={`${satisfy.className} text-4xl`}>
+            Frequently Asked Questions
+          </h2>
+          <hr className="h-1 max-lg:w-40 w-20 rounded bg-primary/40" />
+        </span>
+      </Reveal>
 
       <div className="flex flex-col justify-start w-full gap-4 py-4">
         <Collapsible

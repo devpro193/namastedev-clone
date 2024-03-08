@@ -4,6 +4,7 @@ import HeadBanner from "./head-banner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { mont } from "@/lib/font";
 import Floating from "./floating";
+import LoadingLogo from "@/components/framer/logo-loading";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -27,6 +28,7 @@ export default function RootLayout({
           <HeadBanner />
           {children}
           <Floating />
+          <LoadingLogo />
         </ThemeProvider>
       </body>
     </html>

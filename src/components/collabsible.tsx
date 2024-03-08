@@ -71,7 +71,7 @@ export function Collapsible({
             <BookmarkIcon className="h-8 w-8 stroke-1" />
             <div className="flex flex-col items-start justify-start gap-1">
               <span
-                className={`${satisfy.className} font-bold text-xl text-start`}
+                className={`${satisfy.className} font-bold text-lg text-start`}
               >
                 {title}
               </span>
