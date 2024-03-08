@@ -18,20 +18,16 @@ export default function Hero() {
       <div className="flex flex-col gap-6">
         <section className="flex flex-col">
           <h1
-            className={`${satisfy.className} text-4xl font-semibold leading-5 pb-0`}
+            className={`${satisfy.className} text-4xl font-semibold leading-7 pb-0`}
           >
-            Namaste React🚀
+            MERN Full Stack Development Course
           </h1>
-          <span
-            className={`${space_mono.className} text-foreground/70 font-light`}
-          >
-            From Zero to Hero🔥
+          <span className={`text-foreground/70 font-light`}>
+            30 Days Coding From Zero to Hero🔥
           </span>
         </section>
 
-        <div
-          className={`${space_mono.className} grid gap-1 text-foreground/70 font-light`}
-        >
+        <div className={` grid gap-1 text-foreground/70 font-light`}>
           <CheckTitle>In depth High Quality Videos</CheckTitle>
           <CheckTitle>Project Based Learning</CheckTitle>
           <CheckTitle>Assignments/Projects</CheckTitle>
@@ -77,7 +73,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <YoutubeEmbed embedId="rokGy0huYEA" />
+      <YoutubeEmbed embedId="dao2HaGzc3M" />
     </div>
   );
 }

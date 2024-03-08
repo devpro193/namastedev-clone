@@ -7,10 +7,10 @@ export default function Navbar() {
     <div className="flex justify-between border-b p-2 border-gray-300/30">
       <Image
         className=""
-        src={"/name.webp"}
+        src={"/logo.png"}
         alt="name-pic"
-        width={200}
-        height={200}
+        width={50}
+        height={50}
       />
       <div className="flex items-center px-2 lg:gap-6 gap-3">
         <ModeToggle />

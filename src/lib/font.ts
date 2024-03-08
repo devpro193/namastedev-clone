@@ -1,4 +1,4 @@
-import { Inter, Satisfy, Space_Mono } from 'next/font/google'
+import { Inter, Satisfy, Space_Mono, Montserrat } from 'next/font/google'
 
 export const inter = Inter({
     subsets: ['latin'],
@@ -15,4 +15,10 @@ export const satisfy = Satisfy({
     subsets: ['latin'],
     display: 'block',
     weight: ["400"]
+})
+
+export const mont = Montserrat({
+    subsets: ['latin'],
+    display: 'block',
+    weight: ["400", "500", "600", "700"]
 })

@@ -14,10 +14,10 @@ function CheckTitle({ children }: { children: React.ReactNode }) {
 export default function Projects() {
   return (
     <div className={`grid grid-cols-1 gap-6`}>
-      <span className="flex gap-4 lg:justify-center items-center">
+      <span className="flex gap-4 lg:justify-center items-center mb-6">
         <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-        <h2 className={`${satisfy.className} text-3xl`}>
-          Awesome Projects covered in Namaste React 🚀
+        <h2 className={`${satisfy.className} text-4xl`}>
+          Awesome Premium Courses 🚀
         </h2>
         <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
         {/* <hr className="h-1 max-lg:w-full w-20 rounded bg-primary/40" /> */}
@@ -25,14 +25,14 @@ export default function Projects() {
 
       <div className="flex flex-col gap-2 p-3 rounded-md dark:bg-indigo-900 bg-gray-200/90 shadow-lg">
         <h4 className="text-xl text-foreground/90 font-semibold text-center">
-          `NetflixGPT` - a movie recommendation App with GPT-3.5 turbo
-          integration🔥
+          All 10 courses package - DSA, MERN, AI, Blockchain, Chat GPT (LIFETIME
+          Validity) 🔥
         </h4>
 
         <div className="flex max-xl:flex-col items-center justify-center gap-4 p-5">
           <Image
             className="rounded-md max-lg:w-full object-cover"
-            src={"/project1.webp"}
+            src={"/course1.jpg"}
             alt="project-1"
             width={600}
             height={1200}
@@ -56,14 +56,13 @@ export default function Projects() {
 
       <div className="flex flex-col gap-2 p-3 rounded-md dark:bg-indigo-900 bg-gray-200/90 shadow-lg">
         <h4 className="text-xl text-foreground/90 font-semibold text-center">
-          `Namaste YouTube` - Our own YouTube like webApp with Live chat
-          feature🔥
+          Full stack package - MERN, Next JS, Projects (LIFETIME Validity)
         </h4>
 
         <div className="flex max-xl:flex-col items-center justify-center gap-4 p-5">
           <Image
             className="rounded-md max-lg:w-full object-cover"
-            src={"/project2.png"}
+            src={"/course2.jpg"}
             alt="project-2"
             width={600}
             height={1200}
@@ -85,7 +84,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 p-3 rounded-md dark:bg-indigo-900 bg-gray-200/90 shadow-lg">
+      {/* <div className="flex flex-col gap-2 p-3 rounded-md dark:bg-indigo-900 bg-gray-200/90 shadow-lg">
         <h4 className="text-xl text-foreground/90 font-semibold text-center">
           Namaste YouTube: Our own YouTube like webApp, Live chat feature🔥
         </h4>
@@ -113,7 +112,7 @@ export default function Projects() {
             <CheckTitle>Use of .env files to secure secret API keys</CheckTitle>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

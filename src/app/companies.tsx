@@ -13,7 +13,7 @@ export default function Companies() {
         {/* <hr className="h-1 max-lg:w-full w-20 rounded bg-primary/40" /> */}
       </span>
 
-      <div className="py-6 flex gap-3 overflow-hidden">
+      <div className="py-12 flex gap-3 overflow-hidden">
         <div className="flex space-x-16 animate-loop-scroll">
           <Image alt="company" src={"/company1.png"} width={100} height={100} />
           <Image alt="company" src={"/company1.png"} width={100} height={100} />
