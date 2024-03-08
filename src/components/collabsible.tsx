@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { satisfy } from "@/lib/font";
 import {
   BookmarkIcon,
   CodeSquare,
@@ -11,16 +12,17 @@ import {
   FileText,
   Laptop2,
   Link2,
+  PlaySquare,
   TimerIcon,
   Video,
 } from "lucide-react";
 
 const icons = {
-  video: <Video className="h-6 w-6 shrink-0" />,
-  file: <FileText className="h-6 w-6 shrink-0" />,
-  cloud: <DownloadCloud className="h-6 w-6 shrink-0" />,
-  code: <CodeSquare className="h-6 w-6 shrink-0" />,
-  link: <Link2 className="h-6 w-6 shrink-0" />,
+  video: <PlaySquare className="h-6 w-6 shrink-0 stroke-[1.5]" />,
+  file: <FileText className="h-6 w-6 shrink-0 stroke-[1.5]" />,
+  cloud: <DownloadCloud className="h-6 w-6 shrink-0 stroke-[1.5]" />,
+  code: <CodeSquare className="h-6 w-6 shrink-0 stroke-[1.5]" />,
+  link: <Link2 className="h-6 w-6 shrink-0 stroke-[1.5]" />,
 };
 
 export function SubCourse({
@@ -34,9 +36,9 @@ export function SubCourse({
 }) {
   return (
     <div className="flex lg:items-center max-lg:flex-col justify-between transition-all dark:hover:bg-indigo-900 hover:bg-indigo-100 gap-3 p-4 text-foreground/70 border-t">
-      <div className="flex items-start gap-2">
+      <div className="flex items-center gap-2">
         {icons[type ?? "video"]}{" "}
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <h3 className="text-base font-semibold">{title}</h3>
       </div>
       {time && (
         <section className="flex gap-2 items-end">
@@ -68,7 +70,11 @@ export function Collapsible({
           <div className="flex items-center gap-2">
             <BookmarkIcon className="h-8 w-8 stroke-1" />
             <div className="flex flex-col items-start justify-start gap-1">
-              <span className="font-semibold text-lg text-start">{title}</span>
+              <span
+                className={`${satisfy.className} font-bold text-xl text-start`}
+              >
+                {title}
+              </span>
               <div className="flex gap-2 font-semibold text-foreground/70 text-sm items-center">
                 <span className="flex items-center gap-1.5">
                   <Laptop2 className="h-5 w-5" />

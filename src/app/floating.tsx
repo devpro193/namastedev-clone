@@ -9,10 +9,8 @@ export default function Floating() {
           ₹<span className="text-2xl">2499</span>
         </span>
 
-        <div className="flex gap-2">
-          <span className="text-sm text-muted-foreground ml-1 line-through">
-            ₹3000
-          </span>
+        <div className="flex gap-2 text-sm font-semibold">
+          <span className="text-muted-foreground ml-1 line-through">₹3000</span>
           <span
             className={`${satisfy.className} text-secondary-foreground rounded py-0`}
           >
@@ -23,7 +21,10 @@ export default function Floating() {
 
       <div className="group relative">
         <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
-        <Button variant={"outline"} className={`relative w-full text-lg`}>
+        <Button
+          variant={"outline"}
+          className={`relative w-full text-lg font-semibold text-foreground/70`}
+        >
           Enroll Today
         </Button>
       </div>

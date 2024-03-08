@@ -1,7 +1,7 @@
 import React from "react";
 
 const YoutubeEmbed = ({ embedId }: { embedId: string }) => (
-  <div className="relative flex-1 overflow-hidden lg:min-h-80 min-h-60 lg:max-w-[700px] lg:w-1/2 rounded-xl shadow-inner">
+  <div className="relative flex-1 overflow-hidden min-h-80 max-md:min-h-60 xl:max-w-[700px] xl:w-1/2 rounded-xl shadow-inner">
     <iframe
       className="h-full w-full left-0 top-0 absolute"
       width="853"
