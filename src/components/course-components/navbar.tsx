@@ -8,13 +8,15 @@ export default function Navbar() {
   return (
     <Reveal>
       <div className="flex justify-between border-b p-2 border-gray-300/30">
-        <Image
-          className=""
-          src={"/logo.png"}
-          alt="name-pic"
-          width={50}
-          height={50}
-        />
+        <Link href={"/"}>
+          <Image
+            className=""
+            src={"/logo.png"}
+            alt="name-pic"
+            width={50}
+            height={50}
+          />
+        </Link>
         <div className="flex items-center px-2 lg:gap-6 gap-3">
           <ModeToggle />
           <Button
@@ -32,7 +34,7 @@ export default function Navbar() {
             variant={"ghost"}
             className="hover:bg-background/20 text-foreground/50"
           >
-            Sign In
+            Enroll Now
           </Button>
         </div>
       </div>

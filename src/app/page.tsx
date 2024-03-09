@@ -1,14 +1,25 @@
-import Achievements from "./achievements";
-import Companies from "./companies";
-import Course from "./course";
-import Faq from "./faq";
-import Footer from "./footer";
-import Hero from "./hero";
-import Instructor from "./instructor";
-import Mission from "./mission";
-import Navbar from "./navbar";
-import Projects from "./projects";
-import Testimonials from "./testimonials";
+import Achievements from "@/components/course-components/achievements";
+import Companies from "@/components/course-components/companies";
+import Course from "@/components/course-components/course";
+import Faq from "@/components/course-components/faq";
+import Footer from "@/components/course-components/footer";
+import Hero from "@/components/course-components/hero";
+import Instructor from "@/components/course-components/instructor";
+import Mission from "@/components/course-components/mission";
+import Navbar from "@/components/course-components/navbar";
+import Projects from "@/components/course-components/projects";
+import Testimonials from "@/components/course-components/testimonials";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://namastedev-clone.vercel.app"),
+  title: "Landing Page In Progress",
+  description:
+    "A complete mern full stack development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
+  openGraph: {
+    images: "/mern.jpg",
+  },
+};
 
 export default function Home() {
   return (

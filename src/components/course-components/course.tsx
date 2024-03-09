@@ -44,7 +44,7 @@ export default function Course() {
         </span>
       </Reveal>
 
-      <div className="flex gap-4">
+      <div className="flex lg:gap-4">
         <div className="flex flex-col justify-start w-full max-lg:grid-col-1 shadow-md h-fit">
           <Reveal>
             <section className="flex items-center gap-2 px-2 font-semibold text-sm text-foreground/70 mb-2">

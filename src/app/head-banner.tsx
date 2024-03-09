@@ -28,7 +28,7 @@ export default function HeadBanner() {
 
           <section className="grid gap-0">
             <span className="lg:font-semibold max-lg:text-sm">
-              Namaste Frontend System Design is here 🚀
+              30 Days Coding is here 🚀
             </span>
             <span className="font-bold">
               Coupon Code :{" "}

@@ -13,9 +13,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
-  title: "MERN Full Stack Development Course",
+  title: "LIVE MERN Stack Web Development Cohort",
   description:
-    "A complete mern full stack development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
+    "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
   openGraph: {
     images: "/mern.jpg",
   },
