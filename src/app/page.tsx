@@ -26,10 +26,17 @@ export default function Home() {
     <main className="bg-background dark:bg-indigo-950 min-h-svh transition-all">
       <Navbar />
       <div className="max-w-[1800px] m-auto flex flex-col lg:px-20 lg:py-10 px-6 py-5 gap-10">
-        <Hero />
+        <Hero
+          courseLink="https://courses.30dayscoding.com/s/store"
+          title="MERN Full Stack Development Course"
+          youtube="dao2HaGzc3M"
+        />
         <Achievements />
         <Mission />
-        <Course />
+        <Course
+          courseLink="https://courses.30dayscoding.com/courses/MERN-full-stack-web-development-64eebdb8e4b0a14befedc15d"
+          imageSrc="/mern.jpg"
+        />
         <Instructor />
         <Projects />
         <Companies />
