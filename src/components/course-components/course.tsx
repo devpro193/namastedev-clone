@@ -17,6 +17,7 @@ import {
   Video,
 } from "lucide-react";
 import Image from "next/image";
+import AnimatedButton from "../animated-button";
 
 function CoursePerks({
   children,
@@ -696,15 +697,12 @@ export default function Course() {
                 </span>
               </section>
 
-              <div className="group relative">
-                <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
-                <Button
-                  variant={"outline"}
-                  className={`relative w-full font-semibold text-foreground/80 hover:text-foreground`}
-                >
-                  Buy Now
-                </Button>
-              </div>
+              <AnimatedButton
+                type="ext"
+                link="https://courses.30dayscoding.com/courses/MERN-full-stack-web-development-64eebdb8e4b0a14befedc15d"
+              >
+                Buy Now
+              </AnimatedButton>
 
               <div className="grid grid-col-1 gap-5 text-sm py-3">
                 <CoursePerks title={"50+ hours of video content"}>

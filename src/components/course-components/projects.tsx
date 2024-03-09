@@ -2,6 +2,7 @@ import Reveal from "@/components/framer/reveal";
 import { satisfy } from "@/lib/font";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
+import AnimatedButton from "../animated-button";
 
 function CheckTitle({ children }: { children: React.ReactNode }) {
   return (
@@ -38,7 +39,7 @@ export default function Projects() {
           </Reveal>
 
           <Reveal>
-            <div className="flex max-xl:flex-col items-center justify-center gap-4 p-5">
+            <div className="flex max-xl:flex-col max-xl:items-center justify-center gap-8 p-5">
               <Image
                 className="rounded-md max-lg:w-full object-cover"
                 src={"/course1.jpg"}
@@ -47,24 +48,33 @@ export default function Projects() {
                 height={1200}
               />
 
-              <div className="flex flex-col gap-2 py-3">
-                <CheckTitle>
-                  GPT Search, using the latest GPT-3.5 Turbo API 🚀.
-                </CheckTitle>
-                <CheckTitle>
-                  Authentication - Sign Up, Log In, Sign Out.
-                </CheckTitle>
-                <CheckTitle>Form Handling, and Form validations</CheckTitle>
-                <CheckTitle>Advanced Tailwind.</CheckTitle>
-                <CheckTitle>useRef hook.</CheckTitle>
-                <CheckTitle>covered the concept of Memoization.</CheckTitle>
-                <CheckTitle>Build Multi-Language support.</CheckTitle>
-                <CheckTitle>
-                  Advanced data handling with Redux Toolkit.
-                </CheckTitle>
-                <CheckTitle>
-                  Use of .env files to secure secret API keys
-                </CheckTitle>
+              <div className="flex flex-col lg:gap-5 justify-between py-2">
+                <div className="flex flex-col gap-2">
+                  <CheckTitle>
+                    GPT Search, using the latest GPT-3.5 Turbo API 🚀.
+                  </CheckTitle>
+                  <CheckTitle>
+                    Authentication - Sign Up, Log In, Sign Out.
+                  </CheckTitle>
+                  <CheckTitle>Form Handling, and Form validations</CheckTitle>
+                  <CheckTitle>Advanced Tailwind.</CheckTitle>
+                  <CheckTitle>useRef hook.</CheckTitle>
+                  <CheckTitle>covered the concept of Memoization.</CheckTitle>
+                  <CheckTitle>Build Multi-Language support.</CheckTitle>
+                  <CheckTitle>
+                    Advanced data handling with Redux Toolkit.
+                  </CheckTitle>
+                  <CheckTitle>
+                    Use of .env files to secure secret API keys
+                  </CheckTitle>
+                </div>
+
+                <AnimatedButton
+                  type="ext"
+                  link="https://courses.30dayscoding.com/courses/All-courses-package-652a1994e4b05a145bae5cd0"
+                >
+                  Buy Now
+                </AnimatedButton>
               </div>
             </div>
           </Reveal>
@@ -80,7 +90,7 @@ export default function Projects() {
           </Reveal>
 
           <Reveal>
-            <div className="flex max-xl:flex-col items-center justify-center gap-4 p-5">
+            <div className="flex max-xl:flex-col max-xl:items-center justify-center gap-8 p-5">
               <Image
                 className="rounded-md max-lg:w-full object-cover"
                 src={"/course2.jpg"}
@@ -89,24 +99,33 @@ export default function Projects() {
                 height={1200}
               />
 
-              <div className="flex flex-col gap-2 py-3">
-                <CheckTitle>
-                  GPT Search, using the latest GPT-3.5 Turbo API 🚀.
-                </CheckTitle>
-                <CheckTitle>
-                  Authentication - Sign Up, Log In, Sign Out.
-                </CheckTitle>
-                <CheckTitle>Form Handling, and Form validations</CheckTitle>
-                <CheckTitle>Advanced Tailwind.</CheckTitle>
-                <CheckTitle>useRef hook.</CheckTitle>
-                <CheckTitle>covered the concept of Memoization.</CheckTitle>
-                <CheckTitle>Build Multi-Language support.</CheckTitle>
-                <CheckTitle>
-                  Advanced data handling with Redux Toolkit.
-                </CheckTitle>
-                <CheckTitle>
-                  Use of .env files to secure secret API keys
-                </CheckTitle>
+              <div className="flex flex-col lg:gap-5 justify-between py-2">
+                <div className="flex flex-col gap-2">
+                  <CheckTitle>
+                    GPT Search, using the latest GPT-3.5 Turbo API 🚀.
+                  </CheckTitle>
+                  <CheckTitle>
+                    Authentication - Sign Up, Log In, Sign Out.
+                  </CheckTitle>
+                  <CheckTitle>Form Handling, and Form validations</CheckTitle>
+                  <CheckTitle>Advanced Tailwind.</CheckTitle>
+                  <CheckTitle>useRef hook.</CheckTitle>
+                  <CheckTitle>covered the concept of Memoization.</CheckTitle>
+                  <CheckTitle>Build Multi-Language support.</CheckTitle>
+                  <CheckTitle>
+                    Advanced data handling with Redux Toolkit.
+                  </CheckTitle>
+                  <CheckTitle>
+                    Use of .env files to secure secret API keys
+                  </CheckTitle>
+                </div>
+
+                <AnimatedButton
+                  type="ext"
+                  link="https://courses.30dayscoding.com/courses/Full-stack-package-652a0a17e4b0db14394522ed"
+                >
+                  Buy Now
+                </AnimatedButton>
               </div>
             </div>
           </Reveal>

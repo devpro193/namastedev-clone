@@ -1,6 +1,7 @@
 import Reveal from "@/components/framer/reveal";
 import { Button } from "@/components/ui/button";
 import { satisfy } from "@/lib/font";
+import Link from "next/link";
 
 export default function Floating() {
   return (
@@ -25,15 +26,17 @@ export default function Floating() {
       </Reveal>
 
       <Reveal>
-        <div className="group relative">
-          <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
-          <Button
-            variant={"outline"}
-            className={`relative w-full text-lg font-semibold text-foreground/70`}
-          >
-            Enroll Today
-          </Button>
-        </div>
+        <Link href={"https://courses.30dayscoding.com/s/store"} target="_blank">
+          <div className="group relative">
+            <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
+            <Button
+              variant={"outline"}
+              className={`relative w-full text-lg font-semibold text-foreground/70`}
+            >
+              Enroll Today
+            </Button>
+          </div>
+        </Link>
       </Reveal>
     </div>
   );

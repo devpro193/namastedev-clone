@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import YoutubeEmbed from "@/components/yotube-embed";
 import { space_mono, satisfy } from "@/lib/font";
 import { CheckCircle, TimerReset } from "lucide-react";
+import AnimatedButton from "../animated-button";
 
 function CheckTitle({ children }: { children: React.ReactNode }) {
   return (
@@ -80,15 +81,12 @@ export default function Hero() {
         </div>
 
         <Reveal width="100%" overflow="unset">
-          <div className="group relative">
-            <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
-            <Button
-              variant={"outline"}
-              className={`${space_mono.className} font-semibold text-foreground/80 hover:text-foreground relative w-full`}
-            >
-              Enroll Today
-            </Button>
-          </div>
+          <AnimatedButton
+            type="ext"
+            link="https://courses.30dayscoding.com/s/store"
+          >
+            Enroll Now
+          </AnimatedButton>
         </Reveal>
       </div>
 
