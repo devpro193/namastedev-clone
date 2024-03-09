@@ -160,8 +160,9 @@ export default function Testimonials() {
       </Reveal>
 
       <div className="grid grid-cols-3 max-xl:grid-cols-2 max-md:hidden gap-6">
-        {testimonials.map((e) => (
+        {testimonials.map((e, i) => (
           <Testimonial
+            key={i}
             name={e.name}
             review={e.review}
             profile={e.profile}

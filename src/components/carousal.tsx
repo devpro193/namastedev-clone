@@ -19,8 +19,8 @@ export default function Carousal() {
         ]}
       >
         <CarouselContent>
-          {testimonials.map((e) => (
-            <CarouselItem>
+          {testimonials.map((e, i) => (
+            <CarouselItem key={i}>
               <Testimonial
                 name={e.name}
                 review={e.review}

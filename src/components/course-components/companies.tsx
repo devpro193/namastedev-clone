@@ -77,15 +77,15 @@ export default function Companies() {
       <div className="py-12 relative flex flex-col gap-7 overflow-hidden bg-gradient-to-tr">
         <Reveal>
           <div className="relative flex space-x-16 animate-loop-scroll">
-            {companyImg.map((e) => (
-              <NewImage src={e} />
+            {companyImg.map((e, i) => (
+              <NewImage key={i} src={e} />
             ))}
           </div>
         </Reveal>
         <Reveal>
           <div className="flex space-x-16 animate-loop-scroll-reverse">
-            {companyImg2.map((e) => (
-              <NewImage src={e} />
+            {companyImg2.map((e, i) => (
+              <NewImage key={i} src={e} />
             ))}
           </div>
         </Reveal>
