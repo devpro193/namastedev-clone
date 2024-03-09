@@ -1,9 +1,14 @@
 import Reveal from "@/components/framer/reveal";
-import { Button } from "@/components/ui/button";
 import YoutubeEmbed from "@/components/yotube-embed";
-import { space_mono, satisfy } from "@/lib/font";
+import { satisfy } from "@/lib/font";
 import { CheckCircle, TimerReset } from "lucide-react";
 import AnimatedButton from "../animated-button";
+
+type Props = {
+  title: string;
+  youtube: string;
+  courseLink: string;
+};
 
 function CheckTitle({ children }: { children: React.ReactNode }) {
   return (
@@ -14,14 +19,14 @@ function CheckTitle({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function Hero() {
+export default function Hero({ title, courseLink, youtube }: Props) {
   return (
     <div className="flex max-xl:flex-col-reverse justify-between gap-10 mt-5">
       <div className="flex flex-col gap-6">
         <Reveal>
           <section className="flex flex-col">
             <h1 className={`${satisfy.className} text-4xl font-semibold pb-0`}>
-              MERN Full Stack Development Course
+              {title}
             </h1>
             <span className={`text-foreground/70 font-light`}>
               30 Days Coding From Zero to Hero🔥
@@ -81,16 +86,13 @@ export default function Hero() {
         </div>
 
         <Reveal width="100%" overflow="unset">
-          <AnimatedButton
-            type="ext"
-            link="https://courses.30dayscoding.com/s/store"
-          >
+          <AnimatedButton type="ext" link={courseLink}>
             Enroll Now
           </AnimatedButton>
         </Reveal>
       </div>
 
-      <YoutubeEmbed embedId="dao2HaGzc3M" />
+      <YoutubeEmbed embedId={youtube} />
     </div>
   );
 }

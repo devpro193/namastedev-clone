@@ -48,7 +48,7 @@ export default function Projects() {
                 height={1200}
               />
 
-              <div className="flex flex-col lg:gap-5 justify-between py-2">
+              <div className="flex flex-col max-lg:gap-5 justify-between py-2">
                 <div className="flex flex-col gap-2">
                   <CheckTitle>
                     GPT Search, using the latest GPT-3.5 Turbo API 🚀.
@@ -68,13 +68,14 @@ export default function Projects() {
                     Use of .env files to secure secret API keys
                   </CheckTitle>
                 </div>
-
-                <AnimatedButton
-                  type="ext"
-                  link="https://courses.30dayscoding.com/courses/All-courses-package-652a1994e4b05a145bae5cd0"
-                >
-                  Buy Now
-                </AnimatedButton>
+                <Reveal>
+                  <AnimatedButton
+                    type="ext"
+                    link="https://courses.30dayscoding.com/courses/All-courses-package-652a1994e4b05a145bae5cd0"
+                  >
+                    Buy Now
+                  </AnimatedButton>
+                </Reveal>
               </div>
             </div>
           </Reveal>
@@ -99,7 +100,7 @@ export default function Projects() {
                 height={1200}
               />
 
-              <div className="flex flex-col lg:gap-5 justify-between py-2">
+              <div className="flex flex-col max-lg:gap-5 justify-between py-2">
                 <div className="flex flex-col gap-2">
                   <CheckTitle>
                     GPT Search, using the latest GPT-3.5 Turbo API 🚀.
@@ -120,12 +121,14 @@ export default function Projects() {
                   </CheckTitle>
                 </div>
 
-                <AnimatedButton
-                  type="ext"
-                  link="https://courses.30dayscoding.com/courses/Full-stack-package-652a0a17e4b0db14394522ed"
-                >
-                  Buy Now
-                </AnimatedButton>
+                <Reveal>
+                  <AnimatedButton
+                    type="ext"
+                    link="https://courses.30dayscoding.com/courses/Full-stack-package-652a0a17e4b0db14394522ed"
+                  >
+                    Buy Now
+                  </AnimatedButton>
+                </Reveal>
               </div>
             </div>
           </Reveal>

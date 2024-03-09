@@ -13,7 +13,7 @@ function Collapsible({ title, answer }: { title: string; answer: string }) {
     <Reveal>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger className="dark:bg-background  rounded-md bg-gray-200/60 p-3 font-semibold shadow-md text-lg">
+          <AccordionTrigger className="dark:bg-background rounded-md border-2 p-3 font-semibold text-lg">
             {title}
           </AccordionTrigger>
           <AccordionContent className="dark:bg-indigo-900 rounded-b-md bg-indigo-100/50 p-4 items-start text-foreground/70">
@@ -38,7 +38,7 @@ export default function Faq() {
         </span>
       </Reveal>
 
-      <div className="flex flex-col justify-start w-full gap-4 py-4">
+      <div className="flex flex-col justify-start w-full py-4">
         <Collapsible
           title={"Question 1 ?"}
           answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere esse dolor, dolores enim, architecto saepe impedit vitae quam earum doloribus, voluptate sit delectus reprehenderit mollitia non placeat. Ullam, quisquam facere!"

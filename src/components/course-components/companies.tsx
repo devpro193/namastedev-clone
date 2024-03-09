@@ -89,7 +89,7 @@ export default function Companies() {
             ))}
           </div>
         </Reveal>
-        <div className="h-full w-full absolute z-10 bg-gradient-to-r dark:from-indigo-950 from-background from-5% dark:via-indigo-950/10 via-background/10 via-50% dark:to-indigo-950 to-background to-95%"></div>
+        <div className="h-full w-full absolute z-10 bg-gradient-to-r dark:from-indigo-950 from-background max-lg:from-0% from-5% dark:via-indigo-950/10 via-background/10 via-50% dark:to-indigo-950 to-background max-lg:to-100% to-95%"></div>
       </div>
     </div>
   );

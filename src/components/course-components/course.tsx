@@ -1,6 +1,5 @@
 import { Collapsible, SubCourse } from "@/components/collabsible";
 import Reveal from "@/components/framer/reveal";
-import { Button } from "@/components/ui/button";
 import { satisfy } from "@/lib/font";
 import {
   Atom,
@@ -9,7 +8,6 @@ import {
   Briefcase,
   Clock7,
   Code2,
-  FileText,
   Folder,
   HelpCircle,
   Laptop2,
@@ -18,6 +16,11 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import AnimatedButton from "../animated-button";
+
+type Props = {
+  imageSrc: string;
+  courseLink: string;
+};
 
 function CoursePerks({
   children,
@@ -34,7 +37,7 @@ function CoursePerks({
   );
 }
 
-export default function Course() {
+export default function Course({ imageSrc, courseLink }: Props) {
   return (
     <div className={`grid grid-cols-1 gap-3`}>
       <Reveal>
@@ -665,80 +668,77 @@ export default function Course() {
           </Reveal>
         </div>
 
-        <Reveal>
-          <div className="max-lg:hidden min-w-44 relative h-full">
-            <div className="sticky top-0 p-3 flex flex-col gap-3 shadow-lg dark:bg-indigo-900 rounded-lg h-fit">
-              <Image
-                className="h-36 rounded shadow-md hover:scale-105 transition-transform object-cover"
-                alt="course"
-                src={"/mern.jpg"}
-                width={300}
-                height={300}
-              />
-              <span
-                className={`${satisfy.className} flex text-muted-foreground items-center leading-3 gap-1`}
-              >
-                <Timer className="h-5 w-5" />
-                1099 Days Validity
+        {/* <Reveal> */}
+        <div className="max-lg:hidden min-w-44 relative h-full">
+          <div className="sticky top-0 p-3 flex flex-col gap-3 shadow-lg dark:bg-indigo-900 rounded-lg h-fit">
+            <Image
+              className="h-36 rounded shadow-md hover:scale-105 transition-transform object-cover"
+              alt="course"
+              src={imageSrc}
+              width={300}
+              height={300}
+            />
+            <span
+              className={`${satisfy.className} flex text-muted-foreground items-center leading-3 gap-1`}
+            >
+              <Timer className="h-5 w-5" />
+              1099 Days Validity
+            </span>
+
+            <section className="flex items-end gap-2">
+              <span className={`${satisfy.className} text-lg`}>
+                ₹<span className="text-2xl">2499</span>
+                <span className="text-sm text-muted-foreground ml-1 line-through">
+                  ₹3000
+                </span>
               </span>
 
-              <section className="flex items-end gap-2">
-                <span className={`${satisfy.className} text-lg`}>
-                  ₹<span className="text-2xl">2499</span>
-                  <span className="text-sm text-muted-foreground ml-1 line-through">
-                    ₹3000
-                  </span>
-                </span>
-
-                <span
-                  className={`${satisfy.className} text-secondary-foreground rounded py-0`}
-                >
-                  17% off
-                </span>
-              </section>
-
-              <AnimatedButton
-                type="ext"
-                link="https://courses.30dayscoding.com/courses/MERN-full-stack-web-development-64eebdb8e4b0a14befedc15d"
+              <span
+                className={`${satisfy.className} text-secondary-foreground rounded py-0`}
               >
-                Buy Now
-              </AnimatedButton>
+                17% off
+              </span>
+            </section>
 
-              <div className="grid grid-col-1 gap-5 text-sm py-3">
-                <CoursePerks title={"50+ hours of video content"}>
-                  <Video className="h-5 w-5" />
-                </CoursePerks>
+            <AnimatedButton type="ext" link={courseLink}>
+              Buy Now
+            </AnimatedButton>
 
-                <CoursePerks title={"Machine Coding round tips"}>
-                  <Bookmark className="h-5 w-5" />
-                </CoursePerks>
+            <div className="grid grid-col-1 gap-5 text-sm py-3">
+              <CoursePerks title={"50+ hours of video content"}>
+                <Video className="h-5 w-5" />
+              </CoursePerks>
 
-                <CoursePerks title={"3 Major project"}>
-                  <Briefcase className="h-5 w-5" />
-                </CoursePerks>
+              <CoursePerks title={"Machine Coding round tips"}>
+                <Bookmark className="h-5 w-5" />
+              </CoursePerks>
 
-                <CoursePerks title={"Resume building sessions"}>
-                  <Code2 className="h-5 w-5" />
-                </CoursePerks>
-                <CoursePerks title={"Interviews Questions covered"}>
-                  <HelpCircle className="h-5 w-5" />
-                </CoursePerks>
+              <CoursePerks title={"3 Major project"}>
+                <Briefcase className="h-5 w-5" />
+              </CoursePerks>
 
-                <CoursePerks title={"Latest React Practices"}>
-                  <Atom className="h-5 w-5" />
-                </CoursePerks>
+              <CoursePerks title={"Resume building sessions"}>
+                <Code2 className="h-5 w-5" />
+              </CoursePerks>
+              <CoursePerks title={"Interviews Questions covered"}>
+                <HelpCircle className="h-5 w-5" />
+              </CoursePerks>
 
-                <CoursePerks title={"3 years of access"}>
-                  <Clock7 className="h-5 w-5" />
-                </CoursePerks>
+              <CoursePerks title={"Latest React Practices"}>
+                <Atom className="h-5 w-5" />
+              </CoursePerks>
 
-                <CoursePerks title={"Learn everything from scratch"}>
-                  <BookOpen className="h-5 w-5" />
-                </CoursePerks>
-              </div>
+              <CoursePerks title={"3 years of access"}>
+                <Clock7 className="h-5 w-5" />
+              </CoursePerks>
+
+              <CoursePerks title={"Learn everything from scratch"}>
+                <BookOpen className="h-5 w-5" />
+              </CoursePerks>
             </div>
           </div>
-        </Reveal>
+        </div>
+        {/* </Reveal> */}
       </div>
     </div>
   );

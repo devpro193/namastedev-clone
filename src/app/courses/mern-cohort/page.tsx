@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
   openGraph: {
-    images: "/mern.jpg",
+    images: "/cohort.jpg",
   },
 };
 
@@ -26,10 +26,17 @@ export default function Home() {
     <main className="bg-background dark:bg-indigo-950 min-h-svh transition-all">
       <Navbar />
       <div className="max-w-[1800px] m-auto flex flex-col lg:px-20 lg:py-10 px-6 py-5 gap-10">
-        <Hero />
+        <Hero
+          title="LIVE MERN Stack Web Development Cohort"
+          courseLink="https://courses.30dayscoding.com/s/store"
+          youtube="iQR3fb3yJko"
+        />
         <Achievements />
         <Mission />
-        <Course />
+        <Course
+          courseLink="https://courses.30dayscoding.com/courses/Idea-to-MVP-full-stack-project-course-6525cb14e4b07ef99d14b75b"
+          imageSrc="/cohort.jpg"
+        />
         <Instructor />
         <Projects />
         <Companies />
