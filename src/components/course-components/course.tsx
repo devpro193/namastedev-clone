@@ -1,6 +1,5 @@
 import { Collapsible, SubCourse } from "@/components/collabsible";
 import Reveal from "@/components/framer/reveal";
-import { satisfy } from "@/lib/font";
 import {
   Atom,
   BookOpen,
@@ -39,11 +38,11 @@ function CoursePerks({
 
 export default function Course({ imageSrc, courseLink }: Props) {
   return (
-    <div className={`grid grid-cols-1 gap-3`}>
+    <div className={"grid grid-cols-1 gap-3"}>
       <Reveal>
         <span className="flex gap-4 lg:justify-center items-center mb-5">
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-          <h2 className={`${satisfy.className} text-4xl`}>Course</h2>
+          <h2 className={"font-mulish text-4xl"}>Course</h2>
           <hr className="h-1 max-lg:w-full w-20 rounded bg-primary/40" />
         </span>
       </Reveal>
@@ -679,14 +678,16 @@ export default function Course({ imageSrc, courseLink }: Props) {
               height={300}
             />
             <span
-              className={`${satisfy.className} flex text-muted-foreground items-center leading-3 gap-1`}
+              className={
+                "font-mulish flex text-muted-foreground items-center leading-3 gap-1"
+              }
             >
               <Timer className="h-5 w-5" />
               1099 Days Validity
             </span>
 
             <section className="flex items-end gap-2">
-              <span className={`${satisfy.className} text-lg`}>
+              <span className={"font-mulish text-lg"}>
                 ₹<span className="text-2xl">2499</span>
                 <span className="text-sm text-muted-foreground ml-1 line-through">
                   ₹3000
@@ -694,7 +695,7 @@ export default function Course({ imageSrc, courseLink }: Props) {
               </span>
 
               <span
-                className={`${satisfy.className} text-secondary-foreground rounded py-0`}
+                className={"font-mulish text-secondary-foreground rounded py-0"}
               >
                 17% off
               </span>

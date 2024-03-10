@@ -20,7 +20,7 @@ export default function AnimatedButton({
         <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
         <Button
           variant={"outline"}
-          className={`${space_mono.className} font-semibold lg:text-lg text-foreground/80 hover:text-foreground relative w-full`}
+          className={`font-spaceMono font-semibold lg:text-lg text-foreground/80 hover:text-foreground relative w-full`}
         >
           {children}
         </Button>

@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import HeadBanner from "./head-banner";
 import { ThemeProvider } from "@/components/theme-provider";
-import { mont } from "@/lib/font";
-import Floating from "./floating";
-import LoadingLogo from "@/components/framer/logo-loading";
+import { inter, localJakarta, mont, mulish, space_mono } from "@/lib/font";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -23,12 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mont.className}>
+      <body
+        className={`${mont.variable} ${localJakarta.variable} ${space_mono.variable} ${mulish.variable} ${inter.variable} font-mont`}
+      >
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <HeadBanner />
           {children}
-          <Floating />
-          <LoadingLogo />
         </ThemeProvider>
       </body>
     </html>

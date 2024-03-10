@@ -1,5 +1,6 @@
 import Reveal from "@/components/framer/reveal";
 import { Button } from "@/components/ui/button";
+import { satisfy } from "@/lib/font";
 import Link from "next/link";
 
 export default function Floating() {
@@ -7,7 +8,7 @@ export default function Floating() {
     <div className="lg:hidden fixed bottom-0 flex justify-between items-center gap-2 p-4 px-6 bg-background/40 bg- w-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30">
       <Reveal>
         <section className="flex flex-col gap-1">
-          <span className={"font-mulish text-lg"}>
+          <span className={`font-mulish text-lg`}>
             ₹<span className="text-2xl">2499</span>
           </span>
 
@@ -16,7 +17,7 @@ export default function Floating() {
               ₹3000
             </span>
             <span
-              className={"font-mulish text-secondary-foreground rounded py-0"}
+              className={`font-mulish text-secondary-foreground rounded py-0`}
             >
               17% off
             </span>

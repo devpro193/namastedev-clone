@@ -1,5 +1,3 @@
-// import { Collapsible } from "@/components/collabsible";
-import { satisfy } from "@/lib/font";
 import {
   Accordion,
   AccordionContent,
@@ -27,13 +25,11 @@ function Collapsible({ title, answer }: { title: string; answer: string }) {
 
 export default function Faq() {
   return (
-    <div className={`grid grid-cols-1 gap-3`}>
+    <div className={"grid grid-cols-1 gap-3"}>
       <Reveal>
         <span className="flex gap-4 lg:justify-center items-center">
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-          <h2 className={`${satisfy.className} text-4xl`}>
-            Frequently Asked Questions
-          </h2>
+          <h2 className={"font-mono text-4xl"}>Frequently Asked Questions</h2>
           <hr className="h-1 max-lg:w-40 w-20 rounded bg-primary/40" />
         </span>
       </Reveal>

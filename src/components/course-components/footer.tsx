@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <Reveal>
       <div
-        className={`${space_mono.className} flex justify-between items-start py-5 bg-zinc-950`}
+        className={`font-spaceMono flex justify-between items-start py-5 bg-zinc-950`}
       >
         <section className="grid gap-2 text-gray-400/70 font-semibold p-5">
           <Image

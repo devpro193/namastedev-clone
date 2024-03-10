@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { satisfy } from "@/lib/font";
 import {
   BookmarkIcon,
   CodeSquare,
@@ -70,9 +69,7 @@ export function Collapsible({
           <div className="flex items-center gap-2">
             <BookmarkIcon className="h-8 w-8 stroke-1" />
             <div className="flex flex-col items-start justify-start gap-1">
-              <span
-                className={`${satisfy.className} font-bold text-lg text-start`}
-              >
+              <span className={"font-mulish font-bold text-lg text-start"}>
                 {title}
               </span>
               <div className="flex gap-2 font-semibold text-foreground/70 text-sm items-center">

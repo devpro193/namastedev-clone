@@ -21,9 +21,7 @@ export default function Projects() {
       <Reveal>
         <span className="flex gap-4 lg:justify-center items-center mb-6">
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-          <h2 className={`${satisfy.className} text-4xl`}>
-            Awesome Premium Courses 🚀
-          </h2>
+          <h2 className={`font-mulish text-4xl`}>Awesome Premium Courses 🚀</h2>
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
           {/* <hr className="h-1 max-lg:w-full w-20 rounded bg-primary/40" /> */}
         </span>

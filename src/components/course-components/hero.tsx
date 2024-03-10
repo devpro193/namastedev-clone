@@ -1,6 +1,5 @@
 import Reveal from "@/components/framer/reveal";
 import YoutubeEmbed from "@/components/yotube-embed";
-import { satisfy } from "@/lib/font";
 import { CheckCircle, TimerReset } from "lucide-react";
 import AnimatedButton from "../animated-button";
 
@@ -25,16 +24,16 @@ export default function Hero({ title, courseLink, youtube }: Props) {
       <div className="flex flex-col gap-6">
         <Reveal>
           <section className="flex flex-col">
-            <h1 className={`${satisfy.className} text-4xl font-semibold pb-0`}>
+            <h1 className={"font-mulish text-4xl font-semibold pb-0"}>
               {title}
             </h1>
-            <span className={`text-foreground/70 font-light`}>
+            <span className={"text-foreground/70 font-light"}>
               30 Days Coding From Zero to Hero🔥
             </span>
           </section>
         </Reveal>
 
-        <div className={`grid gap-1 text-foreground/70 font-light`}>
+        <div className={"grid gap-1 text-foreground/70 font-light"}>
           <Reveal>
             <CheckTitle>In depth High Quality Videos</CheckTitle>
           </Reveal>
@@ -59,7 +58,7 @@ export default function Hero({ title, courseLink, youtube }: Props) {
           <div className="flex justify-between items-end">
             <Reveal>
               <section className="flex items-end gap-2">
-                <span className={`${satisfy.className} text-xl`}>
+                <span className={"font-mulish text-xl"}>
                   ₹<span className="text-3xl">2499</span>
                   <span className="text-sm text-muted-foreground ml-1 line-through">
                     ₹3000
@@ -67,7 +66,9 @@ export default function Hero({ title, courseLink, youtube }: Props) {
                 </span>
 
                 <span
-                  className={`${satisfy.className} text-secondary-foreground rounded py-0`}
+                  className={
+                    "font-mulish text-secondary-foreground rounded py-0"
+                  }
                 >
                   17% off
                 </span>
@@ -75,9 +76,7 @@ export default function Hero({ title, courseLink, youtube }: Props) {
             </Reveal>
 
             <Reveal>
-              <span
-                className={`${satisfy.className} flex items-center leading-3 gap-2`}
-              >
+              <span className={"font-mulish flex items-center leading-3 gap-2"}>
                 <TimerReset className="animate-bounce h-5 w-5" />
                 1099 Days Validity
               </span>

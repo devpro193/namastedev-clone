@@ -34,7 +34,7 @@ export default function Achievements() {
   return (
     <Reveal>
       <div
-        className={`${space_mono.className} lg:flex max-lg:grid max-lg:grid-cols-2 justify-evenly gap-10 p-6 bg-gray-200/90 dark:bg-background/90 rounded-md`}
+        className={`font-spaceMono lg:flex max-lg:grid max-lg:grid-cols-2 justify-evenly gap-10 p-6 bg-gray-200/90 dark:bg-background/90 rounded-md`}
       >
         <Achieved title="Success Stories" amount="10,000">
           <Award className="h-8 w-8" />

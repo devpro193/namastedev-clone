@@ -10,6 +10,15 @@ const config = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      "phone": "530px",
+      "tab": "1070px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -58,6 +67,9 @@ const config = {
         bannerButton: {
           DEFAULT: "#28A745"
         },
+        head: "#3F2678",
+        prime: "#683FBE",
+        bg: "#171421"
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -92,7 +104,15 @@ const config = {
         "loop-scroll": "loop-scroll 30s linear infinite",
         "loop-scroll-reverse": "loop-scroll-reverse 30s linear infinite",
       },
+      fontFamily: {
+        jakarta: ['var(--font-jakarta)'],
+        inter: ['var(--font-inter)'],
+        spaceMono: ['var(--font-space-mono)'],
+        mulish: ['var(--font-mulish)'],
+        mont: ['var(--font-mont)'],
+      },
     },
+
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
