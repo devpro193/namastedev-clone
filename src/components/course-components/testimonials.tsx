@@ -1,6 +1,5 @@
 import Carousal from "@/components/carousal";
 import Reveal from "@/components/framer/reveal";
-import { satisfy, space_mono } from "@/lib/font";
 import Image from "next/image";
 import Link from "next/link";
 

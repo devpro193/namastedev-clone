@@ -1,5 +1,5 @@
 import Reveal from "@/components/framer/reveal";
-import { satisfy } from "@/lib/font";
+
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import AnimatedButton from "../animated-button";

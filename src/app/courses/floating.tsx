@@ -1,6 +1,6 @@
 import Reveal from "@/components/framer/reveal";
 import { Button } from "@/components/ui/button";
-import { satisfy } from "@/lib/font";
+
 import Link from "next/link";
 
 export default function Floating() {
