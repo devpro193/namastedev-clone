@@ -25,7 +25,7 @@ export default function Watch() {
   return (
     <div className="grid place-items-center gap-8">
       <h1 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
-        Highlihgts
+        Highlights
       </h1>
       <div className="relative flex flex-wrap gap-8 justify-center">
         {images.map((e, i) => (

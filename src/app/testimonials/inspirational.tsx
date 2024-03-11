@@ -13,48 +13,6 @@ type TestimonialType = {
 };
 
 export let testimonials: TestimonialType[] = [
-  // {
-  //   review:
-  //     "I just purchased course. This is the best price I could get the course compared to market. It is very nice to know that you just want to educate people, don't want to make money out of them. Really value for money.",
-  //   name: "Parth",
-  //   profile: "/profile.webp",
-  //   social: "instagram",
-  //   link: "https://www.instagram.com/p/C4Pv59ZuauW/?igsh=MzRlODBiNWFlZA%3D%3D&img_index=1",
-  // },
-  // {
-  //   review:
-  //     "Sir, you have done a wonderful word. Mene MERN course me enroll kia hai muje mja araha hai. Very good person got to learn new new things about the web development and how to prepare for the future and amazing content for education purpose as well as for the entertainment also.",
-  //   name: "Akshay",
-  //   profile: "/profile2.jpg",
-  //   social: "linkedin",
-  //   link: "https://www.instagram.com/p/C4Pv59ZuauW/?igsh=MzRlODBiNWFlZA%3D%3D&img_index=2",
-  // },
-
-  // {
-  //   review:
-  //     "Really helpful! I got exposed to new avenues and currently I am building a micro SAAS on my own via python, GCP, flutterflow, firebase",
-  //   name: "Abhisek De",
-  //   profile: "/profile3.webp",
-  //   social: "facebook",
-  //   link: "https://www.instagram.com/p/C4Pv59ZuauW/?igsh=MzRlODBiNWFlZA%3D%3D&img_index=3",
-  // },
-  // {
-  //   review:
-  //     "Very good person got to learn new new things about the web development and how to prepare for the future and amazing content for education purpose as well as for the entertainment also. Very good person got to learn new new things about the web development and how to prepare for the future and amazing content for education purpose as well as for the entertainment also.",
-  //   name: "Punit",
-  //   profile: "/profile2.jpg",
-  //   social: "youtube",
-  //   link: "https://www.instagram.com/p/C4Pv59ZuauW/?igsh=MzRlODBiNWFlZA%3D%3D&img_index=4",
-  // },
-  // {
-  //   review:
-  //     "I have purchased 10 courses bundle 2 days ago. I know MERN but bought for other things this bundle offers. I am amazed witht the amount of content and variety on variety of tech. Thanks",
-  //   name: "Jaydeep",
-  //   profile: "/profile3.webp",
-  //   social: "youtube",
-  //   link: "https://www.instagram.com/p/C4Pv59ZuauW/?igsh=MzRlODBiNWFlZA%3D%3D&img_index=4",
-  // },
-
   {
     time: "3/6/2024 22:49:19",
     name: "Abhisek De",
@@ -270,6 +228,33 @@ export let testimonials: TestimonialType[] = [
     review:
       "Through this mentorship, I've gained invaluable insights, refined my skills, and developed a clearer vision for my career trajectory. The main USP is their 1:1 session, which many big institutes fail to deliver consistently, and the quality of content and customized guidance based on a person's skill set is yet another added advantage. The most liked thing about this community is that mentor's push you to achieve your own goals and create your online presence or identity as well, thereby emphasizing succeeding together. Also, they don't force anyone to take their courses; rather, they motivate one to explore other resources and go with the one suitable for oneself. Be if FAANG/MAANG of any GANG, they would provide you with realistic conditions of the market and different organizations. With all of this package, you get complimentary humor and satirical reels. So, if anyone wants to build in public, I would highly recommend them (Tech main tagde hone pr dhyaan do bs). \n\nThanks a lot for guiding us so far and taking us in your 30DC-verse.\nLastly, there's a suggestion that the mentorship program could be stretched for longer period of time as well.",
   },
+  {
+    time: "3/11/2024 9:43:05",
+    name: "Dolly Sharma ",
+    email: "24dollysharma@gmail.com",
+    review:
+      "Aaj se ten days phle mene jab start kiya mujhe YouTube pr videos bhi smj mai nahi aa rhe the two hours ke video dekhne ke baad bhi bs time waste ho rha hai..mene bhut saare famous influencer se 1:1 session liya guidence ke liye vo bhi wastage of time  or money tha mujhe genioun lgne lga tha ye sab apne followers ke followers bdane ke liye fake baate kr rhe hai ..phir mere yha MERN full stack course liya mene socha yha se consult krke mujhe kya Krna hai ye deside kr lunge...phir only 20 percent course complete Kiya hai or jo mene YouTube pr videos dekhe the unka use or sence smj mai aa rha hai...agr mai youtube se hi complete krte toh definitely mera interest zero percent ho jata abhi tak ye such mai 400 rs mai worth it hai ",
+  },
+  {
+    time: "3/10/2024 22:15:29",
+    name: "Akshat Rai",
+    email: "akshatrai21@gmail.com",
+    review:
+      "Taking guidance from Aryan bhaiya is just like receiving guidance from your own elder brother. You can DM him round the clock with any query, no matter how big or small, and he replies within a few minutes. Now, I don't have to waste time deciding which course to take, which tech stack to learn, or in which order I should cover DSA topics. I just have to complete the tasks given by Aryan bhaiya, and I'm done. Under his guidance, I have already secured an internship of 25k. Now, with my placement in the next 6 months, I'm all set for success under his guidance. Thank you, Aryan bhaiya, for bringing this 1:1 guidance program.",
+  },
+  {
+    time: "3/11/2024 11:06:15",
+    name: "Madhav gaur ",
+    email: "gaurmadhav1234@gmail.com",
+    review:
+      "Bhaiya next level motivation for coding as you threaten us about no jobs for average coders that spirit pushing me to high level to develop interest for Deep learning.",
+  },
+  {
+    time: "3/11/2024 7:32:11",
+    name: "Sagnik Tarafder",
+    email: "sagnik.tarafder@gmail.com",
+    review: "Very helpful, insightful...and bhaiya is very kind. ",
+  },
 ];
 
 function Testimonial({ name, review }: TestimonialType) {
@@ -282,43 +267,11 @@ function Testimonial({ name, review }: TestimonialType) {
 }
 
 export default function Inspirational() {
-  const extra = [
-    {
-      time: "3/11/2024 9:43:05",
-      name: "Dolly Sharma ",
-      email: "24dollysharma@gmail.com",
-      review:
-        "Aaj se ten days phle mene jab start kiya mujhe YouTube pr videos bhi smj mai nahi aa rhe the two hours ke video dekhne ke baad bhi bs time waste ho rha hai..mene bhut saare famous influencer se 1:1 session liya guidence ke liye vo bhi wastage of time  or money tha mujhe genioun lgne lga tha ye sab apne followers ke followers bdane ke liye fake baate kr rhe hai ..phir mere yha MERN full stack course liya mene socha yha se consult krke mujhe kya Krna hai ye deside kr lunge...phir only 20 percent course complete Kiya hai or jo mene YouTube pr videos dekhe the unka use or sence smj mai aa rha hai...agr mai youtube se hi complete krte toh definitely mera interest zero percent ho jata abhi tak ye such mai 400 rs mai worth it hai ",
-    },
-    {
-      time: "3/10/2024 22:15:29",
-      name: "Akshat Rai",
-      email: "akshatrai21@gmail.com",
-      review:
-        "Taking guidance from Aryan bhaiya is just like receiving guidance from your own elder brother. You can DM him round the clock with any query, no matter how big or small, and he replies within a few minutes. Now, I don't have to waste time deciding which course to take, which tech stack to learn, or in which order I should cover DSA topics. I just have to complete the tasks given by Aryan bhaiya, and I'm done. Under his guidance, I have already secured an internship of 25k. Now, with my placement in the next 6 months, I'm all set for success under his guidance. Thank you, Aryan bhaiya, for bringing this 1:1 guidance program.",
-    },
-    {
-      time: "3/11/2024 11:06:15",
-      name: "Madhav gaur ",
-      email: "gaurmadhav1234@gmail.com",
-      review:
-        "Bhaiya next level motivation for coding as you threaten us about no jobs for average coders that spirit pushing me to high level to develop interest for Deep learning.",
-    },
-    {
-      time: "3/11/2024 7:32:11",
-      name: "Sagnik Tarafder",
-      email: "sagnik.tarafder@gmail.com",
-      review: "Very helpful, insightful...and bhaiya is very kind. ",
-    },
-  ];
-
-  const [testimony, setTestimony] = useState(testimonials);
-
   return (
     <div className="grid place-items-center gap-8">
       <span className="flex items-center gap-4 relative">
         <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
-        <h2 className="font-jakarta phone:shrink-0 text-[2rem] font-extrabold">
+        <h2 className="font-jakarta phone:shrink-0 text-[2rem] font-extrabold text-center">
           Inspiring journeys and wins!
         </h2>
         <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
@@ -326,33 +279,22 @@ export default function Inspirational() {
 
       <div className="relative flex items-start gap-8">
         <div className="flex flex-col max-[800px]:[&>*:nth-child(n)]:flex max-xl:[&>*:nth-child(odd)]:flex xl:[&>*:nth-child(3n-2)]:flex gap-8 items-start">
-          {testimony.map((e, i) => (
+          {testimonials.map((e, i) => (
             <Testimonial key={i} name={e.name} review={e.review} />
           ))}
         </div>
         <div className="max-[800px]:hidden flex flex-col max-xl:[&>*:nth-child(even)]:flex xl:[&>*:nth-child(3n-1)]:flex gap-8 items-start">
-          {testimony.map((e, i) => (
+          {testimonials.map((e, i) => (
             <Testimonial key={i} name={e.name} review={e.review} />
           ))}
         </div>
         <div className="max-xl:hidden flex flex-col [&>*:nth-child(3n)]:flex gap-8 items-start">
-          {testimony.map((e, i) => (
+          {testimonials.map((e, i) => (
             <Testimonial key={i} name={e.name} review={e.review} />
           ))}
         </div>
         <div className="absolute bottom-0 h-20 w-full bg-gradient-to-b z-10 from-transparent from-0% via-50% via-transparent to-50% blur-md to-bg/70"></div>
       </div>
-
-      <button
-        onClick={() =>
-          testimony.length === 32
-            ? setTestimony([...testimonials, ...extra])
-            : setTestimony(testimonials)
-        }
-        className="border rounded-md border-white px-4 py-2 font-semibold text-base"
-      >
-        Show {testimony.length === 32 ? "more" : "less"} reviews
-      </button>
     </div>
   );
 }
