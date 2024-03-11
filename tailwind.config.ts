@@ -67,10 +67,10 @@ const config = {
         bannerButton: {
           DEFAULT: "#28A745"
         },
-        head: "#3F2678",
-        prime: "#683FBE",
-        bg: "#171421",
-        second: "#221d34"
+        head: "#2c7a76",
+        prime: "#366663",
+        bg: "#0c2e2d",
+        second: "#134543"
       },
       borderRadius: {
         lg: "var(--radius)",

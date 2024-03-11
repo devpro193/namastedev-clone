@@ -33,7 +33,9 @@ export function VideoTestimony({
             <span className="text-cyan-400 text-sm font-semibold font-jakarta">
               {name}
             </span>
-            <span className="text-sm text-white/80">{designation}</span>
+            <span className="text-sm text-white/80 leading-4">
+              {designation}
+            </span>
           </div>
         </div>
 
@@ -63,18 +65,18 @@ export default function Hero() {
       </h1>
       <div className="flex flex-wrap gap-8 justify-center">
         <VideoTestimony
-          name="Aryan Singh"
-          designation="Application Engineer @National Instruments"
+          name="Deepanshu Udhwani"
+          designation="Founder 30dayscoding | Ex. MakeMytrip | Ex. Alibaba Cloud"
           linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
-          imageUrl="/instructor.jpg"
-          videoId="6hf47ik3B5k"
+          imageUrl="/instructor2.jfif"
+          videoId="gIx8D2pyXVI"
         />
         <VideoTestimony
           name="Aryan Singh"
           designation="@Google SWE"
           linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
           imageUrl="/instructor.jpg"
-          videoId="dao2HaGzc3M"
+          videoId="FVHtu6tuA9E"
         />
         <VideoTestimony
           name="Aryan Singh"
