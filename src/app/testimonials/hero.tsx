@@ -10,7 +10,7 @@ type VideoTestimony = {
   linkedinUrl: string;
 };
 
-function VideoTestimony({
+export function VideoTestimony({
   name,
   designation,
   videoId,
@@ -33,7 +33,7 @@ function VideoTestimony({
             <span className="text-cyan-400 text-sm font-semibold font-jakarta">
               {name}
             </span>
-            <span className="text-sm text-opacity-80">{designation}</span>
+            <span className="text-sm text-white/80">{designation}</span>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ function VideoTestimony({
 export default function Hero() {
   return (
     <div className="grid place-items-center gap-8">
-      <h1 className="font-jakarta text-[2.5rem] font-extrabold">
+      <h1 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
         Hear straight from our learners
       </h1>
       <div className="flex flex-wrap gap-8 justify-center">
@@ -67,7 +67,7 @@ export default function Hero() {
           designation="Application Engineer @National Instruments"
           linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
           imageUrl="/instructor.jpg"
-          videoId="dao2HaGzc3M"
+          videoId="6hf47ik3B5k"
         />
         <VideoTestimony
           name="Aryan Singh"
@@ -81,7 +81,7 @@ export default function Hero() {
           designation="@Google SWE"
           linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
           imageUrl="/instructor.jpg"
-          videoId="dao2HaGzc3M"
+          videoId="39MArMcq5Oc"
         />
       </div>
     </div>

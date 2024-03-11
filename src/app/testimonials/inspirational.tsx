@@ -20,7 +20,7 @@ export let testimonials: TestimonialType[] = [
 
   {
     review:
-      "Sir, you have done a wonderful word. Mene MERN course me enroll kia hai muje mja araha hai.",
+      "Sir, you have done a wonderful word. Mene MERN course me enroll kia hai muje mja araha hai. Very good person got to learn new new things about the web development and how to prepare for the future and amazing content for education purpose as well as for the entertainment also.",
     name: "Akshay",
     profile: "/profile2.jpg",
     social: "linkedin",
@@ -37,7 +37,7 @@ export let testimonials: TestimonialType[] = [
   },
   {
     review:
-      "Very good person got to learn new new things about the web development and how to prepare for the future and amazing content for education purpose as well as for the entertainment also.",
+      "Very good person got to learn new new things about the web development and how to prepare for the future and amazing content for education purpose as well as for the entertainment also. Very good person got to learn new new things about the web development and how to prepare for the future and amazing content for education purpose as well as for the entertainment also.",
     name: "Punit",
     profile: "/profile2.jpg",
     social: "youtube",
@@ -55,7 +55,7 @@ export let testimonials: TestimonialType[] = [
 
 function Testimonial({ name, review, profile }: TestimonialType) {
   return (
-    <div className="flex flex-col p-6 gap-3 h-fit bg-second w-[23.75rem] rounded-lg">
+    <div className="hidden flex-col p-6 gap-3 h-fit bg-second w-[23.75rem] rounded-lg">
       <section className="font-jakarta flex items-center gap-2">
         <Image
           src={profile}
@@ -76,25 +76,50 @@ export default function Inspirational() {
   return (
     <div className="grid place-items-center gap-8">
       <span className="flex items-center gap-4 relative">
-        <div className="absolute h-full w-full bg-gradient-to-r z-10 from-bg from-0% via-50% via-transparent to-100% to-bg"></div>
-        <hr className="h-0.5 w-60 max-w-60 rounded bg-prime" />
-        <h2 className="font-jakarta shrink-0 text-[2.5rem] font-extrabold">
+        <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
+        <h2 className="font-jakarta phone:shrink-0 text-[2rem] font-extrabold">
           Inspiring journeys and wins!
         </h2>
-        <hr className="h-0.5 w-60 max-w-60 rounded bg-prime" />
+        <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
       </span>
 
-      <div className="relative gap-8 grid xl:grid-cols-3 lg:grid-cols-2 place-content-center">
-        {testimonials.map((e, i) => (
-          <Testimonial
-            key={i}
-            name={e.name}
-            review={e.review}
-            profile={e.profile}
-            social={e.social}
-            link={e.link}
-          />
-        ))}
+      <div className="relative flex items-start gap-8">
+        <div className="flex flex-col max-[800px]:[&>*:nth-child(n)]:flex max-xl:[&>*:nth-child(odd)]:flex xl:[&>*:nth-child(3n-2)]:flex gap-8 items-start">
+          {testimonials.map((e, i) => (
+            <Testimonial
+              key={i}
+              name={e.name}
+              review={e.review}
+              profile={e.profile}
+              social={e.social}
+              link={e.link}
+            />
+          ))}
+        </div>
+        <div className="max-[800px]:hidden flex flex-col max-xl:[&>*:nth-child(even)]:flex xl:[&>*:nth-child(3n-1)]:flex gap-8 items-start">
+          {testimonials.map((e, i) => (
+            <Testimonial
+              key={i}
+              name={e.name}
+              review={e.review}
+              profile={e.profile}
+              social={e.social}
+              link={e.link}
+            />
+          ))}
+        </div>
+        <div className="max-xl:hidden flex flex-col [&>*:nth-child(3n)]:flex gap-8 items-start">
+          {testimonials.map((e, i) => (
+            <Testimonial
+              key={i}
+              name={e.name}
+              review={e.review}
+              profile={e.profile}
+              social={e.social}
+              link={e.link}
+            />
+          ))}
+        </div>
         <div className="absolute bottom-0 h-20 w-full bg-gradient-to-b z-10 from-transparent from-0% via-50% via-transparent to-50% blur-md to-bg/70"></div>
       </div>
 
