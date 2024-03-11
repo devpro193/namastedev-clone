@@ -14,18 +14,28 @@ function TestimonyImages({ imageUrl }: { imageUrl: string }) {
   );
 }
 
-export default function Watch() {
+export default function Public() {
   const images = [
-    "review1.jpeg",
-    "review2.jpeg",
-    "review3.jpeg",
-    "review4.jpeg",
-    "review5.jpeg",
+    "linkedin1.PNG",
+    "linkedin2.PNG",
+    "linkedin3.PNG",
+    "linkedin4.PNG",
+    "linkedin5.PNG",
+    "linkedin6.PNG",
+    "linkedin7.PNG",
+    "linkedin8.PNG",
+    "linkedin9.PNG",
+    "linkedin10.PNG",
+    "linkedin11.PNG",
+    "linkedin12.PNG",
+    "linkedin13.PNG",
+    "linkedin14.PNG",
+    "linkedin15.PNG",
   ];
   return (
     <div className="grid place-items-center gap-8">
       <h1 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
-        Highlights
+        More people are building in public with us
       </h1>
       <div className="relative flex flex-wrap gap-8 justify-center">
         {images.map((e, i) => (

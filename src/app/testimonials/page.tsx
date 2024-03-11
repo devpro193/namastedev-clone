@@ -3,6 +3,7 @@ import Navbar from "@/components/home-components/navbar";
 import Hero from "./hero";
 import Inspirational from "./inspirational";
 import Watch from "./watch";
+import Public from "./public";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -23,6 +24,7 @@ export default function Testimonial() {
           <Hero />
           <Inspirational />
           <Watch />
+          <Public />
         </div>
       </div>
     </main>
