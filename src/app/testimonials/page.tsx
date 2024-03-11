@@ -22,7 +22,7 @@ export default function Testimonial() {
         <div className="mx-auto w-full max-w-[90rem] max-phone:p-[0_0_3.5rem] p-[0_min(6rem,_6.66%)] flex flex-col gap-20">
           <Hero />
           <Inspirational />
-          <Watch />
+          {/* <Watch /> */}
         </div>
       </div>
     </main>
