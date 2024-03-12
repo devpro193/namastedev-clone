@@ -67,9 +67,9 @@ const config = {
         bannerButton: {
           DEFAULT: "#28A745"
         },
-        head: "#2c7a76",
-        prime: "#366663",
-        bg: "#0c2e2d",
+        head: "#006B5D",
+        prime: "#079281",
+        bg: "#112121",
         second: "#134543"
       },
       borderRadius: {

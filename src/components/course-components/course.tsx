@@ -669,7 +669,7 @@ export default function Course({ imageSrc, courseLink }: Props) {
 
         {/* <Reveal> */}
         <div className="max-lg:hidden min-w-44 relative h-full">
-          <div className="sticky top-0 p-3 flex flex-col gap-3 shadow-lg dark:bg-indigo-900 rounded-lg h-fit">
+          <div className="sticky top-7 p-3 flex flex-col gap-3 shadow-lg dark:bg-second rounded-lg h-fit">
             <Image
               className="h-36 rounded shadow-md hover:scale-105 transition-transform object-cover"
               alt="course"

@@ -32,8 +32,8 @@ export default function Navbar() {
             <Gift className="max-phone:h-5 max-phone:w-5 h-6 w-6 stroke-[1.5]" />
           </button>
           <button className="font-jakarta flex items-center font-semibold gap-2 hover:bg-prime bg-prime/80 transition-all px-4 py-3 max-phone:py-2 rounded-md">
-            <span className="text-sm max-phone:text-xs">Log in</span>
-            <ArrowRight className="h-4 w-4" />
+            <span className="text-sm max-phone:text-xs">Join Coummunity</span>
+            {/* <ArrowRight className="max-md:hidden h-4 w-4" /> */}
           </button>
           <button className="hover:bg-prime/30 rounded-lg p-1 transition-all">
             <AlignJustify className="tab:hidden max-tab:h-5 max-tab:w-5 h-6 w-6 stroke-[1.5]" />

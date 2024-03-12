@@ -14,7 +14,7 @@ function Collapsible({ title, answer }: { title: string; answer: string }) {
           <AccordionTrigger className="dark:bg-background rounded-md border-2 p-3 font-semibold text-lg">
             {title}
           </AccordionTrigger>
-          <AccordionContent className="dark:bg-indigo-900 rounded-b-md bg-indigo-100/50 p-4 items-start text-foreground/70">
+          <AccordionContent className="dark:bg-second rounded-b-md bg-indigo-100/50 p-4 items-start text-foreground/70">
             {answer}
           </AccordionContent>
         </AccordionItem>

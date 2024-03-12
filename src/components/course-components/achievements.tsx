@@ -25,7 +25,7 @@ function Achieved({
       >
         {title}
       </span>
-      <span className="text-orange-700 font-bold">{amount}+</span>
+      <span className="text-lime-700 font-bold">{amount}+</span>
     </section>
   );
 }

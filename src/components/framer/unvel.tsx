@@ -26,7 +26,7 @@ export default function Unveal({
 
   return (
     <div
-      className="dark:bg-indigo-950"
+      className="dark:bg-bg"
       ref={ref}
       style={{ position: "relative", width, overflow }}
     >
