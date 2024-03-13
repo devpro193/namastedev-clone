@@ -42,8 +42,8 @@ export default function Public() {
       </Reveal>
       <div className="relative flex flex-wrap gap-8 justify-center">
         {images.map((e, i) => (
-          <Reveal>
-            <TestimonyImages key={i} imageUrl={`/testimonials/${e}`} />
+          <Reveal key={i}>
+            <TestimonyImages imageUrl={`/testimonials/${e}`} />
           </Reveal>
         ))}
       </div>
