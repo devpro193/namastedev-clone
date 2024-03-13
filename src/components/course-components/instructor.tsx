@@ -8,7 +8,7 @@ export default function Instructor() {
       <Reveal>
         <span className="flex gap-4 lg:justify-center items-center">
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-          <h2 className={"$font-mulish text-4xl"}>Instructor</h2>
+          <h2 className={"$font-jakarta text-4xl"}>Instructor</h2>
           <hr className="h-1 max-lg:w-full w-20 rounded bg-primary/40" />
         </span>
       </Reveal>
@@ -25,7 +25,7 @@ export default function Instructor() {
           <div className="flex flex-col gap-10 p-10 grid-cols-1">
             <Reveal>
               <section className="flex flex-col">
-                <h4 className={"$font-mulish text-3xl"}>Aryan Singh</h4>
+                <h4 className={"$font-jakarta text-3xl"}>Aryan Singh</h4>
                 <span className="text-sm font-semibold text-foreground/70">
                   @Google SWE
                 </span>

@@ -153,7 +153,7 @@ export default function Testimonials() {
       <Reveal>
         <span className="flex gap-4 lg:justify-center items-center mb-5">
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-          <h2 className={`font-mulish text-4xl`}>Our Testimonials</h2>
+          <h2 className={`font-jakarta text-4xl`}>Our Testimonials</h2>
           <hr className="h-1 w-20 rounded bg-primary/40" />
         </span>
       </Reveal>

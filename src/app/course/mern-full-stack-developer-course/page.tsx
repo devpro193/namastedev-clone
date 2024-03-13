@@ -6,7 +6,7 @@ import Footer from "@/components/course-components/footer";
 import Hero from "@/components/course-components/hero";
 import Instructor from "@/components/course-components/instructor";
 import Mission from "@/components/course-components/mission";
-import Navbar from "@/components/course-components/navbar";
+import Navbar from "@/components/home-components/navbar";
 import Projects from "@/components/course-components/projects";
 import Testimonials from "@/components/course-components/testimonials";
 import type { Metadata } from "next";

@@ -65,7 +65,7 @@ export default function Companies() {
       <Reveal>
         <span className="flex gap-4 lg:justify-center items-center">
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-          <h2 className={"font-mulish text-4xl"}>
+          <h2 className={"font-jakarta text-4xl"}>
             Top Companies Where Our Students Work
           </h2>
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />

@@ -1,88 +1,21 @@
-"use client";
-
 import Unveal from "@/components/framer/unvel";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { space_mono } from "@/lib/font";
-import { X } from "lucide-react";
-import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
 
 export default function HeadBanner() {
-  const [hide, setHide] = useState(false);
   return (
     <Unveal>
-      <div
-        className={`${hide ? "hidden" : "flex"} ${
-          space_mono.className
-        } relative p-3 items-end lg:justify-center max-lg:justify-between text-white shadow-xl bg-gradient-to-r from-second via-head to-second animate-gradient bg-[length:200%_auto]`}
-      >
-        <div className="flex max-lg:flex-col lg:items-center justify-center lg:gap-6">
-          <Image
-            className="max-lg:hidden"
-            src={"/discount.webp"}
-            alt="discount-pic"
-            width={50}
-            height={50}
-          />
-
-          <section className="grid gap-0">
-            <span className="lg:font-semibold max-lg:text-sm">
-              30 Days Coding is here 🚀
-            </span>
-            <span className="font-bold">
-              Coupon Code :{" "}
-              <Badge
-                className="rounded bg-primary-foreground/75"
-                variant={"secondary"}
-              >
-                EARLYBIRD
-              </Badge>
-            </span>
-          </section>
-
-          <section className="flex items-center gap-3">
-            <div className="grid place-items-center">
-              <span className="font-bold text-lg">0</span>
-              <span className="uppercase text-xs">Days</span>
-            </div>
-            <span>:</span>
-            <div className="grid place-items-center">
-              <span className="font-bold text-lg">11</span>
-              <span className="uppercase text-xs">Hours</span>
-            </div>
-            <span>:</span>
-            <div className="grid place-items-center">
-              <span className="font-bold text-lg">18</span>
-              <span className="uppercase text-xs">mins</span>
-            </div>
-            <span>:</span>
-            <div className="grid place-items-center">
-              <span className="font-bold text-lg">49</span>
-              <span className="uppercase text-xs">Secs</span>
-            </div>
-          </section>
-
-          {/* <button className="rounded-3xl bg-bannerButton uppercase py-3 px-5 text-sm">
-        Enroll Now
-      </button> */}
-
-          <Button className="bg-zinc-900/75 max-lg:hidden text-white hover:bg-emerald-700 font-semibold">
-            Enroll Now
-          </Button>
-        </div>
-
-        <Button
-          size={"sm"}
-          className="bg-zinc-900/75 lg:hidden text-white hover:bg-emerald-700 font-semibold"
+      <div className={`relative font-jakarta tab:min-h-16`}>
+        <div className="tab:hidden tab:min-h-16" />
+        <Link
+          href={"https://courses.30dayscoding.com/s/store"}
+          target="_blank"
+          className={`bg-gradient-to-r from-second via-head to-second animate-gradient bg-[length:200%_auto] font-bold flex items-center justify-center text-lg max-tab:hidden text-white tab:min-h-16 fixed tab:top-0 w-full z-20`}
         >
-          Enroll Now
-        </Button>
-
-        <X
-          onClick={() => setHide(true)}
-          className="absolute right-2 top-2 w-4 h-4 cursor-pointer transition-all hover:scale-125"
-        />
+          <p className="tracking-wide text-center">
+            Apply now and get our Docker crash course for FREE 🎁
+            <span className="underline mx-2">Apply now!</span>
+          </p>
+        </Link>
       </div>
     </Unveal>
   );
