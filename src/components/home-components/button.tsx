@@ -1,6 +1,3 @@
-import { ArrowRight } from "lucide-react";
-import { localJakarta } from "@/lib/font";
-
 type Props = {
   children: React.ReactNode;
 };

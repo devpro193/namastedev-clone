@@ -7,6 +7,7 @@ import Unveal from "../framer/unvel";
 import Link from "next/link";
 import { useAtom, useSetAtom } from "jotai";
 import { navbarState } from "@/lib/jotai";
+import { ModeToggle } from "../theme-switch";
 
 export default function Navbar() {
   const setState = useSetAtom(navbarState);
@@ -36,9 +37,10 @@ export default function Navbar() {
             </div>
           </section>
 
-          <section className="flex items-center gap-2">
+          <section className="flex items-center gap-3">
+            <ModeToggle />
             <button className="hover:bg-prime/30 rounded-lg p-1 transition-all">
-              <Gift className="max-phone:h-5 max-phone:w-5 h-6 w-6 stroke-[1.5]" />
+              <Gift className="max-phone:h-5 max-phone:w-5 h-6 w-6 stroke-[1.5] stroke-black dark:stroke-white" />
             </button>
             <button className="font-jakarta flex items-center font-semibold gap-2 hover:bg-prime bg-prime/80 transition-all px-4 py-3 max-phone:py-2 rounded-md">
               <span className="text-sm max-phone:text-xs">Join Coummunity</span>

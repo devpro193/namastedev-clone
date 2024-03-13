@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${mont.variable} ${localJakarta.variable} ${space_mono.variable} ${mulish.variable} ${inter.variable} font-mont`}
+        className={`${mont.variable} ${localJakarta.variable} ${space_mono.variable} ${mulish.variable} ${inter.variable} font-jakarta`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
           <MobileMenu />
