@@ -121,7 +121,7 @@ export function Testimonial({
               <div className="flex flex-col gap-0">
                 <span className={`text-xl font-semibold`}>{name}</span>
                 <span
-                  className={`font-spaceMono text-sm font-bold text-orange-600`}
+                  className={`font-spaceMono text-sm font-bold text-lime-600`}
                 >
                   Customer
                 </span>
