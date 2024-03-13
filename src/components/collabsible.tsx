@@ -13,7 +13,6 @@ import {
   Link2,
   PlaySquare,
   TimerIcon,
-  Video,
 } from "lucide-react";
 
 const icons = {
@@ -34,7 +33,7 @@ export function SubCourse({
   type: "video" | "file" | "cloud" | "code" | "link";
 }) {
   return (
-    <div className="flex lg:items-center max-lg:flex-col justify-between transition-all dark:hover:bg-indigo-900 hover:bg-indigo-100 gap-3 p-4 text-foreground/70 border-t">
+    <div className="flex lg:items-center max-lg:flex-col justify-between transition-all dark:hover:bg-second/90 hover:bg-second/50 gap-3 p-4 text-foreground/70 border-t">
       <div className="flex items-center gap-2">
         {icons[type ?? "video"]}{" "}
         <h3 className="text-base font-semibold">{title}</h3>
@@ -69,7 +68,7 @@ export function Collapsible({
           <div className="flex items-center gap-2">
             <BookmarkIcon className="h-8 w-8 stroke-1" />
             <div className="flex flex-col items-start justify-start gap-1">
-              <span className={"font-mulish font-bold text-lg text-start"}>
+              <span className={"font-jakarta font-bold text-lg text-start"}>
                 {title}
               </span>
               <div className="flex gap-2 font-semibold text-foreground/70 text-sm items-center">
@@ -90,7 +89,7 @@ export function Collapsible({
             </div>
           </div>
         </AccordionTrigger>
-        <AccordionContent className="dark:bg-indigo-900/50 bg-indigo-100/50">
+        <AccordionContent className="dark:bg-second/50 bg-second/20">
           {children}
         </AccordionContent>
       </AccordionItem>

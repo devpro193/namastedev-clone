@@ -1,5 +1,6 @@
 "use client";
 
+import Reveal from "@/components/framer/reveal";
 import { useState } from "react";
 
 type TestimonialType = {
@@ -269,13 +270,15 @@ function Testimonial({ name, review }: TestimonialType) {
 export default function Inspirational() {
   return (
     <div className="grid place-items-center gap-8">
-      <span className="flex items-center gap-4 relative">
-        <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
-        <h2 className="font-jakarta phone:shrink-0 text-[2rem] font-extrabold text-center">
-          Inspiring journeys and wins!
-        </h2>
-        <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
-      </span>
+      <Reveal>
+        <span className="flex items-center gap-4 relative">
+          <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
+          <h2 className="font-jakarta phone:shrink-0 text-[2rem] font-extrabold text-center">
+            Inspiring journeys and wins!
+          </h2>
+          <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
+        </span>
+      </Reveal>
 
       <div className="relative flex items-start gap-8">
         <div className="flex flex-col max-[800px]:[&>*:nth-child(n)]:flex max-xl:[&>*:nth-child(odd)]:flex xl:[&>*:nth-child(3n-2)]:flex gap-8 items-start">

@@ -14,7 +14,7 @@ function Collapsible({ title, answer }: { title: string; answer: string }) {
           <AccordionTrigger className="dark:bg-background rounded-md border-2 p-3 font-semibold text-lg">
             {title}
           </AccordionTrigger>
-          <AccordionContent className="dark:bg-indigo-900 rounded-b-md bg-indigo-100/50 p-4 items-start text-foreground/70">
+          <AccordionContent className="dark:bg-second rounded-b-md bg-indigo-100/50 p-4 items-start text-foreground/70">
             {answer}
           </AccordionContent>
         </AccordionItem>
@@ -29,7 +29,9 @@ export default function Faq() {
       <Reveal>
         <span className="flex gap-4 lg:justify-center items-center">
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-          <h2 className={"font-mono text-4xl"}>Frequently Asked Questions</h2>
+          <h2 className={"font-jakarta text-4xl"}>
+            Frequently Asked Questions
+          </h2>
           <hr className="h-1 max-lg:w-40 w-20 rounded bg-primary/40" />
         </span>
       </Reveal>

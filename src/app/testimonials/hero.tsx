@@ -1,6 +1,7 @@
 import Image from "next/image";
 import YoutubeEmbed from "./youtube-embed";
 import Link from "next/link";
+import Reveal from "@/components/framer/reveal";
 
 type VideoTestimony = {
   name?: string;
@@ -60,32 +61,36 @@ export function VideoTestimony({
 export default function Hero() {
   return (
     <div className="grid place-items-center gap-8">
-      <h1 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
-        Hear straight from our learners
-      </h1>
-      <div className="flex flex-wrap gap-8 justify-center">
-        <VideoTestimony
-          name="Deepanshu Udhwani"
-          designation="Founder 30dayscoding | Ex. MakeMytrip | Ex. Alibaba Cloud"
-          linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
-          imageUrl="/instructor2.jfif"
-          videoId="gIx8D2pyXVI"
-        />
-        <VideoTestimony
-          name="Aryan Singh"
-          designation="@Google SWE"
-          linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
-          imageUrl="/instructor.jpg"
-          videoId="FVHtu6tuA9E"
-        />
-        <VideoTestimony
-          name="Aryan Singh"
-          designation="@Google SWE"
-          linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
-          imageUrl="/instructor.jpg"
-          videoId="39MArMcq5Oc"
-        />
-      </div>
+      <Reveal>
+        <h1 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
+          Hear straight from our learners
+        </h1>
+      </Reveal>
+      <Reveal>
+        <div className="flex flex-wrap gap-8 justify-center">
+          <VideoTestimony
+            name="Deepanshu Udhwani"
+            designation="Founder 30dayscoding | Ex. MakeMytrip | Ex. Alibaba Cloud"
+            linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
+            imageUrl="/instructor2.jfif"
+            videoId="gIx8D2pyXVI"
+          />
+          <VideoTestimony
+            name="Aryan Singh"
+            designation="@Google SWE"
+            linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
+            imageUrl="/instructor.jpg"
+            videoId="FVHtu6tuA9E"
+          />
+          <VideoTestimony
+            name="Aryan Singh"
+            designation="@Google SWE"
+            linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
+            imageUrl="/instructor.jpg"
+            videoId="39MArMcq5Oc"
+          />
+        </div>
+      </Reveal>
     </div>
   );
 }

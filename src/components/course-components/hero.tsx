@@ -24,10 +24,10 @@ export default function Hero({ title, courseLink, youtube }: Props) {
       <div className="flex flex-col gap-6">
         <Reveal>
           <section className="flex flex-col">
-            <h1 className={"font-mulish text-4xl font-semibold pb-0"}>
+            <h1 className={"font-jakarta text-4xl font-semibold pb-0"}>
               {title}
             </h1>
-            <span className={"text-foreground/70 font-light"}>
+            <span className={"text-foreground/70 font-light font-jakarta"}>
               30 Days Coding From Zero to Hero🔥
             </span>
           </section>
@@ -58,7 +58,7 @@ export default function Hero({ title, courseLink, youtube }: Props) {
           <div className="flex justify-between items-end">
             <Reveal>
               <section className="flex items-end gap-2">
-                <span className={"font-mulish text-xl"}>
+                <span className={"font-jakarta text-xl"}>
                   ₹<span className="text-3xl">2499</span>
                   <span className="text-sm text-muted-foreground ml-1 line-through">
                     ₹3000
@@ -67,7 +67,7 @@ export default function Hero({ title, courseLink, youtube }: Props) {
 
                 <span
                   className={
-                    "font-mulish text-secondary-foreground rounded py-0"
+                    "font-jakarta text-secondary-foreground rounded py-0"
                   }
                 >
                   17% off
@@ -76,7 +76,9 @@ export default function Hero({ title, courseLink, youtube }: Props) {
             </Reveal>
 
             <Reveal>
-              <span className={"font-mulish flex items-center leading-3 gap-2"}>
+              <span
+                className={"font-jakarta flex items-center leading-3 gap-2"}
+              >
                 <TimerReset className="animate-bounce h-5 w-5" />
                 1099 Days Validity
               </span>

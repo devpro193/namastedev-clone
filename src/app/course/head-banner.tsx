@@ -1,7 +1,7 @@
+import Unveal from "@/components/framer/unvel";
 import Link from "next/link";
-import Unveal from "../framer/unvel";
 
-export default function Banner() {
+export default function HeadBanner() {
   return (
     <Unveal>
       <div className={`relative font-jakarta tab:min-h-16`}>

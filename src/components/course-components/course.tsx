@@ -42,7 +42,7 @@ export default function Course({ imageSrc, courseLink }: Props) {
       <Reveal>
         <span className="flex gap-4 lg:justify-center items-center mb-5">
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-          <h2 className={"font-mulish text-4xl"}>Course</h2>
+          <h2 className={"font-jakarta text-4xl"}>Course</h2>
           <hr className="h-1 max-lg:w-full w-20 rounded bg-primary/40" />
         </span>
       </Reveal>
@@ -669,7 +669,7 @@ export default function Course({ imageSrc, courseLink }: Props) {
 
         {/* <Reveal> */}
         <div className="max-lg:hidden min-w-44 relative h-full">
-          <div className="sticky top-0 p-3 flex flex-col gap-3 shadow-lg dark:bg-indigo-900 rounded-lg h-fit">
+          <div className="sticky top-7 p-3 flex flex-col gap-3 shadow-lg dark:bg-second rounded-lg h-fit">
             <Image
               className="h-36 rounded shadow-md hover:scale-105 transition-transform object-cover"
               alt="course"
@@ -679,7 +679,7 @@ export default function Course({ imageSrc, courseLink }: Props) {
             />
             <span
               className={
-                "font-mulish flex text-muted-foreground items-center leading-3 gap-1"
+                "font-jakarta flex text-muted-foreground items-center leading-3 gap-1"
               }
             >
               <Timer className="h-5 w-5" />
@@ -687,7 +687,7 @@ export default function Course({ imageSrc, courseLink }: Props) {
             </span>
 
             <section className="flex items-end gap-2">
-              <span className={"font-mulish text-lg"}>
+              <span className={"font-jakarta text-lg"}>
                 ₹<span className="text-2xl">2499</span>
                 <span className="text-sm text-muted-foreground ml-1 line-through">
                   ₹3000
@@ -695,7 +695,9 @@ export default function Course({ imageSrc, courseLink }: Props) {
               </span>
 
               <span
-                className={"font-mulish text-secondary-foreground rounded py-0"}
+                className={
+                  "font-jakarta text-secondary-foreground rounded py-0"
+                }
               >
                 17% off
               </span>

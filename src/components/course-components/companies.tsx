@@ -65,7 +65,7 @@ export default function Companies() {
       <Reveal>
         <span className="flex gap-4 lg:justify-center items-center">
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
-          <h2 className={"font-mulish text-4xl"}>
+          <h2 className={"font-jakarta text-4xl"}>
             Top Companies Where Our Students Work
           </h2>
           <hr className="h-1 max-lg:w-full max-lg:hidden w-20 rounded bg-primary/40" />
@@ -88,7 +88,7 @@ export default function Companies() {
             ))}
           </div>
         </Reveal>
-        <div className="h-full w-full absolute z-10 bg-gradient-to-r dark:from-indigo-950 from-background max-lg:from-0% from-5% dark:via-indigo-950/10 via-background/10 via-50% dark:to-indigo-950 to-background max-lg:to-100% to-95%"></div>
+        <div className="h-full w-full absolute z-10 bg-gradient-to-r dark:from-bg from-background max-lg:from-0% from-5% dark:via-bg/10 via-background/10 via-50% dark:to-bg to-background max-lg:to-100% to-95%"></div>
       </div>
     </div>
   );

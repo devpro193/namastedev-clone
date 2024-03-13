@@ -1,3 +1,4 @@
+import Reveal from "@/components/framer/reveal";
 import Image from "next/image";
 
 function TestimonyImages({ imageUrl }: { imageUrl: string }) {
@@ -24,12 +25,16 @@ export default function Watch() {
   ];
   return (
     <div className="grid place-items-center gap-8">
-      <h1 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
-        Highlights
-      </h1>
+      <Reveal>
+        <h1 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
+          Highlights
+        </h1>
+      </Reveal>
       <div className="relative flex flex-wrap gap-8 justify-center">
         {images.map((e, i) => (
-          <TestimonyImages key={i} imageUrl={`/testimonials/${e}`} />
+          <Reveal key={i}>
+            <TestimonyImages imageUrl={`/testimonials/${e}`} />
+          </Reveal>
         ))}
       </div>
     </div>

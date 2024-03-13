@@ -14,26 +14,10 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { HomeIcon } from "lucide-react";
 
-type href = { title: string; href: string; description: string };
+export type href = { title: string; href: string; description: string };
 
-// const components = [
-//   {
-//     title: "Alert Dialog",
-//     href: "/docs/primitives/alert-dialog",
-//     description:
-//       "A modal dialog that interrupts the user with important content and expects a response.",
-//   },
-//   {
-//     title: "Hover Card",
-//     href: "/docs/primitives/hover-card",
-//     description:
-//       "For sighted users to preview content available behind a link.",
-//   },
-// ];
-
-const navTitles: {
+export const navTitles: {
   title: string;
   href: string | href[];
 }[] = [
@@ -42,22 +26,42 @@ const navTitles: {
     href: [
       {
         title: "Mern FullStack Course",
-        href: "/courses/mern-full-stack-developer-course",
+        href: "/course/mern-full-stack-developer-course",
         description:
           "A complete mern full stack development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
       },
       {
         title: "Live Mern Cohort",
-        href: "/courses/mern-cohort",
+        href: "/course/mern-cohort",
         description:
           "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
       },
     ],
   },
-  { title: "Events", href: "/" },
-  { title: "Upskill for free", href: "/" },
+  {
+    title: "Resources",
+    href: [
+      {
+        title: "DSA Sheets",
+        href: "/course/mern-cohort",
+        description:
+          "Explore our comprehensive Data Structures and Algorithms (DSA) sheet, meticulously curated to aid your journey through our DSA courses.",
+      },
+      {
+        title: "Resume Builder",
+        href: "/course/mern-cohort",
+        description:
+          "Create your best resume ever with our All-in-one AI Builder, Reviewer, and Optimizer.",
+      },
+      {
+        title: "Premium Guides",
+        href: "/course/mern-cohort",
+        description:
+          "Elevate your coding skills with our premium guide, meticulously crafted to propel you towards mastery in programming. Dive deep into advanced concepts, best practices, and insider tips curated by industry experts.",
+      },
+    ],
+  },
   { title: "Testimonials", href: "/testimonials" },
-  { title: "Job board", href: "/" },
 ];
 
 export function NavMenu() {

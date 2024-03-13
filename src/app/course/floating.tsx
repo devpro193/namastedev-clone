@@ -8,7 +8,7 @@ export default function Floating() {
     <div className="lg:hidden fixed bottom-0 flex justify-between items-center gap-2 p-4 px-6 bg-background/40 bg- w-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30">
       <Reveal>
         <section className="flex flex-col gap-1">
-          <span className={`font-mulish text-lg`}>
+          <span className={`font-jakarta text-lg`}>
             ₹<span className="text-2xl">2499</span>
           </span>
 
@@ -17,7 +17,7 @@ export default function Floating() {
               ₹3000
             </span>
             <span
-              className={`font-mulish text-secondary-foreground rounded py-0`}
+              className={`font-jakarta text-secondary-foreground rounded py-0`}
             >
               17% off
             </span>
@@ -28,7 +28,7 @@ export default function Floating() {
       <Reveal>
         <Link href={"https://courses.30dayscoding.com/s/store"} target="_blank">
           <div className="group relative">
-            <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
+            <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-green-500 via-lime-500 to-emerald-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
             <Button
               variant={"outline"}
               className={`relative w-full text-lg font-semibold text-foreground/70`}
