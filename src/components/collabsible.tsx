@@ -13,7 +13,6 @@ import {
   Link2,
   PlaySquare,
   TimerIcon,
-  Video,
 } from "lucide-react";
 
 const icons = {

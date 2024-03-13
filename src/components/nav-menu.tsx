@@ -14,26 +14,10 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { HomeIcon } from "lucide-react";
 
-type href = { title: string; href: string; description: string };
+export type href = { title: string; href: string; description: string };
 
-// const components = [
-//   {
-//     title: "Alert Dialog",
-//     href: "/docs/primitives/alert-dialog",
-//     description:
-//       "A modal dialog that interrupts the user with important content and expects a response.",
-//   },
-//   {
-//     title: "Hover Card",
-//     href: "/docs/primitives/hover-card",
-//     description:
-//       "For sighted users to preview content available behind a link.",
-//   },
-// ];
-
-const navTitles: {
+export const navTitles: {
   title: string;
   href: string | href[];
 }[] = [
