@@ -3,7 +3,7 @@
 import Reveal from "@/components/framer/reveal";
 import { useState } from "react";
 
-type TestimonialType = {
+export type TestimonialType = {
   name: string;
   time?: string;
   email?: string;

@@ -1,8 +1,8 @@
 import Footer from "@/components/course-components/footer";
-import Hero from "./hero";
+import Hero from "@/components/new-cohort/hero";
 import type { Metadata } from "next";
-import YoutubeEmbed from "@/components/yotube-embed";
-import Video from "@/components/new-cohort/video";
+import Testimonials from "@/components/new-cohort/testimonials";
+import Companies from "@/components/new-cohort/companies";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -18,6 +18,8 @@ export default function Home() {
   return (
     <main className="bg-background dark:bg-bg min-h-svh transition-all">
       <Hero />
+      <Testimonials />
+      <Companies />
       <Footer />
     </main>
   );

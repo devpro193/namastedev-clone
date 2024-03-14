@@ -2,8 +2,8 @@ import Reveal from "../framer/reveal";
 
 export default function Video({ youtubeId }: { youtubeId: string }) {
   return (
-    <div className="m-auto flex max-lg:flex-col items-start justify-between p-10 lg:p-20 max-lg:gap-10 gap-6 max-w-[75rem]">
-      <div className="lg:w-3/5 grid gap-5 shrink">
+    <div className="m-auto flex max-lg:flex-col items-start justify-between p-10 lg:p-20 gap-10 max-w-[75rem]">
+      <div className="lg:w-2/4 grid gap-5 shrink">
         <Reveal>
           <span className="text-prime font-semibold uppercase">In 30-Days</span>
         </Reveal>
@@ -20,10 +20,10 @@ export default function Video({ youtubeId }: { youtubeId: string }) {
           </p>
         </Reveal>
       </div>
-      <div className="lg:w-2/5 w-full shrink-0 flex-1">
+      <div className="lg:w-2/4 w-full shrink-0 flex-1">
         <Reveal>
           <div
-            className={`relative overflow-hidden min-h-64 bg-background/20 rounded-md shadow-inner transition-all duration-500`}
+            className={`relative overflow-hidden max-md:min-h-60 max-lg:min-h-80 lg:min-h-64 bg-background/20 rounded-md shadow-inner transition-all duration-500`}
           >
             <iframe
               className="h-full w-full left-0 top-0 absolute"
