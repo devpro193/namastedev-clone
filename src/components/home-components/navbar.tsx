@@ -16,7 +16,7 @@ export default function Navbar() {
     <Unveal>
       <div className="w-full flex justify-center">
         <div
-          className={`p-[.875rem_6.25rem] max-phone:p-[0.5rem_1rem] text-white flex gap-6 justify-between items-center w-full max-w-[90rem]`}
+          className={`p-[.875rem_6.25rem] max-sm:p-[0.5rem_1rem] text-white flex gap-6 justify-between items-center w-full max-w-[90rem]`}
         >
           <section className="flex gap-12">
             <Link href={"/"} className="flex items-center gap-1">

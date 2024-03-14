@@ -1,16 +1,8 @@
-import Achievements from "@/components/course-components/achievements";
-import Companies from "@/components/course-components/companies";
-import Course from "@/components/course-components/course";
-import Faq from "@/components/course-components/faq";
 import Footer from "@/components/course-components/footer";
 import Hero from "./hero";
-import Instructor from "@/components/course-components/instructor";
-import Mission from "@/components/course-components/mission";
-import Navbar from "@/components/home-components/navbar";
-import Projects from "@/components/course-components/projects";
-import Testimonials from "@/components/course-components/testimonials";
 import type { Metadata } from "next";
 import YoutubeEmbed from "@/components/yotube-embed";
+import Video from "@/components/new-cohort/video";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -25,24 +17,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="bg-background dark:bg-bg min-h-svh transition-all">
-      <Navbar />
       <Hero />
-      <div className="lg:max-w-[1800px] m-auto flex flex-col items-center lg:px-20 lg:py-10 px-6 py-5 gap-10">
-        <YoutubeEmbed embedId="iQR3fb3yJko" />
-      </div>
-      {/* <div className="max-w-[1800px] m-auto flex flex-col lg:px-20 lg:py-10 px-6 py-5 gap-10">
-        <Achievements />
-        <Mission />
-        <Course
-          courseLink="https://courses.30dayscoding.com/courses/Idea-to-MVP-full-stack-project-course-6525cb14e4b07ef99d14b75b"
-          imageSrc="/cohort.jpg"
-        />
-        <Instructor />
-        <Projects />
-        <Companies />
-        <Testimonials />
-        <Faq />
-      </div> */}
       <Footer />
     </main>
   );

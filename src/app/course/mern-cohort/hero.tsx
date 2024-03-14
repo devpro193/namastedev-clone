@@ -1,5 +1,6 @@
 import Reveal from "@/components/framer/reveal";
 import Button from "@/components/home-components/button";
+import Video from "@/components/new-cohort/video";
 import { ArrowRight, ShieldCheck } from "lucide-react";
 
 export default function Hero() {
@@ -32,6 +33,7 @@ export default function Hero() {
           </Button>
         </div>
       </div>
+      <Video youtubeId="iQR3fb3yJko" />
     </Reveal>
   );
 }

@@ -4,6 +4,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { inter, localJakarta, mont, mulish, space_mono } from "@/lib/font";
 import Whatsapp from "@/components/whatsapp";
 import MobileMenu from "@/components/mobile-menu";
+import Banner from "@/components/home-components/banner";
+import Navbar from "@/components/home-components/navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -27,6 +29,8 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
           <MobileMenu />
+          <Banner />
+          <Navbar />
           {children}
           <Whatsapp />
         </ThemeProvider>
