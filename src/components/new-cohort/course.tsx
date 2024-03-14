@@ -3,7 +3,6 @@
 import Reveal from "@/components/framer/reveal";
 import Link from "next/link";
 import { TabMenu } from "../tabs";
-import Button from "../home-components/button";
 import { DownloadIcon, MapIcon } from "lucide-react";
 import AnimatedButton from "../animated-button";
 
@@ -30,10 +29,10 @@ export default function Course() {
                 <span className="bg-gradient-to-t from-bg to-second/80 rounded-lg p-4 w-fit">
                   <MapIcon className="h-10 w-10 stroke-prime" />
                 </span>
-                <span className="sm:text-lg font-semibold">
+                <span className="text-lg font-semibold">
                   Explore our detailed curriculum!
                 </span>
-                <p className="text-xs sm:text-sm">
+                <p className="text-xs">
                   Understand the in depth concepts and tools you will learn
                   throughout the program.
                 </p>

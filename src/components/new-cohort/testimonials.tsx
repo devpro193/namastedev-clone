@@ -7,9 +7,9 @@ import Link from "next/link";
 
 function Testimonial({ name, review }: TestimonialType) {
   return (
-    <div className="flex-col p-6 gap-3 h-fit bg-second min-w-40 max-w-[23.75rem] rounded-lg">
+    <div className="flex flex-col p-6 gap-4 h-fit bg-second min-w-40 max-w-[23.75rem] rounded-lg">
       <span className="font-jakarta font-bold">{name}</span>
-      <p className="leading-6 text-base font-normal">{review}</p>
+      <p className="leading-6 text-sm font-normal">{review}</p>
     </div>
   );
 }

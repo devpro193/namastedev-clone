@@ -74,10 +74,10 @@ export function TabMenu() {
         {courseList.map(({ title, content }, i) => (
           <TabsContent
             key={i}
-            className="lg:max-w-96 w-full overflow-y-scroll scroll px-4 lg:min-h-96"
+            className="lg:max-w-96 w-full overflow-y-scroll scroll px-4"
             value={`chapter${i + 1}`}
           >
-            <div className="flex flex-col gap-5 max-w-[30rem]">
+            <div className="flex flex-col gap-5 max-w-[26rem]">
               <h3 className="text-3xl text-prime font-bold">{title}</h3>
               {content.map((e, index) => (
                 <span className="flex gap-2 items-start">
