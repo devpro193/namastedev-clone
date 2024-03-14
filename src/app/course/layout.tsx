@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <div>
       {children}
-      <LoadingLogo />
+      {/* <LoadingLogo /> */}
       <Floating />
     </div>
   );

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Reveal from "../framer/reveal";
 import Link from "next/link";
 import Button from "../home-components/button";
+import HoverInfo from "../hover-info";
 
 function Profile({
   name,
@@ -9,15 +10,17 @@ function Profile({
   link,
   profile,
   position,
+  desc,
 }: {
   name: string;
-  company: string;
+  company: { name: string; path: string }[];
   link: string;
   profile: string;
   position: string;
+  desc: string;
 }) {
   return (
-    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] w-56 max-phone:w-full max-phone:max-w-96 h-80">
+    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] w-64 max-phone:w-full max-phone:max-w-96">
       <div className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] absolute p-2 bg-gradient-to-t from-prime/80 to-second/80 rounded-full">
         <div className="h-36 w-36 overflow-hidden rounded-full flex items-center justify-center">
           <Image src={profile} alt="mentor profile" height={220} width={220} />
@@ -26,9 +29,27 @@ function Profile({
       <div className="flex flex-col items-center justify-between py-10 pt-24 h-full">
         <div className="flex flex-col items-center gap-2">
           <span className="font-semibold text-xl">{name}</span>
-          <span className="text-muted-foreground text-sm">{position}</span>
-          <Image src={company} alt="google logo" height={90} width={90} />
+          <span className="text-muted-foreground text-sm font-semibold">
+            {position}
+          </span>
+          <div className="flex gap-3 py-2">
+            {company.map(({ name, path }, i) => (
+              <HoverInfo info={name}>
+                <Image
+                  className="rounded-md"
+                  key={i}
+                  src={path}
+                  alt="companies logo"
+                  height={35}
+                  width={35}
+                />
+              </HoverInfo>
+            ))}
+          </div>
         </div>
+
+        <p className="text-sm p-3 px-6">{desc}</p>
+
         <Link href={link} target="_blank">
           <svg
             className="h-6 w-6 fill-white stroke-white my-3"
@@ -73,9 +94,17 @@ export default function NewMentor() {
           <Profile
             name="Aryan Singh"
             profile="/instructor.jpg"
-            position="SDE I"
+            position="SDE @Google"
             link="https://www.linkedin.com/in/singh1aryan/"
-            company="/google.png"
+            company={[
+              { name: "Google", path: "/company3.png" },
+              { name: "Arrow Electronics", path: "/arrow_logo.jfif" },
+              {
+                name: "Massachusetts Amherst",
+                path: "/umassamherst_logo.jfif",
+              },
+            ]}
+            desc="Our lead mentor Aryan Singh, a visionary software engineer at Google, leading 30 Days Coding. With roles in tech giants and projects like Blocktrain and DSA Revision, Aryan combines professional expertise with a passion for mentoring."
           />
         </Reveal>
         <div className="max-lg:hidden flex flex-col gap-5 items-center text-center max-w-2xl px-8">
@@ -99,16 +128,21 @@ export default function NewMentor() {
           </Reveal>
           <div className="py-2" />
           <Reveal>
-            <Button>Chat with Us</Button>
+            <Button>Join Community</Button>
           </Reveal>
         </div>
         <Reveal>
           <Profile
             name="Deepanshu Udhwani"
             profile="/instructor2.jfif"
-            position="EX"
+            position="Founder"
             link="https://www.linkedin.com/in/deepanshu-udhwani/"
-            company="/alibaba.png"
+            company={[
+              { name: "MakeMyTrip", path: "/makemytrip_logo.jfif" },
+              { name: "Alibaba Cloud", path: "/alibaba.jfif" },
+              { name: "Thapar Institute of Engineering", path: "/thapar.jfif" },
+            ]}
+            desc="Deepanshu Udhwani, drawing from experience at MakeMyTrip, Alibaba Cloud, and startups, founded 30 Days Coding. With a background in Computer Science and an MBA in Information Systems."
           />
         </Reveal>
       </div>

@@ -1,6 +1,7 @@
 import { ArrowRight, ShieldCheck } from "lucide-react";
 import Reveal from "../framer/reveal";
 import Button from "./button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -26,11 +27,13 @@ export default function Hero() {
             </p>
           </div>
 
-          <Button>
-            <span className="px-5 flex gap-2 items-center">
-              Apply Now <ArrowRight className="h-4 w-4" />
-            </span>
-          </Button>
+          <Link
+            className="font-jakarta flex items-center font-semibold gap-1 hover:bg-prime bg-prime/80 transition-all px-4 py-3 rounded-md text-sm"
+            href={"https://courses.30dayscoding.com/s/store"}
+            target="_blank"
+          >
+            Apply Now <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </Reveal>

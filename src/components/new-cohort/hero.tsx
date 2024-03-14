@@ -2,6 +2,7 @@ import Reveal from "@/components/framer/reveal";
 import Button from "@/components/home-components/button";
 import Video from "@/components/new-cohort/video";
 import { ArrowRight, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -26,11 +27,16 @@ export default function Hero() {
             </p>
           </div>
 
-          <Button>
-            <span className="px-5 flex gap-2 items-center">
-              Apply Now <ArrowRight className="h-4 w-4" />
-            </span>
-          </Button>
+          <Link
+            href={"https://courses.30dayscoding.com/s/store"}
+            target="_blank"
+          >
+            <Button>
+              <span className="px-5 flex gap-2 items-center">
+                Apply Now <ArrowRight className="h-4 w-4" />
+              </span>
+            </Button>
+          </Link>
         </div>
       </div>
       <Video youtubeId="iQR3fb3yJko" />

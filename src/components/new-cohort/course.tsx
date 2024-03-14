@@ -51,7 +51,10 @@ export default function Course() {
         <button
           className={`font-jakarta flex items-center font-semibold gap-1 border-white border transition-all px-6 py-3 rounded-md`}
         >
-          <Link className="text-sm" href={"/testimonials"}>
+          <Link
+            className="text-sm"
+            href={"https://courses.30dayscoding.com/s/store"}
+          >
             Check More Courses
           </Link>
         </button>
