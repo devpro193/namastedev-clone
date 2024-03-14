@@ -19,9 +19,9 @@ export default function Hero() {
             on www.courses.30dayscoding.com
           </p>
 
-          <div className="p-[.5rem_1.75rem_.5rem_1.00rem] rounded-[3.125rem] flex items-center gap-2 w-fit my-2 mb-1 bg-gradient-to-r from-[rgba(67,173,28,0.7)] to-[rgba(10,106,53,0.3)]">
+          <div className="p-[.5rem_1.75rem_.5rem_1.00rem] rounded-[3.125rem] flex items-center gap-2 my-2 mb-1 bg-gradient-to-r from-[rgba(67,173,28,0.7)] to-[rgba(10,106,53,0.3)]">
             <ShieldCheck className="h-7 w-7" />
-            <p className={`font-jakarta font-medium`}>
+            <p className={`font-jakarta font-medium line-clamp-1`}>
               Guaranteed interviews from our hiring network!
             </p>
           </div>
