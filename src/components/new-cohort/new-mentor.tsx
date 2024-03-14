@@ -34,10 +34,9 @@ function Profile({
           </span>
           <div className="flex gap-3 py-2">
             {company.map(({ name, path }, i) => (
-              <HoverInfo info={name}>
+              <HoverInfo key={i} info={name}>
                 <Image
                   className="rounded-md"
-                  key={i}
                   src={path}
                   alt="companies logo"
                   height={35}
