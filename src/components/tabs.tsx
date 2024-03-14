@@ -80,7 +80,7 @@ export function TabMenu() {
             <div className="flex flex-col gap-5 max-w-[26rem]">
               <h3 className="text-3xl text-prime font-bold">{title}</h3>
               {content.map((e, index) => (
-                <span className="flex gap-2 items-start">
+                <span key={index} className="flex gap-2 items-start">
                   <LucideCheckCircle className="h-6 w-6 stroke-prime shrink-0" />
                   <p className="text-base">{e}</p>
                 </span>
