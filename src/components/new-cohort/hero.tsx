@@ -11,7 +11,7 @@ export default function Hero() {
           <h1
             className={`font-jakarta phone:text-[3.5rem] text-[2.5rem] font-extrabold bg-gradient-to-r from-lime-300 to-green-800 text-transparent bg-clip-text leading-tight px-2 max-phone:px-6`}
           >
-            LIVE MERN Stack Web Development Cohort
+            LIVE Full Stack Web Development (MERN & NEXT) Cohort
           </h1>
 
           <p className="tab:max-w-[43rem] max-tab:px-11 max-phone:px-6 text-lg max-tab:text-[1.05rem] max-tab:leading-6">

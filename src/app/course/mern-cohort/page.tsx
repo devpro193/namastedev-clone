@@ -5,6 +5,7 @@ import Testimonials from "@/components/new-cohort/testimonials";
 import Companies from "@/components/new-cohort/companies";
 import Course from "@/components/new-cohort/course";
 import NewMentor from "@/components/new-cohort/new-mentor";
+import Highlights from "@/components/new-cohort/highligths";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -24,6 +25,7 @@ export default function Home() {
       <NewMentor />
       <Companies />
       <Testimonials />
+      <Highlights />
       <Footer />
     </main>
   );

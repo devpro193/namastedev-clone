@@ -30,18 +30,18 @@ const testimonials: TestimonialType[] = [
       "I have purchased 10 courses bundle 2 days ago. I know MERN, but bought for other things this bundle offers. I am amazed with the amount of content and variety on veriety of tech. Thanks. ",
   },
   {
-    time: "3/7/2024 1:38:21",
-    name: "Parth Sankpal ",
-    email: "psankpal87@gmail.com",
-    review:
-      "I just purchased course.This is the best price i could get the course compared to market.It is very nice to know that you just want to educate people,don't want to make money out of them. Really value for money.\n\nAlso please share community links to join",
-  },
-  {
     time: "3/10/2024 22:04:05",
     name: "Darshan ",
     email: "darsingh07@yahoo.com",
     review:
       "I have taken a mern stack course ,its a veey good course for professional as well as beginner,deep learning concepts plenty of projects. Interview question etc lot of things its a job ready course in such a small amount. \nThankyou",
+  },
+  {
+    time: "3/7/2024 1:38:21",
+    name: "Parth Sankpal ",
+    email: "psankpal87@gmail.com",
+    review:
+      "I just purchased course.This is the best price i could get the course compared to market.It is very nice to know that you just want to educate people,don't want to make money out of them. Really value for money.\n\nAlso please share community links to join",
   },
   {
     time: "3/10/2024 23:09:03",

@@ -97,6 +97,7 @@ export default function NewMentor() {
               </span>
             </p>
           </Reveal>
+          <div className="py-2" />
           <Reveal>
             <Button>Chat with Us</Button>
           </Reveal>
