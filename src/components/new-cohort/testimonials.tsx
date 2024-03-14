@@ -65,14 +65,14 @@ export default function Testimonials() {
         <span className="flex items-center gap-4 relative">
           <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
           <h2 className="font-jakarta phone:shrink-0 text-[2rem] font-extrabold text-center">
-            People's Word
+            People&apos;s Word
           </h2>
           <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
         </span>
       </Reveal>
       <div className="relative flex flex-wrap items-start justify-center gap-8 pt-5 lg:pt-10">
         {testimonials.map(({ name, review }, i) => (
-          <Reveal>
+          <Reveal key={i}>
             <Testimonial key={i} name={name} review={review} />
           </Reveal>
         ))}
