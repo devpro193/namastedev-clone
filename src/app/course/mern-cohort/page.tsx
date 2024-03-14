@@ -20,10 +20,10 @@ export default function Home() {
   return (
     <main className="bg-background dark:bg-bg min-h-svh transition-all">
       <Hero />
-      <Companies />
-      <Testimonials />
       <Course />
       <Mentor />
+      <Companies />
+      <Testimonials />
       <Footer />
     </main>
   );

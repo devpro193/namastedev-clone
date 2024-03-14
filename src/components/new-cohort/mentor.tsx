@@ -28,7 +28,7 @@ function Profile({
           <span className="text-muted-foreground text-sm">{position}</span>
           <Image src={company} alt="google logo" height={90} width={90} />
         </div>
-        <Link href={link}>
+        <Link href={link} target="_blank">
           <svg
             className="h-6 w-6 fill-white stroke-white my-3"
             xmlns="http://www.w3.org/2000/svg"
@@ -58,20 +58,24 @@ export default function Mentor() {
         </Reveal>
       </div>
       <div className="flex max-lg:justify-center flex-wrap gap-10 pt-24 max-sm:gap-28">
-        <Profile
-          name="Aryan Singh"
-          profile="/instructor.jpg"
-          position="SDE I"
-          link=""
-          company="/google.png"
-        />
-        <Profile
-          name="Deepanshu Udhwani"
-          profile="/instructor2.jfif"
-          position="EX"
-          link=""
-          company="/alibaba.png"
-        />
+        <Reveal>
+          <Profile
+            name="Aryan Singh"
+            profile="/instructor.jpg"
+            position="SDE I"
+            link="https://www.linkedin.com/in/singh1aryan/"
+            company="/google.png"
+          />
+        </Reveal>
+        <Reveal>
+          <Profile
+            name="Deepanshu Udhwani"
+            profile="/instructor2.jfif"
+            position="EX"
+            link="https://www.linkedin.com/in/deepanshu-udhwani/"
+            company="/alibaba.png"
+          />
+        </Reveal>
       </div>
     </div>
   );
