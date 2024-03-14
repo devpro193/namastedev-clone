@@ -38,7 +38,7 @@ export default function Navbar() {
           </section>
 
           <section className="flex items-center gap-3">
-            <ModeToggle />
+            {/* <ModeToggle /> */}
             <button className="hover:bg-prime/30 rounded-lg p-1 transition-all">
               <Gift className="max-phone:h-5 max-phone:w-5 h-6 w-6 stroke-[1.5] stroke-black dark:stroke-white" />
             </button>
