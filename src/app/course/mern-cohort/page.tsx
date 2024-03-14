@@ -3,6 +3,7 @@ import Hero from "@/components/new-cohort/hero";
 import type { Metadata } from "next";
 import Testimonials from "@/components/new-cohort/testimonials";
 import Companies from "@/components/new-cohort/companies";
+import Course from "@/components/new-cohort/course";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -18,8 +19,9 @@ export default function Home() {
   return (
     <main className="bg-background dark:bg-bg min-h-svh transition-all">
       <Hero />
-      <Testimonials />
       <Companies />
+      <Testimonials />
+      <Course />
       <Footer />
     </main>
   );

@@ -50,13 +50,6 @@ const testimonials: TestimonialType[] = [
     review:
       "content across 30days coding is great and its really easy to understand, and best part about it is project based learning which starts with beginner to intermediate to hard and handholding support by aryan and his team is impeccable. ",
   },
-  {
-    time: "3/10/2024 23:53:02",
-    name: "Aditya Nitin Pawar",
-    email: "adityanitinpawar9@gmail.com",
-    review:
-      "Love the courses and the personal advice. Definitely most practical courses in terms of learning things from first principles and then slowly increasing the application part along the course.",
-  },
 ];
 export default function Testimonials() {
   return (
