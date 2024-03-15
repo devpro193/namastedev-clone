@@ -21,7 +21,7 @@ export default function Home() {
     <main className="bg-background dark:bg-bg min-h-svh transition-all">
       <Hero
         title="Live DSA Placement Ready Course"
-        desc="A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com"
+        desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
         subTitle="Learn dsa and get ready for placement"
         subDesc="Master dsa through practicing algorithms under expert's guidance from industry professionals. A placement driven course."
         ytId="tJkZA9JoZCw"

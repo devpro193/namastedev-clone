@@ -253,7 +253,7 @@ export let testimonials: TestimonialType[] = [
 
 function Testimonial({ name, review }: TestimonialType) {
   return (
-    <div className="hidden flex-col p-6 gap-3 h-fit bg-second w-[23.75rem] rounded-lg">
+    <div className="hidden flex-col p-6 gap-3 h-fit bg-second max-w-[23.75rem] w-full rounded-lg">
       <span className="font-jakarta font-bold">{name}</span>
       <p className="leading-6 text-base font-normal">{review}</p>
     </div>
@@ -275,17 +275,17 @@ export default function Inspirational() {
 
       <Reveal>
         <div className="relative flex items-start gap-8">
-          <div className="flex flex-col max-[800px]:[&>*:nth-child(n)]:flex max-xl:[&>*:nth-child(odd)]:flex xl:[&>*:nth-child(3n-2)]:flex gap-8 items-start">
+          <div className="p-3 flex flex-col max-[800px]:[&>*:nth-child(n)]:flex max-xl:[&>*:nth-child(odd)]:flex xl:[&>*:nth-child(3n-2)]:flex gap-8 items-start">
             {testimonials.map((e, i) => (
               <Testimonial key={i} name={e.name} review={e.review} />
             ))}
           </div>
-          <div className="max-[800px]:hidden flex flex-col max-xl:[&>*:nth-child(even)]:flex xl:[&>*:nth-child(3n-1)]:flex gap-8 items-start">
+          <div className="p-3 max-[800px]:hidden flex flex-col max-xl:[&>*:nth-child(even)]:flex xl:[&>*:nth-child(3n-1)]:flex gap-8 items-start">
             {testimonials.map((e, i) => (
               <Testimonial key={i} name={e.name} review={e.review} />
             ))}
           </div>
-          <div className="max-xl:hidden flex flex-col [&>*:nth-child(3n)]:flex gap-8 items-start">
+          <div className="p-3 max-xl:hidden flex flex-col [&>*:nth-child(3n)]:flex gap-8 items-start">
             {testimonials.map((e, i) => (
               <Testimonial key={i} name={e.name} review={e.review} />
             ))}

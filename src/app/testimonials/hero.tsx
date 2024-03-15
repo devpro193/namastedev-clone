@@ -19,7 +19,7 @@ export function VideoTestimony({
   linkedinUrl,
 }: VideoTestimony) {
   return (
-    <div className="w-[23.75rem] p-6 bg-second rounded-lg min-h-72 relative grid gap-4">
+    <div className="max-lg:max-w-[23.75rem] lg:w-[23.75rem] w-full p-6 bg-second rounded-lg min-h-72 relative grid gap-4">
       <YoutubeEmbed embedId={videoId!} />
       <section className="flex justify-between">
         <div className="flex gap-3">
@@ -67,7 +67,7 @@ export default function Hero() {
         </h1>
       </Reveal>
       <Reveal>
-        <div className="flex flex-wrap gap-8 justify-center">
+        <div className="flex flex-wrap gap-8 justify-center p-3">
           <VideoTestimony
             name="Deepanshu Udhwani"
             designation="Founder 30dayscoding | Ex. MakeMytrip | Ex. Alibaba Cloud"

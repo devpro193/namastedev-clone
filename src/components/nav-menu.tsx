@@ -68,6 +68,7 @@ export const navTitles: {
     ],
   },
   { title: "Testimonials", href: "/testimonials" },
+  { title: "Wall of Love", href: "/wall-of-love" },
 ];
 
 export function NavMenu() {

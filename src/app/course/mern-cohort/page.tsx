@@ -21,7 +21,7 @@ export default function Home() {
     <main className="bg-background dark:bg-bg min-h-svh transition-all">
       <Hero
         title="LIVE Full Stack Web Development (MERN & NEXT) Cohort"
-        desc="A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com"
+        desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
         subTitle="Build fullstack engineering skills with confidence"
         subDesc="Achieve mastery in fullstack engineering through practical projects and expert feedback from industry professionals in this comprehensive program."
         ytId="iQR3fb3yJko"
