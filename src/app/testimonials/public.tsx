@@ -32,6 +32,10 @@ export default function Public() {
     "linkedin13.PNG",
     "linkedin14.PNG",
     "linkedin15.PNG",
+    "linkedin16.jpeg",
+    "linkedin17.jpeg",
+    "linkedin18.jpeg",
+    "linkedin19.jpeg",
   ];
   return (
     <div className="grid place-items-center gap-8">

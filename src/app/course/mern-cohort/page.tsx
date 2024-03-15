@@ -1,4 +1,4 @@
-import Footer from "@/components/course-components/footer";
+import Footer from "@/components/new-cohort/footer";
 import Hero from "@/components/new-cohort/hero";
 import type { Metadata } from "next";
 import Testimonials from "@/components/new-cohort/testimonials";
@@ -24,8 +24,8 @@ export default function Home() {
       <Course />
       <NewMentor />
       <Companies />
-      <Testimonials />
       <Highlights />
+      <Testimonials />
       <Footer />
     </main>
   );

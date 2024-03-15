@@ -26,9 +26,11 @@ function CollapsibleMenu({
 
   if (typeof href === "string")
     return (
-      <Link href={href} className="font-semibold">
-        {title}
-      </Link>
+      <span>
+        <Link href={href} className="font-semibold">
+          {title}
+        </Link>
+      </span>
     );
 
   return (

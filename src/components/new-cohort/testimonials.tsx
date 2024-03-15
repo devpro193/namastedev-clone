@@ -58,7 +58,7 @@ export default function Testimonials() {
         <span className="flex items-center gap-4 relative">
           <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
           <h2 className="font-jakarta phone:shrink-0 text-[2rem] font-extrabold text-center">
-            People&apos;s Word
+            Reviews from our students
           </h2>
           <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
         </span>

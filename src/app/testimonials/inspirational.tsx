@@ -35,13 +35,6 @@ export let testimonials: TestimonialType[] = [
     review: "Yes I have purchased you MERN STACK course",
   },
   {
-    time: "3/6/2024 23:48:09",
-    name: "Prathamesh Bhangre ",
-    email: "bhangrep23@gmail.com",
-    review:
-      "Course is really good but need to work on website speed, it loads very slow which is quiet irritating.",
-  },
-  {
     time: "3/6/2024 23:48:49",
     name: "Kompal",
     email: "kompalthakur1134@gmail.com",
