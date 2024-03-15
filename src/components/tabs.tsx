@@ -58,7 +58,7 @@ export function TabMenu() {
   return (
     <Tabs
       defaultValue="chapter1"
-      className="flex max-lg:flex-col gap-2 text-lg h-full"
+      className="flex shrink-0 max-lg:flex-col gap-2 text-lg h-full"
     >
       <TabsList className="text-muted-foreground lg:grid lg:place-items-start flex flex-wrap gap-3 h-fit">
         {courseList.map((_, i) => (

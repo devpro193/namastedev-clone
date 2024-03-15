@@ -3,7 +3,7 @@
 import Reveal from "@/components/framer/reveal";
 import Link from "next/link";
 import { TabMenu } from "../tabs";
-import { DownloadIcon, MapIcon } from "lucide-react";
+import { DownloadIcon, Key, MapIcon } from "lucide-react";
 import AnimatedButton from "../animated-button";
 
 export default function Course() {
@@ -23,8 +23,8 @@ export default function Course() {
         <div className="flex max-lg:flex-col gap-3 max-lg:gap-10 min-h-96">
           <TabMenu />
 
-          <Reveal>
-            <div className="lg:ml-[4.5rem] max-lg:m-auto min-w-[10rem] max-w-[25rem] flex flex-col items-start lg:p-[2rem_1.5rem_2.5rem] p-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-8 rounded-xl bg-second max-lg:w-full h-fit">
+          <Reveal width="fit-content">
+            <div className="lg:ml-[4.5rem] max-lg:m-auto flex flex-col items-start lg:p-[2rem_1.5rem_2.5rem] p-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-8 rounded-xl bg-second h-fit">
               <section className="flex flex-col gap-2">
                 <span className="bg-gradient-to-t from-bg to-second/80 rounded-lg p-4 w-fit">
                   <MapIcon className="h-10 w-10 stroke-prime" />
@@ -32,16 +32,26 @@ export default function Course() {
                 <span className="text-lg font-semibold">
                   Explore our detailed curriculum!
                 </span>
-                <p className="text-sm">
+                <p className="text-sm max-w-sm">
                   Understand the in depth concepts and tools you will learn
                   throughout the program.
                 </p>
               </section>
-              <AnimatedButton>
-                <section className="flex gap-2 items-center">
-                  Purcase detailed course <DownloadIcon className="h-5 w-6" />
-                </section>
-              </AnimatedButton>
+              <span className="max-lg:mx-auto">
+                {/* <AnimatedButton>
+                  <section className="flex gap-2 items-center">
+                    <span className="tracking-wide">Buy Full Course</span>
+                    <Key className="h-5 w-5" />
+                  </section>
+                </AnimatedButton> */}
+                <div
+                  className="razorpay-embed-btn"
+                  data-url="https://pages.razorpay.com/pl_NlXmnJkIOZFVcc/view"
+                  data-text="Pay Now"
+                  data-color="#254246"
+                  data-size="large"
+                ></div>
+              </span>
             </div>
           </Reveal>
         </div>

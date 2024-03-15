@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function TestimonyImages({ imageUrl }: { imageUrl: string }) {
   return (
-    <div className="w-[23.75rem] p-6 bg-second rounded-lg min-h-72 relative grid gap-4 max-phone:scale-90 transition-all">
+    <div className="max-w-[23.75rem] p-6 bg-second rounded-lg lg:min-h-72 h-full relative grid gap-4 max-phone:scale-90 transition-all">
       <Image
         src={imageUrl}
         alt="instrutor"

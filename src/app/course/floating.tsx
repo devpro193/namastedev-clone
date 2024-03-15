@@ -1,5 +1,6 @@
 import Reveal from "@/components/framer/reveal";
 import { Button } from "@/components/ui/button";
+import { Key } from "lucide-react";
 
 import Link from "next/link";
 
@@ -26,17 +27,27 @@ export default function Floating() {
       </Reveal>
 
       <Reveal>
-        <Link href={"https://courses.30dayscoding.com/s/store"} target="_blank">
+        {/* <Link href={"https://courses.30dayscoding.com/s/store"} target="_blank">
           <div className="group relative">
             <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-green-500 via-lime-500 to-emerald-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
             <Button
               variant={"outline"}
-              className={`relative w-full text-lg font-semibold text-foreground/70`}
+              className={`relative w-full text-lg font-semibold text-foreground/70 flex gap-2`}
             >
-              Enroll Today
+              <span className="tracking-wide">Buy Course</span>
+              <Key className="h-5 w-5" />
             </Button>
+
+              
           </div>
-        </Link>
+        </Link> */}
+        <div
+          className="razorpay-embed-btn"
+          data-url="https://pages.razorpay.com/pl_NlXmnJkIOZFVcc/view"
+          data-text="Pay Now"
+          data-color="#254246"
+          data-size="large"
+        ></div>
       </Reveal>
     </div>
   );
