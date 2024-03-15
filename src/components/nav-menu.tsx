@@ -36,6 +36,12 @@ export const navTitles: {
         description:
           "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
       },
+      {
+        title: "Live DSA Placement Ready Course",
+        href: "/course/dsa-live-placement-ready-course",
+        description:
+          "A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com",
+      },
     ],
   },
   {

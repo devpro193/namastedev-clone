@@ -1,6 +1,14 @@
 import Reveal from "../framer/reveal";
 
-export default function Video({ youtubeId }: { youtubeId: string }) {
+export default function Video({
+  title,
+  desc,
+  youtubeId,
+}: {
+  title: string;
+  desc: string;
+  youtubeId: string;
+}) {
   return (
     <div className="m-auto flex max-lg:flex-col items-start justify-between p-10 lg:p-20 gap-10 max-w-[75rem]">
       <div className="lg:w-2/4 grid gap-5 shrink">
@@ -8,16 +16,10 @@ export default function Video({ youtubeId }: { youtubeId: string }) {
           <span className="text-prime font-semibold uppercase">In 30-Days</span>
         </Reveal>
         <Reveal>
-          <span className="text-4xl font-bold">
-            Build fullstack engineering skills with confidence
-          </span>
+          <span className="text-4xl font-bold">{title}</span>
         </Reveal>
         <Reveal>
-          <p className="text-lg max-tab:text-[1.05rem]">
-            Achieve mastery in fullstack engineering through practical projects
-            and expert feedback from industry professionals in this
-            comprehensive program.
-          </p>
+          <p className="text-lg max-tab:text-[1.05rem]">{desc}</p>
         </Reveal>
       </div>
       <div className="lg:w-2/4 w-full shrink-0 flex-1">

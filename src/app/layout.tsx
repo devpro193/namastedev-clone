@@ -6,6 +6,7 @@ import Whatsapp from "@/components/whatsapp";
 import MobileMenu from "@/components/mobile-menu";
 import Banner from "@/components/home-components/banner";
 import Navbar from "@/components/home-components/navbar";
+import Footer from "@/components/new-cohort/footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -32,6 +33,7 @@ export default function RootLayout({
           <Banner />
           <Navbar />
           {children}
+          <Footer />
           <Whatsapp />
         </ThemeProvider>
       </body>

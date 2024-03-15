@@ -2,11 +2,9 @@ import Achievements from "@/components/course-components/achievements";
 import Companies from "@/components/course-components/companies";
 import Course from "@/components/course-components/course";
 import Faq from "@/components/course-components/faq";
-import Footer from "@/components/course-components/footer";
 import Hero from "@/components/course-components/hero";
 import Instructor from "@/components/course-components/instructor";
 import Mission from "@/components/course-components/mission";
-import Navbar from "@/components/home-components/navbar";
 import Projects from "@/components/course-components/projects";
 import Testimonials from "@/components/course-components/testimonials";
 import type { Metadata } from "next";
@@ -42,7 +40,6 @@ export default function Home() {
         <Testimonials />
         <Faq />
       </div>
-      <Footer />
     </main>
   );
 }
