@@ -7,7 +7,7 @@ import MobileMenu from "@/components/mobile-menu";
 import Banner from "@/components/home-components/banner";
 import Navbar from "@/components/home-components/navbar";
 import Footer from "@/components/new-cohort/footer";
-import Razorpay from "@/util/razorpay";
+import NewRazorpay from "@/util/new-razorpay";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -38,7 +38,7 @@ export default function RootLayout({
           <Whatsapp />
         </ThemeProvider>
       </body>
-      <Razorpay />
+      <NewRazorpay />
     </html>
   );
 }

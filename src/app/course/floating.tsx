@@ -41,13 +41,15 @@ export default function Floating() {
               
           </div>
         </Link> */}
-        <div
+        {/* <div
           className="razorpay-embed-btn"
           data-url="https://pages.razorpay.com/pl_NlXmnJkIOZFVcc/view"
           data-text="Pay Now"
           data-color="#254246"
           data-size="large"
-        ></div>
+        ></div> */}
+
+        <form name="rzp_payment_form"></form>
       </Reveal>
     </div>
   );

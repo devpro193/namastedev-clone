@@ -38,20 +38,21 @@ export default function Course() {
                 </p>
               </section>
               <span className="max-lg:mx-auto">
-                {/* <AnimatedButton>
-                  <section className="flex gap-2 items-center">
-                    <span className="tracking-wide">Buy Full Course</span>
-                    <Key className="h-5 w-5" />
-                  </section>
-                </AnimatedButton> */}
-                <div
-                  className="razorpay-embed-btn"
-                  data-url="https://pages.razorpay.com/pl_NlXmnJkIOZFVcc/view"
-                  data-text="Pay Now"
-                  data-color="#254246"
-                  data-size="large"
-                ></div>
+                <form name="rzp_payment_form"></form>
               </span>
+              {/* <AnimatedButton>
+                      <section className="flex gap-2 items-center">
+                        <span className="tracking-wide">Buy Full Course</span>
+                        <Key className="h-5 w-5" />
+                      </section>
+                    </AnimatedButton> */}
+              {/* <div
+                      className="razorpay-embed-btn"
+                      data-url="https://pages.razorpay.com/pl_NlXmnJkIOZFVcc/view"
+                      data-text="Pay Now"
+                      data-color="#254246"
+                      data-size="large"
+                    ></div> */}
             </div>
           </Reveal>
         </div>
