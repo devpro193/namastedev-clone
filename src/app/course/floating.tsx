@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Floating() {
   return (
-    <div className="lg:hidden fixed bottom-0 flex justify-between items-center gap-2 p-4 px-6 bg-background/40 bg- w-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30">
+    <div className="lg:hidden fixed bottom-0 z-20 flex justify-between items-center gap-2 p-4 px-6 bg-background/40 bg- w-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30">
       <Reveal>
         <section className="flex flex-col gap-1">
           <span className={`font-jakarta text-lg`}>

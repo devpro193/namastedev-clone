@@ -6,10 +6,8 @@ import Footer from "@/components/course-components/footer";
 import Hero from "@/components/home-components/hero";
 import Instructor from "@/components/course-components/instructor";
 import Mission from "@/components/course-components/mission";
-import Navbar from "@/components/home-components/navbar";
 import Projects from "@/components/course-components/projects";
 import Testimonials from "@/components/course-components/testimonials";
-import Banner from "@/components/home-components/banner";
 import { inter } from "@/lib/font";
 import type { Metadata } from "next";
 
@@ -26,8 +24,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className={`font-inter bg-bg min-h-svh`}>
-      <Banner />
-      <Navbar />
       <Hero />
     </main>
   );

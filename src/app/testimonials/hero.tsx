@@ -71,7 +71,7 @@ export default function Hero() {
           <VideoTestimony
             name="Deepanshu Udhwani"
             designation="Founder 30dayscoding | Ex. MakeMytrip | Ex. Alibaba Cloud"
-            linkedinUrl="https://www.linkedin.com/in/singh1aryan/"
+            linkedinUrl="https://www.linkedin.com/in/deepanshu-udhwani/"
             imageUrl="/instructor2.jfif"
             videoId="gIx8D2pyXVI"
           />

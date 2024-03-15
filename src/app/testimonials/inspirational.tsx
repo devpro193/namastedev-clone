@@ -3,7 +3,7 @@
 import Reveal from "@/components/framer/reveal";
 import { useState } from "react";
 
-type TestimonialType = {
+export type TestimonialType = {
   name: string;
   time?: string;
   email?: string;
@@ -33,13 +33,6 @@ export let testimonials: TestimonialType[] = [
     name: "Aashish kumar",
     email: "jis2k0001@gmail.com",
     review: "Yes I have purchased you MERN STACK course",
-  },
-  {
-    time: "3/6/2024 23:48:09",
-    name: "Prathamesh Bhangre ",
-    email: "bhangrep23@gmail.com",
-    review:
-      "Course is really good but need to work on website speed, it loads very slow which is quiet irritating.",
   },
   {
     time: "3/6/2024 23:48:49",
@@ -280,24 +273,26 @@ export default function Inspirational() {
         </span>
       </Reveal>
 
-      <div className="relative flex items-start gap-8">
-        <div className="flex flex-col max-[800px]:[&>*:nth-child(n)]:flex max-xl:[&>*:nth-child(odd)]:flex xl:[&>*:nth-child(3n-2)]:flex gap-8 items-start">
-          {testimonials.map((e, i) => (
-            <Testimonial key={i} name={e.name} review={e.review} />
-          ))}
+      <Reveal>
+        <div className="relative flex items-start gap-8">
+          <div className="flex flex-col max-[800px]:[&>*:nth-child(n)]:flex max-xl:[&>*:nth-child(odd)]:flex xl:[&>*:nth-child(3n-2)]:flex gap-8 items-start">
+            {testimonials.map((e, i) => (
+              <Testimonial key={i} name={e.name} review={e.review} />
+            ))}
+          </div>
+          <div className="max-[800px]:hidden flex flex-col max-xl:[&>*:nth-child(even)]:flex xl:[&>*:nth-child(3n-1)]:flex gap-8 items-start">
+            {testimonials.map((e, i) => (
+              <Testimonial key={i} name={e.name} review={e.review} />
+            ))}
+          </div>
+          <div className="max-xl:hidden flex flex-col [&>*:nth-child(3n)]:flex gap-8 items-start">
+            {testimonials.map((e, i) => (
+              <Testimonial key={i} name={e.name} review={e.review} />
+            ))}
+          </div>
+          <div className="absolute bottom-0 h-20 w-full bg-gradient-to-b z-10 from-transparent from-0% via-50% via-transparent to-50% blur-md to-bg/70"></div>
         </div>
-        <div className="max-[800px]:hidden flex flex-col max-xl:[&>*:nth-child(even)]:flex xl:[&>*:nth-child(3n-1)]:flex gap-8 items-start">
-          {testimonials.map((e, i) => (
-            <Testimonial key={i} name={e.name} review={e.review} />
-          ))}
-        </div>
-        <div className="max-xl:hidden flex flex-col [&>*:nth-child(3n)]:flex gap-8 items-start">
-          {testimonials.map((e, i) => (
-            <Testimonial key={i} name={e.name} review={e.review} />
-          ))}
-        </div>
-        <div className="absolute bottom-0 h-20 w-full bg-gradient-to-b z-10 from-transparent from-0% via-50% via-transparent to-50% blur-md to-bg/70"></div>
-      </div>
+      </Reveal>
     </div>
   );
 }

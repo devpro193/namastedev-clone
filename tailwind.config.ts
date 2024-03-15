@@ -70,7 +70,8 @@ const config = {
         head: "#006B5D",
         prime: "#079281",
         bg: "#112121",
-        second: "#134543"
+        second: "#134543",
+        footer: "#031211"
       },
       borderRadius: {
         lg: "var(--radius)",

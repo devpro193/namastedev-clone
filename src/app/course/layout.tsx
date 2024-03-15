@@ -9,10 +9,9 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      <HeadBanner />
       {children}
+      {/* <LoadingLogo /> */}
       <Floating />
-      <LoadingLogo />
     </div>
   );
 }
