@@ -20,7 +20,7 @@ export default function Course() {
       </Reveal>
 
       <Reveal>
-        <div className="flex max-lg:flex-col gap-3 max-lg:gap-10 min-h-96">
+        <div className="flex max-lg:flex-col gap-3 max-lg:items-center max-lg:gap-10 min-h-96">
           <TabMenu />
 
           <Reveal width="fit-content">

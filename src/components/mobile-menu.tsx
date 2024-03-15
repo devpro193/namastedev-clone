@@ -22,7 +22,6 @@ function CollapsibleMenu({
   href: string | href[];
 }) {
   const [isOpen, setIsOpen] = useState(false);
-  const setState = useSetAtom(navbarState);
 
   if (typeof href === "string")
     return (
@@ -46,19 +45,21 @@ function CollapsibleMenu({
         </CollapsibleTrigger>
       </div>
 
-      <CollapsibleContent className="flex flex-col gap-5 py-5">
-        {href.map(({ title, href }, i) => {
-          return (
-            <Link
-              key={i}
-              href={href}
-              className="font-semibold text-muted-foreground"
-            >
-              {title}
-            </Link>
-          );
-        })}
-      </CollapsibleContent>
+      {isOpen && (
+        <CollapsibleContent className="flex flex-col gap-5 py-5 overflow-hidden">
+          {href.map(({ title, href }, i) => {
+            return (
+              <Link
+                key={i}
+                href={href}
+                className="font-semibold text-muted-foreground"
+              >
+                {title}
+              </Link>
+            );
+          })}
+        </CollapsibleContent>
+      )}
     </Collapsible>
   );
 }
@@ -81,7 +82,7 @@ export default function MobileMenu() {
       }`}
     >
       <div
-        className={`transition-all duration-300 w-screen h-screen bg-bg p-10 relative ${
+        className={`flex flex-col gap-4 transition-all duration-300 w-screen h-screen bg-bg p-6 relative ${
           state ? "translate-x-full" : "translate-x-0"
         }`}
       >
@@ -91,6 +92,9 @@ export default function MobileMenu() {
         >
           <X className="tab:hidden max-tab:h-5 max-tab:w-5 h-6 w-6 stroke-[1.5]" />
         </button>
+        <span className="uppercase mb-3 text-lg font-semibold text-muted-foreground">
+          Menu
+        </span>
         {navTitles.map(({ title, href }, i) => {
           return <CollapsibleMenu key={i} title={title} href={href} />;
         })}
