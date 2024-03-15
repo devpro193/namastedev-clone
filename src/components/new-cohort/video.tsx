@@ -13,7 +13,7 @@ export default function Video({ youtubeId }: { youtubeId: string }) {
           </span>
         </Reveal>
         <Reveal>
-          <p>
+          <p className="text-lg max-tab:text-[1.05rem]">
             Achieve mastery in fullstack engineering through practical projects
             and expert feedback from industry professionals in this
             comprehensive program.

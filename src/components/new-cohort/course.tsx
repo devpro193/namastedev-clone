@@ -32,7 +32,7 @@ export default function Course() {
                 <span className="text-lg font-semibold">
                   Explore our detailed curriculum!
                 </span>
-                <p className="text-xs">
+                <p className="text-sm">
                   Understand the in depth concepts and tools you will learn
                   throughout the program.
                 </p>

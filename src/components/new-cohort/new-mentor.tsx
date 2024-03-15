@@ -21,7 +21,7 @@ function Profile({
   desc: string;
 }) {
   return (
-    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] lg:h-[500px] w-64 max-sm:w-full max-sm:max-w-96">
+    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] lg:h-[580px] w-72 max-sm:w-full max-sm:max-w-96">
       <div className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] absolute p-2 bg-gradient-to-t from-prime/80 to-second/80 rounded-full">
         <div className="h-36 w-36 overflow-hidden rounded-full flex items-center justify-center">
           <Image src={profile} alt="mentor profile" height={220} width={220} />
@@ -49,7 +49,7 @@ function Profile({
             </div>
           </div>
 
-          <p className="text-sm p-6">{desc}</p>
+          <p className="text-base p-6">{desc}</p>
         </div>
       </div>
       <Link className="mx-auto mb-6" href={link} target="_blank">
