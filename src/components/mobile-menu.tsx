@@ -27,7 +27,7 @@ function CollapsibleMenu({
   if (typeof href === "string")
     return (
       <span>
-        <Link href={href} className="font-semibold">
+        <Link href={href} className="font-semibold text-lg">
           {title}
         </Link>
       </span>
@@ -37,7 +37,7 @@ function CollapsibleMenu({
     <Collapsible open={isOpen} onOpenChange={setIsOpen}>
       <div className="flex items-center">
         <CollapsibleTrigger className="font-semibold items-center flex gap-3">
-          <span>{title}</span>
+          <span className="text-lg">{title}</span>
           <ChevronDown
             className={`h-4 w-4 ${
               isOpen ? "rotate-180" : "rotate-0"
@@ -46,13 +46,13 @@ function CollapsibleMenu({
         </CollapsibleTrigger>
       </div>
 
-      <CollapsibleContent className="flex flex-col gap-3 py-3">
+      <CollapsibleContent className="flex flex-col gap-5 py-5">
         {href.map(({ title, href }, i) => {
           return (
             <Link
               key={i}
               href={href}
-              className="font-semibold text-sm text-muted-foreground"
+              className="font-semibold text-muted-foreground"
             >
               {title}
             </Link>
