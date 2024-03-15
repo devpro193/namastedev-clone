@@ -1,6 +1,7 @@
 import Reveal from "@/components/framer/reveal";
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -102,15 +103,30 @@ export default function Testimonial() {
     >
       <div className="mx-auto w-full max-w-[90rem] max-phone:p-[0_0_3.5rem] p-[0_min(6rem,_6.66%)] flex flex-col gap-20">
         <div className="grid place-items-center gap-8">
-          <Reveal>
-            <span className="flex items-center gap-4 relative">
-              <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
-              <h2 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
-                Wall of Love
-              </h2>
-              <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
-            </span>
-          </Reveal>
+          <div className="grid place-items-center gap-4">
+            <Reveal>
+              <span className="flex items-center gap-4 relative">
+                <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
+                <h2 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
+                  Wall of Love
+                </h2>
+                <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
+              </span>
+            </Reveal>
+
+            <Reveal>
+              <Link
+                href={"https://www.instagram.com/singh.aryan.45/"}
+                target="_blank"
+                className="flex gap-3"
+              >
+                <p>DM me on Instagram</p>
+                <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-prime relative inline-block">
+                  <span className="relative text-white">@Aryan Singh</span>
+                </span>
+              </Link>
+            </Reveal>
+          </div>
           {/* <Reveal> */}
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 justify-center p-3">
             {reviews.map((e, i) => (
