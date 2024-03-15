@@ -21,7 +21,7 @@ function Profile({
   desc: string;
 }) {
   return (
-    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] lg:h-[500px] w-64 max-phone:w-full max-phone:max-w-96">
+    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] lg:h-[500px] w-64 max-sm:w-full max-sm:max-w-96">
       <div className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] absolute p-2 bg-gradient-to-t from-prime/80 to-second/80 rounded-full">
         <div className="h-36 w-36 overflow-hidden rounded-full flex items-center justify-center">
           <Image src={profile} alt="mentor profile" height={220} width={220} />
@@ -90,7 +90,7 @@ export default function NewMentor() {
         </Reveal>
       </div>
 
-      <div className="flex flex-wrap max-phone:flex-col items-start max-phone:gap-28 max-lg:gap-20 phone:h-full gap-2 justify-evenly w-full pt-24">
+      <div className="flex flex-wrap max-phone:flex-col lg:items-start items-center max-phone:gap-28 max-lg:gap-20 phone:h-full gap-16 justify-evenly pt-24">
         <Reveal>
           <Profile
             name="Aryan Singh"
