@@ -4,21 +4,9 @@ import Reveal from "@/components/framer/reveal";
 import Link from "next/link";
 import { TabMenu } from "../tabs";
 import { MapIcon } from "lucide-react";
-import { useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import NewRazorpay from "@/util/new-razorpay";
 
 export default function Course() {
-  const router = usePathname();
-  useEffect(() => {
-    const form = document.getElementById("rzp_payment_form");
-    if (!form?.hasChildNodes()) {
-      let script = document.createElement("script");
-      script.src = "https://checkout.razorpay.com/v1/payment-button.js";
-      script.async = true;
-      script.dataset.payment_button_id = "pl_NmmJdmhwt5r9iD";
-      form?.appendChild(script);
-    }
-  }, [router]);
   return (
     <div className="grid place-items-center gap-8 max-w-[90rem] m-auto py-8">
       <Reveal>
@@ -50,7 +38,7 @@ export default function Course() {
                 </p>
               </section>
               <span className="max-lg:mx-auto">
-                <form name="rzp_payment_form"></form>
+                <NewRazorpay id={"buy-course"} />
               </span>
               {/* <AnimatedButton>
                       <section className="flex gap-2 items-center">
