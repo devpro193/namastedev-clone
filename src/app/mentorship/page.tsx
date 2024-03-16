@@ -5,6 +5,7 @@ import Companies from "@/components/new-cohort/companies";
 import Course from "@/components/new-cohort/course";
 import Highlights from "@/components/new-cohort/highligths";
 import NewMentor from "@/components/new-cohort/new-mentor";
+import Video from "@/components/new-cohort/video";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -29,6 +30,13 @@ export default function Home() {
         heroImage="bg-[url('/main/hero_section_course.webp')]"
       /> */}
       <Course />
+      <Video
+        title={"1:1 Live Session with our Mentors"}
+        desc={
+          "Learn all the latest technologies from experts themselves with live interation and dobut clear session"
+        }
+        youtubeId={"gIx8D2pyXVI"}
+      />
       <Companies />
       <Highlights />
       <Testimonials />
