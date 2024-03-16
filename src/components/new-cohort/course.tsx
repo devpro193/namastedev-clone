@@ -59,16 +59,16 @@ export default function Course() {
       </Reveal>
 
       <Reveal>
-        <button
-          className={`font-jakarta flex items-center font-semibold gap-1 border-white border transition-all px-6 py-3 rounded-md`}
+        <Link
+          className="text-sm"
+          href={"https://courses.30dayscoding.com/s/store"}
         >
-          <Link
-            className="text-sm"
-            href={"https://courses.30dayscoding.com/s/store"}
+          <button
+            className={`font-jakarta flex items-center font-semibold gap-1 border-white border transition-all px-6 py-3 rounded-md`}
           >
             Check More Courses
-          </Link>
-        </button>
+          </button>
+        </Link>
       </Reveal>
     </div>
   );

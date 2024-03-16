@@ -3,32 +3,32 @@ import type { Metadata } from "next";
 import Testimonials from "@/components/new-cohort/testimonials";
 import Companies from "@/components/new-cohort/companies";
 import Course from "@/components/new-cohort/course";
-import NewMentor from "@/components/new-cohort/new-mentor";
 import Highlights from "@/components/new-cohort/highligths";
+import NewMentor from "@/components/new-cohort/new-mentor";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
-  title: "Solve, Save, and Revise DSA",
+  title: "Mentorship | 30dayscoding",
   description:
-    "A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com",
+    "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
   openGraph: {
-    images: "/dsa.jpg",
+    images: "/cohort.jpg",
   },
 };
 
 export default function Home() {
   return (
     <main className="bg-background dark:bg-bg min-h-svh transition-all">
-      <Hero
-        title="Live DSA Placement Ready Course"
-        desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
-        subTitle="Learn dsa and get ready for placement"
-        subDesc="Master dsa through practicing algorithms under expert's guidance from industry professionals. A placement driven course."
-        ytId="tJkZA9JoZCw"
-        heroImage="bg-[url('/main/hero_section_dsa.png')]"
-      />
-      <Course />
       <NewMentor />
+      {/* <Hero
+        title="LIVE Full Stack Web Development (MERN & NEXT) Cohort"
+        desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
+        subTitle="Build fullstack engineering skills with confidence"
+        subDesc="Achieve mastery in fullstack engineering through practical projects and expert feedback from industry professionals in this comprehensive program."
+        ytId="iQR3fb3yJko"
+        heroImage="bg-[url('/main/hero_section_course.webp')]"
+      /> */}
+      <Course />
       <Companies />
       <Highlights />
       <Testimonials />

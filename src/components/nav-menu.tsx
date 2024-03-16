@@ -67,8 +67,27 @@ export const navTitles: {
       },
     ],
   },
-  { title: "Testimonials", href: "/testimonials" },
-  { title: "Wall of Love", href: "/wall-of-love" },
+  {
+    title: "Reviews",
+    href: [
+      {
+        title: "Testimonials",
+        href: "/testimonials",
+        description:
+          "Work reviews and words of people how they felt working with us.",
+      },
+      {
+        title: "Wall of Love",
+        href: "/wall-of-love",
+        description:
+          "A whole page dedicated for the kind of love we recieves from the people.",
+      },
+    ],
+  },
+  {
+    title: "Mentorship",
+    href: "/mentorship",
+  },
 ];
 
 export function NavMenu() {

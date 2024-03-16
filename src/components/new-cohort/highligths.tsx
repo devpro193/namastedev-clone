@@ -18,11 +18,11 @@ function TestimonyImages({ imageUrl }: { imageUrl: string }) {
 
 export default function Highlights() {
   const images = [
-    "review1.jpeg",
-    "review2.jpeg",
-    "review3.jpeg",
-    "review4.jpeg",
-    "review5.jpeg",
+    "https://i.ibb.co/F3PjZxG/review1.jpg",
+    "https://i.ibb.co/bdj2xq6/review2.jpg",
+    "https://i.ibb.co/SRB5r0S/review3.jpg",
+    "https://i.ibb.co/yXNwxWY/review4.jpg",
+    "https://i.ibb.co/bmbL8gk/review5.jpg",
   ];
   return (
     <div className="grid place-items-center gap-8 max-w-[90rem] m-auto py-8">
@@ -38,20 +38,20 @@ export default function Highlights() {
       <div className="relative flex flex-wrap items-start justify-center phone:gap-8 pt-5 lg:pt-10">
         {images.map((e, i) => (
           <Reveal key={i}>
-            <TestimonyImages imageUrl={`/testimonials/${e}`} />
+            <TestimonyImages imageUrl={e} />
           </Reveal>
         ))}
         <div className="absolute bottom-0 h-20 w-full bg-gradient-to-b z-10 from-transparent from-0% via-50% via-transparent to-50% blur-md to-bg/70 translate-y-6"></div>
       </div>
 
       <Reveal>
-        <button
-          className={`font-jakarta flex items-center font-semibold gap-1 border-white border transition-all px-6 py-3 rounded-md`}
-        >
-          <Link className="text-sm" href={"/testimonials"}>
+        <Link className="text-sm" href={"/testimonials"}>
+          <button
+            className={`font-jakarta flex items-center font-semibold gap-1 border-white border transition-all px-6 py-3 rounded-md`}
+          >
             Show More Highlights
-          </Link>
-        </button>
+          </button>
+        </Link>
       </Reveal>
     </div>
   );

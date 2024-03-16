@@ -10,9 +10,7 @@ export default function NewRazorpay({ id }: { id: string }) {
         id={id}
         dangerouslySetInnerHTML={{
           __html: `
-        let rzpPaymentForm = document.getElementsByName("rzp_payment_form");
-
-        rzpPaymentForm.forEach((form) => {
+          document.getElementsByName("rzp_payment_form").forEach((form) => {
           if (!form.hasChildNodes()) {
     let script = document.createElement("script");
     script.src = "https://checkout.razorpay.com/v1/payment-button.js";

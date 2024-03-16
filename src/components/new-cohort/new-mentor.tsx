@@ -88,7 +88,7 @@ export default function NewMentor() {
             </span>{" "}
             and
             <span className="font-semibold text-prime px-1 text-xl">
-              Alibaba Express
+              Alibaba Cloud
             </span>
           </p>
         </Reveal>
