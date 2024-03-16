@@ -3,8 +3,8 @@
 import Reveal from "@/components/framer/reveal";
 import Link from "next/link";
 import { TabMenu } from "../tabs";
-import { DownloadIcon, Key, MapIcon } from "lucide-react";
-import AnimatedButton from "../animated-button";
+import { MapIcon } from "lucide-react";
+import NewRazorpay from "@/util/new-razorpay";
 
 export default function Course() {
   return (
@@ -38,7 +38,7 @@ export default function Course() {
                 </p>
               </section>
               <span className="max-lg:mx-auto">
-                <form name="rzp_payment_form"></form>
+                <NewRazorpay id={"buy-course"} />
               </span>
               {/* <AnimatedButton>
                       <section className="flex gap-2 items-center">

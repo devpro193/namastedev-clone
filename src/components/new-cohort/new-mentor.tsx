@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Reveal from "../framer/reveal";
 import Link from "next/link";
-import Button from "../home-components/button";
 import HoverInfo from "../hover-info";
 import AnimatedButton from "../animated-button";
 
@@ -24,7 +23,12 @@ function Profile({
     <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] lg:h-[580px] w-72 max-sm:w-full max-sm:max-w-96">
       <div className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] absolute p-2 bg-gradient-to-t from-prime/80 to-second/80 rounded-full">
         <div className="h-36 w-36 overflow-hidden rounded-full flex items-center justify-center">
-          <Image src={profile} alt="mentor profile" height={220} width={220} />
+          <Image
+            src={profile}
+            alt={`${name}'s profile`}
+            height={220}
+            width={220}
+          />
         </div>
       </div>
       <div className="flex flex-col items-center justify-between pt-24 h-full">
@@ -94,7 +98,7 @@ export default function NewMentor() {
         <Reveal>
           <Profile
             name="Aryan Singh"
-            profile="/instructor.jpg"
+            profile="https://i.ibb.co/YRBGz7v/instructor.jpg"
             position="SDE @Google"
             link="https://www.linkedin.com/in/singh1aryan/"
             company={[
@@ -111,7 +115,7 @@ export default function NewMentor() {
         <Reveal>
           <Profile
             name="Abhinav Awasthi"
-            profile="/instructor3.jfif"
+            profile="https://i.ibb.co/8mFwp1C/instructor2.jpg"
             position="SDE @Zeta"
             link="https://www.linkedin.com/in/abhinavawasthi1/"
             company={[
@@ -152,7 +156,7 @@ export default function NewMentor() {
         <Reveal>
           <Profile
             name="Deepanshu Udhwani"
-            profile="/instructor2.jfif"
+            profile="https://i.ibb.co/GHMvNkm/instructor3.jpg"
             position="Founder"
             link="https://www.linkedin.com/in/deepanshu-udhwani/"
             company={[

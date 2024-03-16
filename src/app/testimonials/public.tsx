@@ -17,25 +17,25 @@ function TestimonyImages({ imageUrl }: { imageUrl: string }) {
 
 export default function Public() {
   const images = [
-    "linkedin1.PNG",
-    "linkedin2.PNG",
-    "linkedin3.PNG",
-    "linkedin4.PNG",
-    "linkedin5.PNG",
-    "linkedin6.PNG",
-    "linkedin7.PNG",
-    "linkedin8.PNG",
-    "linkedin9.PNG",
-    "linkedin10.PNG",
-    "linkedin11.PNG",
-    "linkedin12.PNG",
-    "linkedin13.PNG",
-    "linkedin14.PNG",
-    "linkedin15.PNG",
-    "linkedin16.jpeg",
-    "linkedin17.jpeg",
-    "linkedin18.jpeg",
-    "linkedin19.jpeg",
+    "https://i.ibb.co/vhX2GJ4/linkedin1.jpg",
+    "https://i.ibb.co/WcCx9hn/linkedin2.jpg",
+    "https://i.ibb.co/zXGgPxS/linkedin3.jpg",
+    "https://i.ibb.co/Bj0F1BS/linkedin4.jpg",
+    "https://i.ibb.co/3dgLfHg/linkedin5.jpg",
+    "https://i.ibb.co/qxYYvSh/linkedin6.jpg",
+    "https://i.ibb.co/3R61d67/linkedin7.jpg",
+    "https://i.ibb.co/Rz2MzV2/linkedin8.jpg",
+    "https://i.ibb.co/YWNZDpN/linkedin9.jpg",
+    "https://i.ibb.co/cc8L54K/linkedin10.jpg",
+    "https://i.ibb.co/C8Xtq0G/linkedin11.jpg",
+    "https://i.ibb.co/6HnQy38/linkedin12.jpg",
+    "https://i.ibb.co/YymwwZ9/linkedin13.jpg",
+    "https://i.ibb.co/1btWRkn/linkedin14.jpg",
+    "https://i.ibb.co/x3cMF2B/linkedin15.jpg",
+    "https://i.ibb.co/pv99N4L/linkedin16.jpg",
+    "https://i.ibb.co/9pydRcw/linkedin17.jpg",
+    "https://i.ibb.co/XYp5Dbm/linkedin18.jpg",
+    "https://i.ibb.co/9crgVhD/linkedin19.jpg",
   ];
   return (
     <div className="grid place-items-center gap-8">
@@ -47,7 +47,7 @@ export default function Public() {
       <div className="relative flex flex-wrap gap-8 justify-center p-3">
         {images.map((e, i) => (
           <Reveal key={i}>
-            <TestimonyImages imageUrl={`/testimonials/${e}`} />
+            <TestimonyImages imageUrl={e} />
           </Reveal>
         ))}
       </div>

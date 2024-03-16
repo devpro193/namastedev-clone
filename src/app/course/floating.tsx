@@ -1,10 +1,7 @@
 import Reveal from "@/components/framer/reveal";
-import { Button } from "@/components/ui/button";
-import { Key } from "lucide-react";
+import NewRazorpay from "@/util/new-razorpay";
 
-import Link from "next/link";
-
-export default function Floating() {
+export default async function Floating() {
   return (
     <div className="lg:hidden fixed bottom-0 z-20 flex justify-between items-center gap-2 p-4 px-6 bg-background/40 bg- w-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30">
       <Reveal>
@@ -50,6 +47,7 @@ export default function Floating() {
         ></div> */}
 
         <form name="rzp_payment_form"></form>
+        <NewRazorpay id={"buy-mobile-course"} />
       </Reveal>
     </div>
   );

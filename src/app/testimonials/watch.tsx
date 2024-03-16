@@ -17,11 +17,11 @@ function TestimonyImages({ imageUrl }: { imageUrl: string }) {
 
 export default function Watch() {
   const images = [
-    "review1.jpeg",
-    "review2.jpeg",
-    "review3.jpeg",
-    "review4.jpeg",
-    "review5.jpeg",
+    "https://i.ibb.co/F3PjZxG/review1.jpg",
+    "https://i.ibb.co/bdj2xq6/review2.jpg",
+    "https://i.ibb.co/SRB5r0S/review3.jpg",
+    "https://i.ibb.co/yXNwxWY/review4.jpg",
+    "https://i.ibb.co/bmbL8gk/review5.jpg",
   ];
   return (
     <div className="grid place-items-center gap-8">
@@ -33,7 +33,7 @@ export default function Watch() {
       <div className="relative flex flex-wrap gap-8 justify-center p-3">
         {images.map((e, i) => (
           <Reveal key={i}>
-            <TestimonyImages imageUrl={`/testimonials/${e}`} />
+            <TestimonyImages imageUrl={e} />
           </Reveal>
         ))}
       </div>

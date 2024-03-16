@@ -2,16 +2,18 @@
 
 import Script from "next/script";
 
-export default function NewRazorpay() {
+export default function NewRazorpay({ id }: { id: string }) {
   return (
-    <Script
-      id="show-banner"
-      dangerouslySetInnerHTML={{
-        __html: `
+    <>
+      <form name="rzp_payment_form"></form>
+      <Script
+        id={id}
+        dangerouslySetInnerHTML={{
+          __html: `
         let rzpPaymentForm = document.getElementsByName("rzp_payment_form");
 
-rzpPaymentForm.forEach((form) => {
-  if (!form.hasChildNodes()) {
+        rzpPaymentForm.forEach((form) => {
+          if (!form.hasChildNodes()) {
     let script = document.createElement("script");
     script.src = "https://checkout.razorpay.com/v1/payment-button.js";
     script.async = true;
@@ -19,7 +21,8 @@ rzpPaymentForm.forEach((form) => {
     form.appendChild(script);
   }
 });`,
-      }}
-    />
+        }}
+      />
+    </>
   );
 }

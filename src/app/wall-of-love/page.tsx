@@ -28,72 +28,31 @@ function TestimonyImages({ imageUrl }: { imageUrl: string }) {
 }
 
 const reviews = [
-  "2023-09-28_17-23-43_UTC.jpg",
-  "2023-10-03_19-57-09_UTC.jpg",
-  "2023-10-04_19-58-59_UTC.jpg",
-  "2023-10-09_23-43-10_UTC.jpg",
-  "2023-10-10_10-12-14_UTC.jpg",
-  "2023-10-16_21-27-12_UTC.jpg",
-  "2023-10-21_00-55-04_UTC.jpg",
-  "2023-10-24_23-13-12_UTC.jpg",
-  "2023-10-25_23-44-12_UTC.jpg",
-  "2023-10-31_04-40-15_UTC.jpg",
-  "2023-10-31_07-43-06_UTC.jpg",
-  "2023-11-02_16-42-12_UTC.jpg",
-  "2023-11-25_00-21-17_UTC.jpg",
-  "2023-12-15_03-31-20_UTC.jpg",
-  "2023-12-31_05-35-57_UTC.jpg",
-  "2024-01-21_05-47-46_UTC.jpg",
-  "2024-01-24_18-06-30_UTC.jpg",
-  "2024-01-27_00-11-56_UTC.jpg",
-  "2024-01-28_02-24-41_UTC.jpg",
-  "2024-02-07_20-30-15_UTC.jpg",
-  "2024-02-07_20-31-09_UTC.jpg",
-  "2024-02-07_20-33-44_UTC.jpg",
-  "2024-02-07_20-34-04_UTC.jpg",
-  "2024-02-14_08-59-57_UTC.jpg",
-  "2024-02-14_09-03-43_UTC.jpg",
-  "2024-02-14_09-04-14_UTC.jpg",
-  "2024-02-14_23-09-14_UTC.jpg",
-  "2024-02-15_08-23-36_UTC.jpg",
-  "2024-02-17_17-33-22_UTC.jpg",
-  "2024-02-20_16-00-08_UTC.jpg",
-  "2024-02-21_18-30-28_UTC.jpg",
-  "2024-02-23_11-29-33_UTC.jpg",
-  "2024-02-26_02-13-30_UTC.jpg",
-  "2024-02-27_02-27-27_UTC.jpg",
-  "2024-02-27_17-37-17_UTC.jpg",
-  "2024-03-03_17-16-12_UTC.jpg",
-  "2024-03-07_00-07-32_UTC.jpg",
-  "2024-03-07_20-28-53_UTC.jpg",
-  "2024-03-07_20-29-34_UTC.jpg",
-  "2024-03-08_00-19-11_UTC.jpg",
-  "2024-03-08_08-14-40_UTC.jpg",
-  "2024-03-08_08-15-31_UTC.jpg",
-  "2024-03-09_00-21-30_UTC.jpg",
-  "2024-03-09_22-03-20_UTC.jpg",
-  "2024-03-09_22-07-08_UTC.jpg",
-  "2024-03-09_22-11-48_UTC.jpg",
-  "2024-03-10_06-47-05_UTC.jpg",
-  "2024-03-10_07-04-06_UTC.jpg",
-  "2024-03-10_20-06-15_UTC.jpg",
-  "2024-03-10_21-39-49_UTC.jpg",
-  "2024-03-11_02-25-42_UTC.jpg",
-  "2024-03-11_04-46-51_UTC.jpg",
-  "2024-03-11_05-50-01_UTC.jpg",
-  "2024-03-11_07-05-20_UTC.jpg",
-  "2024-03-11_07-07-56_UTC.jpg",
-  "2024-03-11_10-16-26_UTC.jpg",
-  "2024-03-11_21-39-22_UTC.jpg",
-  "2024-03-12_00-19-28_UTC.jpg",
-  "2024-03-12_01-44-50_UTC.jpg",
-  "2024-03-12_01-45-06_UTC.jpg",
-  "2024-03-12_08-09-41_UTC.jpg",
-  "2024-03-13_06-23-08_UTC.jpg",
-  "2024-03-13_10-22-10_UTC.jpg",
-  "2024-03-14_22-35-00_UTC.jpg",
-  "2024-03-14_22-35-56_UTC.jpg",
-  "2024-03-15_17-03-38_UTC.jpg",
+  "https://i.ibb.co/7JJ7qgH/IMG-0012.jpg",
+  "https://i.ibb.co/X3txcLJ/IMG-0013.jpg",
+  "https://i.ibb.co/rsds6g5/IMG-0014.jpg",
+  "https://i.ibb.co/3W4tMWy/IMG-0015.jpg",
+  "https://i.ibb.co/vPnLQ5z/IMG-0559.jpg",
+  "https://i.ibb.co/RBQGz97/IMG-0560.jpg",
+  "https://i.ibb.co/68RZ8zR/IMG-0570.jpg",
+  "https://i.ibb.co/8rLwbcp/IMG-4948.jpg",
+  "https://i.ibb.co/njrL67D/IMG-5333.jpg",
+  "https://i.ibb.co/mTXxFjj/IMG-6393.jpg",
+  "https://i.ibb.co/zhfhZ0G/IMG-6394.jpg",
+  "https://i.ibb.co/Zc419mR/IMG-6570.jpg",
+  "https://i.ibb.co/8bGdxZM/IMG-0022.jpg",
+  "https://i.ibb.co/8MXtjL5/IMG-0064.jpg",
+  "https://i.ibb.co/QmV84Hg/IMG-0134.jpg",
+  "https://i.ibb.co/8PwTW9S/IMG-7686.jpg",
+  "https://i.ibb.co/wrfhr1m/IMG-7687.png",
+  "https://i.ibb.co/0rNJjfr/IMG-7689.png",
+  "https://i.ibb.co/fXZqDvj/IMG-7690.png",
+  "https://i.ibb.co/jHNQVQL/IMG-7691.png",
+  "https://i.ibb.co/3dYxTMz/IMG-7692.png",
+  "https://i.ibb.co/3dYxTMz/IMG-7692.png",
+  "https://i.ibb.co/zSt7QXp/IMG-7841.jpg",
+  "https://i.ibb.co/RvK9Hy4/IMG-7982.jpg",
+  "https://i.ibb.co/0yxW2MG/IMG-8087.jpg",
 ];
 
 export default function Testimonial() {
@@ -120,7 +79,7 @@ export default function Testimonial() {
                 target="_blank"
                 className="flex gap-3"
               >
-                <p>DM me on Instagram</p>
+                <p>DM us on Instagram</p>
                 <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-prime relative inline-block">
                   <span className="relative text-white">@Aryan Singh</span>
                 </span>
@@ -131,7 +90,7 @@ export default function Testimonial() {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 justify-center p-3">
             {reviews.map((e, i) => (
               <Reveal key={i}>
-                <TestimonyImages imageUrl={`/social/${e}`} />
+                <TestimonyImages imageUrl={e} />
               </Reveal>
             ))}
           </div>
