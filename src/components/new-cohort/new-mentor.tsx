@@ -115,7 +115,7 @@ export default function NewMentor() {
         <Reveal>
           <Profile
             name="Abhinav Awasthi"
-            profile="https://i.ibb.co/8mFwp1C/instructor2.jpg"
+            profile="https://i.ibb.co/8mFwp1C/instructor3.jpg"
             position="SDE @Zeta"
             link="https://www.linkedin.com/in/abhinavawasthi1/"
             company={[
@@ -156,7 +156,7 @@ export default function NewMentor() {
         <Reveal>
           <Profile
             name="Deepanshu Udhwani"
-            profile="https://i.ibb.co/GHMvNkm/instructor3.jpg"
+            profile="https://i.ibb.co/GHMvNkm/instructor2.jpg"
             position="Founder"
             link="https://www.linkedin.com/in/deepanshu-udhwani/"
             company={[

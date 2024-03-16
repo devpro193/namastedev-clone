@@ -1,7 +1,21 @@
+"use client";
+
 import Reveal from "@/components/framer/reveal";
-import NewRazorpay from "@/util/new-razorpay";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 export default async function Floating() {
+  const router = usePathname();
+  useEffect(() => {
+    const form = document.getElementById("rzp_payment_btn");
+    if (!form?.hasChildNodes()) {
+      let script = document.createElement("script");
+      script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+      script.async = true;
+      script.dataset.payment_button_id = "pl_NmmJdmhwt5r9iD";
+      form?.appendChild(script);
+    }
+  }, [router]);
   return (
     <div className="lg:hidden fixed bottom-0 z-20 flex justify-between items-center gap-2 p-4 px-6 bg-background/40 bg- w-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30">
       <Reveal>
@@ -46,8 +60,8 @@ export default async function Floating() {
           data-size="large"
         ></div> */}
 
-        {/* <form name="rzp_payment_form"></form> */}
-        <NewRazorpay id={"buy-mobile-course"} />
+        <form name="rzp_payment_btn"></form>
+        {/* <NewRazorpay id={"buy-mobile-course"} /> */}
       </Reveal>
     </div>
   );
