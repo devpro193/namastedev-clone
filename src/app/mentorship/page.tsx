@@ -7,6 +7,7 @@ import Video from "@/components/new-cohort/video";
 import Mentor from "@/components/new-cohort/mentor";
 import Hero from "./hero";
 import Profile from "./profile";
+import Faqs from "./faq";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -35,7 +36,7 @@ export default function Home() {
         youtubeId={"gIx8D2pyXVI"}
       />
       <Testimonials />
-      {/* <Companies /> */}
+      <Faqs />
       {/* <Highlights /> */}
       {/* <Testimonials /> */}
     </main>
