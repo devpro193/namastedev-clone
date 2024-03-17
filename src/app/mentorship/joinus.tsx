@@ -41,11 +41,8 @@ export default function JoinUs() {
 
         <div className="flex flex-col items-start gap-6 self-stretch rounded-xl border-t border-[#e4e7ec]/70 dark:bg-prime/40 dark:border-prime/70 divide-y-2 divide-prime lg:border px-4 py-6">
           {program.map(({ title, topics }, i) => (
-            <Reveal>
-              <div
-                key={i}
-                className="flex flex-col items-start justify-between w-full gap-4 self-stretch lg:flex-row"
-              >
+            <Reveal key={i}>
+              <div className="flex flex-col items-start justify-between w-full gap-4 self-stretch lg:flex-row">
                 <span className="pt-5 text-sm font-semibold leading-5 lg:pb-0 lg:pt-2">
                   {title}
                 </span>

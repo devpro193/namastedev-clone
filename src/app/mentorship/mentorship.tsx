@@ -43,9 +43,9 @@ export default function Mentorship() {
           <Reveal>
             <p className="self-stretch text-sm leading-[22px] text-muted-foreground">
               You might work on ALL or a few selected areas based on your
-              current preparation level. (Don't worry if you are not sure. Your
-              mentor will personalize everything for you. 1 on 1 personalized
-              mentorship for a reason)
+              current preparation level. (Don&apos;t worry if you are not sure.
+              Your mentor will personalize everything for you. 1 on 1
+              personalized mentorship for a reason)
             </p>
           </Reveal>
         </div>
