@@ -1,6 +1,7 @@
 import Reveal from "@/components/framer/reveal";
 import Image from "next/image";
 import Link from "next/link";
+import Career from "./career";
 
 type Profile = {
   name: string;
@@ -17,6 +18,14 @@ type Profile = {
     youtube?: string;
     twitter?: string;
   };
+  career: {
+    latest: string;
+    joined: string;
+    duration: string;
+    designation: string;
+    company: string;
+    imgSrc?: string;
+  }[];
 };
 
 function ProfileCard({
@@ -26,6 +35,7 @@ function ProfileCard({
   company,
   image,
   social,
+  career,
 }: Profile) {
   return (
     <Reveal>
@@ -182,6 +192,7 @@ function ProfileCard({
             </Reveal>
           </div>
         </div>
+        <Career details={career} />
       </div>
     </Reveal>
   );
@@ -207,6 +218,40 @@ export default function Profile() {
         linkedin: "https://www.linkedin.com/in/singh1aryan/",
         instagram: "https://www.instagram.com/singh.aryan.45/",
       },
+      career: [
+        {
+          latest: "Present",
+          joined: "August, 2020",
+          duration: "3y 8m",
+          company: "Google",
+          designation: "Software Engineer",
+          imgSrc: "/google.jfif",
+        },
+        {
+          latest: "August, 2020",
+          joined: "May, 2020",
+          duration: "4m",
+          company: "Google",
+          designation: "Software Engineer Intern",
+          imgSrc: "/google.jfif",
+        },
+        {
+          latest: "May, 2020",
+          joined: "January, 2019",
+          duration: "1y 5m",
+          company: "University of Massachusetts Amherst",
+          designation: "Software Engineer",
+          imgSrc: "/umassamherst_logo.jfif",
+        },
+        {
+          latest: "August, 2019",
+          joined: "June, 2019",
+          duration: "3m",
+          company: "Arrow Electronics",
+          designation: "Software Engineer Intern",
+          imgSrc: "/arrow_logo.jfif",
+        },
+      ],
     },
     {
       name: "Deepanshu Udhwani",
@@ -220,6 +265,47 @@ export default function Profile() {
       ],
       description:
         "Deepanshu Udhwani, drawing from experience at MakeMyTrip, Alibaba Cloud, and startups, founded 30 Days Coding. With a background in Computer Science and an MBA in Information Systems.",
+      career: [
+        {
+          latest: "Present",
+          joined: "July, 2023",
+          duration: "9m",
+          company: "30 Days Coding",
+          designation: "Founder",
+          imgSrc: "/30days_logo.jfif",
+        },
+        {
+          latest: "February, 2024",
+          joined: "July, 2021",
+          duration: "2y 8m",
+          company: "Newton School",
+          designation: "Student Mentor",
+          imgSrc: "/newtonschool_logo.jfif",
+        },
+        {
+          latest: "February, 2024",
+          joined: "June, 2021",
+          duration: "2y 9m",
+          company: "MakeMyTrip",
+          designation: "Software Engineer",
+          imgSrc: "/makemytrip_logo.jfif",
+        },
+        {
+          latest: "September, 2020",
+          joined: "July, 2020",
+          duration: "3m",
+          company: "Alibaba Cloud",
+          designation: "Software Development Intern",
+          imgSrc: "/alibaba.jfif",
+        },
+        {
+          latest: "March, 2020",
+          joined: "December, 2019",
+          duration: "4m",
+          company: "Ancient Vedic Roots",
+          designation: "Software Engineer",
+        },
+      ],
     },
   ];
 
@@ -229,7 +315,7 @@ export default function Profile() {
         <span className="flex items-center justify-center gap-4 relative">
           <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
           <h2 className="font-jakarta phone:shrink-0 text-[2rem] font-extrabold text-center">
-            Our Mentors
+            Our Elite Mentors
           </h2>
           <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
         </span>
@@ -237,7 +323,10 @@ export default function Profile() {
 
       <div className="w-full grid grid-cols-1 gap-6">
         {mentors.map(
-          ({ company, description, name, designation, social, image }, i) => (
+          (
+            { company, description, name, designation, social, image, career },
+            i
+          ) => (
             <Reveal key={i}>
               <ProfileCard
                 name={name}
@@ -246,6 +335,7 @@ export default function Profile() {
                 designation={designation}
                 company={company}
                 social={social}
+                career={career}
               />
             </Reveal>
           )

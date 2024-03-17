@@ -8,6 +8,8 @@ import Mentor from "@/components/new-cohort/mentor";
 import Hero from "./hero";
 import Profile from "./profile";
 import Faqs from "./faq";
+import Mentorship from "./mentorship";
+import JoinUs from "./joinus";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -28,6 +30,8 @@ export default function Home() {
         heroImage="/main/hero_section_mentor.png"
       />
       <Profile />
+      <Mentorship />
+      <JoinUs />
       <Video
         title={"1:1 Live Session with our Mentors"}
         desc={
