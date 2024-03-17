@@ -30,7 +30,7 @@ function ProfileCard({
   return (
     <Reveal>
       <div
-        className={`relative flex flex-col bg-second rounded-lg overflow-hidden shadow-inner transition-all duration-500 w-full items-start gap-7 border pb-6`}
+        className={`relative flex flex-col border-[#f2f4f7] dark:border-prime bg-second rounded-lg overflow-hidden shadow-inner transition-all duration-500 w-full items-start gap-7 border pb-6`}
       >
         <div className="w-full relative max-md:min-h-30 max-lg:min-h-40 lg:min-h-44 bg-gradient-to-r from-prime/30 via-head/30 to-prime/30 animate-gradient bg-[length:200%_auto0] flex items-end justify-end">
           <Reveal>

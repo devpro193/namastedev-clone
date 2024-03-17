@@ -11,7 +11,7 @@ function Faq({ question, answer }: Faq) {
             {question}
           </span>
         </Reveal>
-        <hr className="h-px w-full bg-[#f2f4f7] dark:prime" />
+        <hr className="h-px w-full border-[#f2f4f7] dark:border-prime" />
         <Reveal>
           <p className="w-full text-sm leading-5 text-muted-foreground">
             {answer}
