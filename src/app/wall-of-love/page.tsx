@@ -62,7 +62,7 @@ export default function Testimonial() {
     >
       <div className="mx-auto w-full max-w-[90rem] max-phone:p-[0_0_3.5rem] p-[0_min(6rem,_6.66%)] flex flex-col gap-20">
         <div className="grid place-items-center gap-8">
-          <div className="grid place-items-center gap-4">
+          <div className="grid place-items-center gap-2">
             <Reveal>
               <span className="flex items-center gap-4 relative">
                 <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
@@ -74,16 +74,25 @@ export default function Testimonial() {
             </Reveal>
 
             <Reveal>
-              <Link
-                href={"https://www.instagram.com/singh.aryan.45/"}
-                target="_blank"
-                className="flex gap-3"
-              >
+              <span className="flex gap-2  h-10 p-2 overflow-y-hidden">
                 <p>DM us on Instagram</p>
-                <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-prime relative inline-block">
-                  <span className="relative text-white">@Aryan Singh</span>
+                <span className="flex flex-col items-center gap-4 animate-show">
+                  <Link
+                    href={"https://www.instagram.com/singh.aryan.45/"}
+                    target="_blank"
+                    className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-prime relative inline-block before:transition-all"
+                  >
+                    <span className="relative text-white">@singh.aryan.45</span>
+                  </Link>
+                  <Link
+                    href={"https://www.instagram.com/itsudhwani/"}
+                    target="_blank"
+                    className="before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-white relative inline-block before:transition-all w-fit"
+                  >
+                    <span className="relative text-prime">@itsudhwani</span>
+                  </Link>
                 </span>
-              </Link>
+              </span>
             </Reveal>
           </div>
           {/* <Reveal> */}

@@ -106,6 +106,12 @@ const config = {
           '0%': { transform: 'rotate(0deg)' },
           '50%': { transform: 'rotate(-180deg)' },
           '100%': { transform: 'rotate(-360deg)' },
+        },
+        "show": {
+          "10%": { transform: "translateY(0px)" },
+          "30%": { transform: "translateY(-40px)" },
+          "70%": { transform: "translateY(-40px)" },
+          "90%": { transform: "translateY(0px)" },
         }
       },
       animation: {
@@ -115,7 +121,8 @@ const config = {
         "loop-scroll": "loop-scroll 30s linear infinite",
         "loop-scroll-reverse": "loop-scroll-reverse 30s linear infinite",
         "rotate-clock": "rotate-clock 10s linear infinite",
-        "rotate-anitclock": "rotate-anticlock 10s linear infinite"
+        "rotate-anitclock": "rotate-anticlock 10s linear infinite",
+        "show": "show 10s ease-in-out infinite"
       },
       fontFamily: {
         jakarta: ['var(--font-jakarta)'],
