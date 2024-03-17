@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import Testimonials from "@/components/new-cohort/testimonials";
+import Testimonials from "./testimonials";
 import Companies from "@/components/new-cohort/companies";
 import Course from "@/components/new-cohort/course";
 import Highlights from "@/components/new-cohort/highligths";
 import Video from "@/components/new-cohort/video";
 import Mentor from "@/components/new-cohort/mentor";
 import Hero from "./hero";
+import Profile from "./profile";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -25,7 +26,7 @@ export default function Home() {
         desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
         heroImage="/main/hero_section_mentor.png"
       />
-      <Mentor />
+      <Profile />
       <Video
         title={"1:1 Live Session with our Mentors"}
         desc={
@@ -33,9 +34,10 @@ export default function Home() {
         }
         youtubeId={"gIx8D2pyXVI"}
       />
-      <Companies />
-      {/* <Highlights /> */}
       <Testimonials />
+      {/* <Companies /> */}
+      {/* <Highlights /> */}
+      {/* <Testimonials /> */}
     </main>
   );
 }

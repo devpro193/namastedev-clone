@@ -18,20 +18,24 @@ export default function Hero({
       <div
         className={`w-full grid relative overflow-hidden min-h-[500px] object-center bg-no-repeat`}
       >
-        <Image
-          src={"/main/ep2.png"}
-          alt="mentor hero"
-          width={1000}
-          height={1000}
-          className="absolute object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35"
-        />
-        <Image
-          src={"/main/ep1.png"}
-          alt="mentor hero"
-          width={650}
-          height={650}
-          className="absolute object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35 max-tab:h-96 max-tab:w-96"
-        />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <Image
+            src={"/main/ep2.png"}
+            alt="mentor hero"
+            width={1000}
+            height={1000}
+            className="object-cover opacity-35 animate-rotate-clock max-tab:h-[500px] max-tab:w-[500px] h-[800px] w-[800px]"
+          />
+        </div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <Image
+            src={"/main/ep1.png"}
+            alt="mentor hero"
+            width={650}
+            height={650}
+            className="object-cover opacity-35 max-tab:h-96 max-tab:w-96 h-[500px] w-[500px] animate-rotate-anitclock"
+          />
+        </div>
         <div className="tab:p-[11.5rem_5.5rem_5.75rem] max-tab:pt-[5rem] max-tab:pb-[4.5rem] m-auto max-w-4xl grid gap-7 place-items-center phone:text-center text-white">
           <h1
             className={`font-jakarta phone:text-[3.5rem] text-[2.5rem] font-extrabold bg-gradient-to-r from-lime-300 to-green-800 text-transparent bg-clip-text leading-tight px-2 max-phone:px-6`}
