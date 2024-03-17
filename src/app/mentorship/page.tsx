@@ -1,11 +1,11 @@
-import Hero from "@/components/new-cohort/hero";
 import type { Metadata } from "next";
 import Testimonials from "@/components/new-cohort/testimonials";
 import Companies from "@/components/new-cohort/companies";
 import Course from "@/components/new-cohort/course";
 import Highlights from "@/components/new-cohort/highligths";
-import NewMentor from "@/components/new-cohort/new-mentor";
 import Video from "@/components/new-cohort/video";
+import Mentor from "@/components/new-cohort/mentor";
+import Hero from "./hero";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -20,16 +20,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="bg-background dark:bg-bg min-h-svh transition-all">
-      <NewMentor />
-      {/* <Hero
-        title="LIVE Full Stack Web Development (MERN & NEXT) Cohort"
+      <Hero
+        title=" Join 30DC Private Mentorship Community"
         desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
-        subTitle="Build fullstack engineering skills with confidence"
-        subDesc="Achieve mastery in fullstack engineering through practical projects and expert feedback from industry professionals in this comprehensive program."
-        ytId="iQR3fb3yJko"
-        heroImage="bg-[url('/main/hero_section_course.webp')]"
-      /> */}
-      <Course />
+        heroImage="/main/hero_section_mentor.png"
+      />
+      <Mentor />
       <Video
         title={"1:1 Live Session with our Mentors"}
         desc={
@@ -38,7 +34,7 @@ export default function Home() {
         youtubeId={"gIx8D2pyXVI"}
       />
       <Companies />
-      <Highlights />
+      {/* <Highlights /> */}
       <Testimonials />
     </main>
   );

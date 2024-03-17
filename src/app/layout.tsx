@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { inter, localJakarta, mont, mulish, space_mono } from "@/lib/font";
+import { inter, localJakarta, mont, mulish } from "@/lib/font";
 import Whatsapp from "@/components/whatsapp";
 import MobileMenu from "@/components/mobile-menu";
 import Banner from "@/components/home-components/banner";
@@ -25,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${mont.variable} ${localJakarta.variable} ${space_mono.variable} ${mulish.variable} ${inter.variable} font-jakarta`}
-      >
+      <body className={`${localJakarta.variable} font-jakarta`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <MobileMenu />
           <Banner />

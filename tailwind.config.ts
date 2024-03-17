@@ -97,6 +97,15 @@ const config = {
         'loop-scroll-reverse': {
           from: { transform: "translateX(-100%)" },
           to: { transform: "translateX(0)" },
+        },
+        'rotate-clock': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'rotate-anticlock': {
+          '0%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(-180deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
         }
       },
       animation: {
@@ -105,6 +114,8 @@ const config = {
         'gradient': 'gradient 2s linear infinite',
         "loop-scroll": "loop-scroll 30s linear infinite",
         "loop-scroll-reverse": "loop-scroll-reverse 30s linear infinite",
+        "rotate-clock": "rotate-clock 10s linear infinite",
+        "rotate-anitclock": "rotate-anticlock 10s linear infinite"
       },
       fontFamily: {
         jakarta: ['var(--font-jakarta)'],
