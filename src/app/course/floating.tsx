@@ -1,6 +1,7 @@
 import AnimatedButton from "@/components/animated-button";
 import Reveal from "@/components/framer/reveal";
 import NewRazorpay from "@/util/new-razorpay";
+import { Key } from "lucide-react";
 
 export default async function Floating() {
   return (
@@ -41,7 +42,10 @@ export default async function Floating() {
         </Link> */}
 
         <AnimatedButton link="https://rzp.io/l/kZPObNXZ">
-          Buy Now
+          <section className="flex gap-2 items-center">
+            <span className="tracking-wide">Buy Now</span>
+            <Key className="h-5 w-5" />
+          </section>
         </AnimatedButton>
 
         {/* <div

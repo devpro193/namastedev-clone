@@ -32,7 +32,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          <Whatsapp />
+          {/* <Whatsapp /> */}
         </ThemeProvider>
       </body>
     </html>

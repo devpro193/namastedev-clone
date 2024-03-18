@@ -216,7 +216,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-background dark:bg-bg min-h-svh transition-all">
+    <main className="bg-background bg-bg min-h-svh transition-all">
       <Hero
         title="Solve, Save, and Revise DSA"
         desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."

@@ -5,10 +5,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div>
-      {children}
-      <Floating />
-    </div>
-  );
+  return <div>{children}</div>;
 }
