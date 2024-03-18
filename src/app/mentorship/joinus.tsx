@@ -4,7 +4,7 @@ export default function JoinUs() {
   let program = [
     {
       title: "If you're targeting:",
-      topics: ["Frontend Developer"],
+      topics: ["Frontend Developer", "Backend Developer"],
     },
     {
       title: "If you're a:",
