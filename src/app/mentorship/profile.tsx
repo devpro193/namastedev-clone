@@ -26,6 +26,7 @@ type Profile = {
     company: string;
     imgSrc?: string;
   }[];
+  exp: number;
 };
 
 function ProfileCard({
@@ -36,6 +37,7 @@ function ProfileCard({
   image,
   social,
   career,
+  exp,
 }: Profile) {
   return (
     <Reveal>
@@ -138,7 +140,7 @@ function ProfileCard({
 
               <Reveal>
                 <div className="md:hidden flex w-full flex-col gap-2">
-                  <p className="text-xs">9+ years of experience</p>
+                  <p className="text-xs">{exp}+ years of experience</p>
                   {company.map(({ name, path }, i) => {
                     return (
                       <section
@@ -169,7 +171,7 @@ function ProfileCard({
             <Reveal>
               <div className="hidden md:block">
                 <div className="flex w-full flex-col gap-2">
-                  <p className="text-xs">9+ years of experience</p>
+                  <p className="text-xs">{exp}+ years of experience</p>
                   {company.map(({ name, path }, i) => {
                     return (
                       <section
@@ -252,6 +254,7 @@ export default function Profile() {
           imgSrc: "/arrow_logo.jfif",
         },
       ],
+      exp: 5,
     },
     {
       name: "Deepanshu Udhwani",
@@ -306,6 +309,7 @@ export default function Profile() {
           designation: "Software Engineer",
         },
       ],
+      exp: 6,
     },
   ];
 
@@ -324,7 +328,16 @@ export default function Profile() {
       <div className="w-full grid grid-cols-1 gap-6">
         {mentors.map(
           (
-            { company, description, name, designation, social, image, career },
+            {
+              company,
+              description,
+              name,
+              designation,
+              social,
+              image,
+              career,
+              exp,
+            },
             i
           ) => (
             <Reveal key={i}>
@@ -336,6 +349,7 @@ export default function Profile() {
                 company={company}
                 social={social}
                 career={career}
+                exp={exp}
               />
             </Reveal>
           )

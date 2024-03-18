@@ -6,7 +6,14 @@ import { TabMenu } from "../tabs";
 import { MapIcon } from "lucide-react";
 import NewRazorpay from "@/util/new-razorpay";
 
-export default function Course() {
+export default function Course({
+  course,
+}: {
+  course: {
+    title: string;
+    topics: string[];
+  }[];
+}) {
   return (
     <div className="grid place-items-center gap-8 max-w-[90rem] m-auto py-8">
       <Reveal>
@@ -21,7 +28,7 @@ export default function Course() {
 
       <Reveal>
         <div className="flex max-lg:flex-col gap-3 max-lg:items-center max-lg:gap-10 min-h-96">
-          <TabMenu />
+          <TabMenu course={course} />
 
           <Reveal width="fit-content">
             <div className="lg:ml-[4.5rem] max-lg:m-auto flex flex-col items-start lg:p-[2rem_1.5rem_2.5rem] p-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-8 rounded-xl bg-second h-fit">

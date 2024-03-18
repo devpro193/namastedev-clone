@@ -13,7 +13,18 @@ export default function Mentorship() {
     },
     {
       title: "Stage 2: Getting your up to speed in your technical skills",
-      topics: ["DSA", "Frontend Architecture", "Teamwork", "HTML"],
+      topics: [
+        "DSA",
+        "Frontend Architecture",
+        "Teamwork",
+        "Next JS",
+        "React JS",
+        "Git",
+        "UI",
+        "User Experience",
+        "JavaScript",
+        "Problem Solving",
+      ],
     },
     {
       title: "Stage 3: Practicing and improving your interview skills",
