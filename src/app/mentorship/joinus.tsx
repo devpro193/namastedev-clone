@@ -41,23 +41,25 @@ export default function JoinUs() {
 
         <div className="flex flex-col items-start gap-6 self-stretch rounded-xl border-t border-[#e4e7ec]/70 dark:bg-prime/40 dark:border-prime/70 divide-y-2 divide-prime lg:border px-4 py-6">
           {program.map(({ title, topics }, i) => (
-            <Reveal key={i}>
-              <div className="flex flex-col items-start justify-between w-full gap-4 self-stretch lg:flex-row">
+            <div
+              key={i}
+              className="flex flex-col items-start justify-between w-full gap-4 self-stretch lg:flex-row pt-4"
+            >
+              <Reveal>
                 <span className="pt-5 text-sm font-semibold leading-5 lg:pb-0 lg:pt-2">
                   {title}
                 </span>
-                <section className="flex flex-wrap justify-start gap-3 lg:justify-end">
-                  {topics.map((e, i) => (
-                    <button
-                      key={i}
-                      className="flex items-center gap-2 py-[10px] px-3 rounded-md border border-[#d0d5dd] dark:border-prime bg-white dark:bg-second text-muted-foreground text-[12px] font-medium leading-[18px] whitespace-nowrap"
-                    >
+              </Reveal>
+              <section className="flex flex-wrap justify-start gap-3 lg:justify-end">
+                {topics.map((e, i) => (
+                  <Reveal key={i}>
+                    <button className="flex items-center gap-2 py-[10px] px-3 rounded-md border border-[#d0d5dd] dark:border-prime bg-white dark:bg-second text-muted-foreground text-[12px] font-medium leading-[18px] whitespace-nowrap">
                       {e}
                     </button>
-                  ))}
-                </section>
-              </div>
-            </Reveal>
+                  </Reveal>
+                ))}
+              </section>
+            </div>
           ))}
         </div>
       </div>

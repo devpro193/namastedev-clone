@@ -73,26 +73,20 @@ export default function Footer() {
             <Reveal>
               <div className="flex text-sm gap-4 flex-col max-w-64">
                 <span className="text-muted-foreground uppercase">
-                  PRODUCT COURSES
+                  LIVE COURSES
                 </span>
-                <Link
-                  className="lg:hover:text-head transition-all"
-                  href={"/course/mern-full-stack-developer-course"}
-                >
-                  MERN FullStack Stack
-                </Link>
                 <Link
                   className="lg:hover:text-head transition-all"
                   href={"/course/dsa-live-placement-ready-course"}
                 >
                   DSA Live Placement Course
                 </Link>
-                <Link
+                {/* <Link
                   className="lg:hover:text-head transition-all"
                   href={"/course/mern-cohort"}
                 >
                   Live FullStack Web Development MERN & NEXT
-                </Link>
+                </Link> */}
               </div>
             </Reveal>
             <Reveal>
