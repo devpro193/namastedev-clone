@@ -3,8 +3,8 @@
 import Reveal from "@/components/framer/reveal";
 import Link from "next/link";
 import { TabMenu } from "../tabs";
-import { MapIcon } from "lucide-react";
-import NewRazorpay from "@/util/new-razorpay";
+import { Key, MapIcon } from "lucide-react";
+import AnimatedButton from "../animated-button";
 
 export default function Course({
   course,
@@ -44,15 +44,15 @@ export default function Course({
                   throughout the program.
                 </p>
               </section>
-              <span className="max-lg:mx-auto">
+              {/* <span className="max-lg:mx-auto">
                 <NewRazorpay id={"buy-course"} />
-              </span>
-              {/* <AnimatedButton>
-                      <section className="flex gap-2 items-center">
-                        <span className="tracking-wide">Buy Full Course</span>
-                        <Key className="h-5 w-5" />
-                      </section>
-                    </AnimatedButton> */}
+              </span> */}
+              <AnimatedButton link="https://rzp.io/l/kZPObNXZ">
+                <section className="flex gap-2 items-center">
+                  <span className="tracking-wide">Buy Full Course</span>
+                  <Key className="h-5 w-5" />
+                </section>
+              </AnimatedButton>
               {/* <div
                       className="razorpay-embed-btn"
                       data-url="https://pages.razorpay.com/pl_NlXmnJkIOZFVcc/view"

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 function TestimonyImages({ imageUrl }: { imageUrl: string }) {
   return (
-    <div className="max-w-[23.75rem] w-full p-6 bg-second rounded-lg lg:max-h-[23.75rem] relative grid gap-4">
+    <div className="max-w-[23.75rem] w-full p-6 bg-second rounded-lg lg:min-h-[23.75rem] relative grid gap-4">
       <Image
         src={imageUrl}
         alt="instrutor"
@@ -96,7 +96,7 @@ export default function Testimonial() {
             </Reveal>
           </div>
           {/* <Reveal> */}
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 justify-center p-3">
+          <div className="flex flex-wrap gap-8 justify-center p-3">
             {reviews.map((e, i) => (
               <Reveal key={i}>
                 <TestimonyImages imageUrl={e} />

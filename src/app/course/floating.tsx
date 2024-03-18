@@ -1,3 +1,4 @@
+import AnimatedButton from "@/components/animated-button";
 import Reveal from "@/components/framer/reveal";
 import NewRazorpay from "@/util/new-razorpay";
 
@@ -38,6 +39,11 @@ export default async function Floating() {
               
           </div>
         </Link> */}
+
+        <AnimatedButton link="https://rzp.io/l/kZPObNXZ">
+          Buy Now
+        </AnimatedButton>
+
         {/* <div
           className="razorpay-embed-btn"
           data-url="https://pages.razorpay.com/pl_NlXmnJkIOZFVcc/view"
@@ -47,7 +53,7 @@ export default async function Floating() {
         ></div> */}
 
         {/* <form name="rzp_payment_form"></form> */}
-        <NewRazorpay id={"buy-mobile-course"} />
+        {/* <NewRazorpay id={"buy-mobile-course"} /> */}
       </Reveal>
     </div>
   );

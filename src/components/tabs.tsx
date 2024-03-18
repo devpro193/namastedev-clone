@@ -14,9 +14,9 @@ export function TabMenu({
   return (
     <Tabs
       defaultValue="chapter1"
-      className="flex shrink-0 max-lg:flex-col gap-2 text-lg h-full"
+      className="flex shrink-0 max-lg:flex-col gap-2 text-lg"
     >
-      <TabsList className="text-muted-foreground lg:grid lg:place-items-start flex flex-wrap gap-3 h-fit">
+      <TabsList className="text-muted-foreground lg:grid lg:place-items-start flex flex-wrap gap-3 h-fit max-h-80 overflow-y-scroll scroll">
         {course.map((_, i) => (
           <TabsTrigger key={i} value={`chapter${i + 1}`}>
             <span>Chapter {i + 1}</span>
@@ -30,13 +30,16 @@ export function TabMenu({
         {course.map(({ title, topics }, i) => (
           <TabsContent
             key={i}
-            className="lg:max-w-96 w-full overflow-y-scroll scroll px-4"
+            className="lg:max-w-96 w-full overflow-y-scroll scroll px-4 lg:max-h-96"
             value={`chapter${i + 1}`}
           >
-            <div className="flex flex-col gap-5 max-w-[26rem]">
+            <div className="flex flex-col gap-5 max-w-[26rem] max-lg:text-center">
               <h3 className="text-3xl text-prime font-bold">{title}</h3>
               {topics.map((e, index) => (
-                <span key={index} className="flex gap-2 items-start">
+                <span
+                  key={index}
+                  className="flex gap-2 max-lg:mx-auto lg:items-start"
+                >
                   <LucideCheckCircle className="h-6 w-6 stroke-prime shrink-0" />
                   <p className="text-base">{e}</p>
                 </span>

@@ -16,7 +16,7 @@ export default function Hero({
   return (
     <Reveal>
       <div
-        className={`w-full grid relative overflow-hidden min-h-[500px] bg-footer`}
+        className={`w-full grid relative overflow-hidden min-h-[500px] bg-gradient-to-t from-bg to-footer`}
       >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible">
           <Image
