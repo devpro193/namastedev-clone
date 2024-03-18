@@ -49,19 +49,19 @@ export const navTitles: {
     href: [
       {
         title: "DSA Sheets",
-        href: "/course/mern-cohort",
+        href: "http://dsa.30dayscoding.com/",
         description:
           "Explore our comprehensive Data Structures and Algorithms (DSA) sheet, meticulously curated to aid your journey through our DSA courses.",
       },
       {
         title: "Resume Builder",
-        href: "/course/mern-cohort",
+        href: "http://resume.30dayscoding.com/",
         description:
           "Create your best resume ever with our All-in-one AI Builder, Reviewer, and Optimizer.",
       },
       {
         title: "Premium Guides",
-        href: "/course/mern-cohort",
+        href: "http://courses.30dayscoding.com/",
         description:
           "Elevate your coding skills with our premium guide, meticulously crafted to propel you towards mastery in programming. Dive deep into advanced concepts, best practices, and insider tips curated by industry experts.",
       },

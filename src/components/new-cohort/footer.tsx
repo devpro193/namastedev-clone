@@ -94,9 +94,24 @@ export default function Footer() {
                 <span className="text-muted-foreground uppercase">
                   Resourse
                 </span>
-                <span>DSA Sheets</span>
-                <span>Premium Guides</span>
-                <span>Resume Builder</span>
+                <Link
+                  className="lg:hover:text-head transition-all"
+                  href={"http://dsa.30dayscoding.com/"}
+                >
+                  DSA Sheets
+                </Link>
+                <Link
+                  className="lg:hover:text-head transition-all"
+                  href={"http://courses.30dayscoding.com/"}
+                >
+                  Premium Guides
+                </Link>
+                <Link
+                  className="lg:hover:text-head transition-all"
+                  href={"http://resume.30dayscoding.com/"}
+                >
+                  Resume Builder
+                </Link>
               </div>
             </Reveal>
             <Reveal>
