@@ -49,7 +49,7 @@ export function CourseTabMenu({
                 {courses.map(({ title, imgSrc }, index) => (
                   <Link
                     key={index}
-                    href={"/mern-cohort"}
+                    href={"/courses/mern-cohort"}
                     className="flex-1 lg:w-[300px] max-lg:max-w-[550px] shadow-[0_2px_40px_0_rgba(0,0,0,.2)]"
                   >
                     <div className="max-lg:m-auto flex lg:flex-col max-lg:items-center max-lg:justify-center lg:p-[2rem_1.5rem_2.5rem] p-8 gap-4 rounded-t-xl bg-second h-fit">

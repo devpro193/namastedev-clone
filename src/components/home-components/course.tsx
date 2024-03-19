@@ -23,7 +23,7 @@ export default function Course() {
 
       <div className="flex w-full max-lg:flex-col lg:gap-6 justify-center max-lg:items-center max-lg:gap-10 max-lg:max-w-[550px] px-10">
         <Link
-          href={"/mern-cohort"}
+          href={"/course/mern-cohort"}
           className="flex-1 max-lg:w-full lg:max-w-[450px] hover:opacity-90"
         >
           <Reveal>
@@ -50,7 +50,7 @@ export default function Course() {
         </Link>
 
         <Link
-          href={"/dsa-live-placement-ready-course"}
+          href={"/course/dsa-live-placement-ready-course"}
           className="flex-1 max-lg:w-full lg:max-w-[450px] hover:opacity-90"
         >
           <Reveal>
