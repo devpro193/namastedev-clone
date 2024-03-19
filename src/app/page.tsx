@@ -1,6 +1,6 @@
 import Hero from "@/components/home-components/new-hero";
 import Companies from "@/components/new-cohort/companies";
-import Course from "@/components/new-cohort/course";
+import Course from "@/components/home-components/course";
 import Highlights from "@/components/new-cohort/highligths";
 import Mentor from "@/components/new-cohort/mentor";
 import Testimonials from "@/components/new-cohort/testimonials";
@@ -17,51 +17,6 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const course = [
-    {
-      title: "Introduction to MERN Stack",
-      topics: [
-        "Welcome to our course. DM me for any help!",
-        "We have EVERYTHING you need in this course.",
-        "What is MERN stack ?",
-        "Role of Every Component of MERN",
-      ],
-    },
-    {
-      title: "Introduction to the world of Web development",
-      topics: [
-        "Introduction of HTML, CSS and JS",
-        "CSS, Tailwind CSS, Shadcn, Styling (must watch)",
-      ],
-    },
-    {
-      title: "Everything about HTML, CSS",
-      topics: [
-        "Introduction of HTML, CSS and JS",
-        "CSS, Tailwind CSS, Shadcn, Styling (must watch)",
-        "HTML: Intro, Tags, elements, headings",
-        "HTML: Lists , Tables , Forms",
-        "HTML: div, classes , id ,styles",
-        "CSS: Flexbox and Gridbox",
-        "Tailwind CSS complete project ",
-        "Tailwind CSS generic projects ",
-      ],
-    },
-    {
-      title: "Everything about Javascript",
-      topics: [
-        "Inroduction to JavaScript - basics , Looping",
-        "JavaScript - Functions, Arrays",
-        "JavaScript - promises, async, await, and objects",
-        "JavaScript - proto , prototype and class",
-        "JavaScript - DOM manipulation and apps",
-        "JavaScript - Asynchronous, Set Timeout , Callback, Callback Hell",
-        "JavaScript - live class - async await, promises, callback",
-        "Portfolio project with JavaScript",
-        "Form Validation project in JS",
-      ],
-    },
-  ];
   return (
     <main className={`font-jakarta bg-bg min-h-svh`}>
       <Hero
@@ -72,7 +27,7 @@ export default function Home() {
         subDesc="Whether you're a beginner looking to dive into programming or an experienced developer seeking to enhance your skills, our courses & mentors helps to all levels of proficiency."
         ytId="dao2HaGzc3M"
       />
-      <Course course={course} />
+      <Course />
       <Mentor />
       <Companies />
       <Highlights />
