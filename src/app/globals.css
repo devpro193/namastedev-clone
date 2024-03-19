@@ -71,3 +71,18 @@
 .scroll::-webkit-scrollbar-thumb {
   background: #ffffff60;
 }
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 3px; /* height of horizontal scrollbar ← You're missing this */
+  width: 4px; /* width of vertical scrollbar */
+}
+
+/* Track */
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #ffffff60;
+}
