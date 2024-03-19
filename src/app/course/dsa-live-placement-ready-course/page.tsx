@@ -218,9 +218,9 @@ export default function Home() {
   return (
     <main className="bg-background bg-bg min-h-svh transition-all">
       <Hero
-        title="Solve, Save, and Revise DSA"
+        title="Learn DSA and Get Ready for Placement"
         desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
-        subTitle="Learn DSA and get ready for placement"
+        subTitle="Solve, Save, and Revise DSA"
         subDesc="Master dsa through practicing algorithms under expert's guidance from industry professionals. A placement driven course."
         ytId="tJkZA9JoZCw"
         heroImage="bg-[url('/main/hero_section_dsa.png')]"

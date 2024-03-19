@@ -3,6 +3,54 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
+  let cousre = {
+    title: "Courses",
+    href: [
+      // {
+      //   title: "Mern FullStack Course",
+      //   href: "/course/mern-full-stack-developer-course",
+      //   description:
+      //     "A complete mern full stack development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
+      // },
+      {
+        title: "Live Mern Cohort",
+        href: "/course/mern-cohort",
+        description:
+          "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
+      },
+      {
+        title: "Solve, Save, and Revise DSA",
+        href: "/course/dsa-live-placement-ready-course",
+        description:
+          "A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com",
+      },
+      {
+        title: "MERN FullStack Course",
+        href: "https://courses.30dayscoding.com/courses/MERN-full-stack-web-development-64eebdb8e4b0a14befedc15d",
+        description:
+          "A complete mern full stack development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
+      },
+      {
+        title: "DSA Mastery Course",
+        href: "https://courses.30dayscoding.com/courses/DSA-revision-placement-course-64f93394e4b0e75ce98af312",
+        description:
+          "A full dsa mastry course from 30 days coding. Checkout on www.courses.30dayscoding.com",
+      },
+      {
+        title: "Next JS FullStack",
+        href: "https://courses.30dayscoding.com/courses/NEXT-JS-full-stack-web-development-course-64eebe15e4b06aa775217381-64eebe15e4b06aa775217381",
+        description:
+          "A live next js fullstack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
+      },
+      {
+        title: "All Courses Package",
+        href: "https://courses.30dayscoding.com/courses/All-courses-package-652a1994e4b05a145bae5cd0",
+        description:
+          "Get a course from 30 days coding. Checkout on www.courses.30dayscoding.com",
+      },
+    ],
+  };
+
   return (
     <Reveal>
       <div className="bg-footer w-full">
@@ -75,12 +123,16 @@ export default function Footer() {
                 <span className="text-muted-foreground uppercase">
                   LIVE COURSES
                 </span>
-                <Link
-                  className="lg:hover:text-head transition-all"
-                  href={"/course/dsa-live-placement-ready-course"}
-                >
-                  DSA Live Placement Course
-                </Link>
+                {cousre.href.map(({ title, href }, i) => (
+                  <Link
+                    key={i}
+                    className="lg:hover:text-head transition-all"
+                    href={href}
+                  >
+                    {title}
+                  </Link>
+                ))}
+
                 {/* <Link
                   className="lg:hover:text-head transition-all"
                   href={"/course/mern-cohort"}
@@ -102,15 +154,15 @@ export default function Footer() {
                 </Link>
                 <Link
                   className="lg:hover:text-head transition-all"
-                  href={"http://courses.30dayscoding.com/"}
-                >
-                  Premium Guides
-                </Link>
-                <Link
-                  className="lg:hover:text-head transition-all"
                   href={"http://resume.30dayscoding.com/"}
                 >
                   Resume Builder
+                </Link>
+                <Link
+                  className="lg:hover:text-head transition-all"
+                  href={"https://courses.30dayscoding.com/products"}
+                >
+                  Premium Guides
                 </Link>
               </div>
             </Reveal>

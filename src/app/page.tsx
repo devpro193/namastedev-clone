@@ -1,4 +1,4 @@
-import Hero from "@/components/home-components/hero";
+import Hero from "@/components/home-components/new-hero";
 import Companies from "@/components/new-cohort/companies";
 import Course from "@/components/new-cohort/course";
 import Highlights from "@/components/new-cohort/highligths";
