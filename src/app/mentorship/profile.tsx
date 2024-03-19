@@ -27,6 +27,7 @@ type Profile = {
     imgSrc?: string;
   }[];
   exp: number;
+  skills: string[];
 };
 
 function ProfileCard({
@@ -38,13 +39,14 @@ function ProfileCard({
   social,
   career,
   exp,
+  skills,
 }: Profile) {
   return (
     <Reveal>
       <div
         className={`relative flex flex-col border-[#f2f4f7] dark:border-prime bg-second rounded-lg overflow-hidden shadow-inner transition-all duration-500 w-full items-start gap-7 border pb-6`}
       >
-        <div className="w-full relative max-md:min-h-30 max-lg:min-h-40 lg:min-h-44 bg-gradient-to-r from-prime/30 via-head/30 to-prime/30 animate-gradient bg-[length:200%_auto0] flex items-end justify-end">
+        <div className="w-full relative max-md:min-h-30 max-lg:min-h-40 lg:min-h-44 bg-gradient-to-r from-prime/20 via-head/20 to-prime/20 animate-gradient bg-[length:200%_auto0] flex items-end justify-end">
           <Reveal>
             <section className="flex gap-2 p-3 max-phone:grid max-phone:grid-cols-2">
               {social.linkedin && (
@@ -194,6 +196,30 @@ function ProfileCard({
             </Reveal>
           </div>
         </div>
+
+        {/* Skills */}
+        <div className="flex flex-col gap-5 rounded-xl bg-white dark:bg-second px-5 lg:px-8 w-full">
+          <Reveal>
+            <span className="self-stretch text-xl font-semibold leading-[30px] lg:pb-6">
+              Skills
+            </span>
+          </Reveal>
+
+          <Reveal>
+            <div className="flex flex-wrap gap-4">
+              {skills.map((skill, i) => (
+                <button
+                  key={i}
+                  className="flex items-center justify-center gap-2 rounded-xl border px-3 py-2 duration-200 border-[#e4e7ec] dark:border-prime dark:bg-second bg-white box-border"
+                >
+                  {skill}
+                </button>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+
+        {/* Career */}
         <Career details={career} />
       </div>
     </Reveal>
@@ -255,12 +281,57 @@ export default function Profile() {
         },
       ],
       exp: 5,
+      skills: [
+        "Algorithms",
+        "Full-Stack Development",
+        "User Experience",
+        "Artificial Intelligence ",
+        "User Interface Design",
+        "Statistics",
+        "Data Structures",
+        "Web Applications",
+        "Object-Oriented Programming",
+        "Machine Learning",
+        "Data Analysis",
+        "Java",
+        "JavaScript",
+        "Android",
+        "Python ",
+        "HTML5",
+        "CSS",
+        "XML",
+        "Node.js",
+        "Kotlin",
+        "React Native",
+        "Ruby on Rails",
+        "Github",
+        "React.js",
+        "Next.js",
+        "Ruby",
+        "Firebase",
+        "RESTful WebServices",
+        "Flutter",
+        "SQL",
+        "MongoDB",
+        "PHP",
+        "MySQL",
+        "Git",
+        "REST",
+        "Matlab",
+        "Retrofit",
+        "Mobile Experiences",
+        "Android StudioAndroid Studio",
+        "Back-End Web Development",
+      ],
     },
     {
       name: "Deepanshu Udhwani",
       image: "https://i.ibb.co/8mFwp1C/instructor2.jpg",
       designation: "Founder",
-      social: { linkedin: "https://www.linkedin.com/in/deepanshu-udhwani/" },
+      social: {
+        linkedin: "https://www.linkedin.com/in/deepanshu-udhwani/",
+        instagram: "https://www.instagram.com/itsudhwani/",
+      },
       company: [
         { name: "MakeMyTrip", path: "/makemytrip_logo.jfif" },
         { name: "Alibaba Cloud", path: "/alibaba.jfif" },
@@ -310,6 +381,27 @@ export default function Profile() {
         },
       ],
       exp: 6,
+      skills: [
+        "MySQL",
+        "MongoDB",
+        "Django",
+        "Product Development",
+        "Python",
+        "C++",
+        "HTML5",
+        "JavaScript",
+        "Blockchain",
+        "Cloud Computing",
+        "Artificial Intelligence",
+        "Java",
+        "Node.js",
+        "React.js",
+        "Go",
+        "Full-Stack Development",
+        "DSA",
+        "Data Structures",
+        "Software Development",
+      ],
     },
   ];
 
@@ -325,7 +417,7 @@ export default function Profile() {
         </span>
       </Reveal>
 
-      <div className="w-full grid grid-cols-1 gap-6">
+      <div className="w-full grid grid-cols-1 gap-10 lg:gap-20">
         {mentors.map(
           (
             {
@@ -337,6 +429,7 @@ export default function Profile() {
               image,
               career,
               exp,
+              skills,
             },
             i
           ) => (
@@ -350,6 +443,7 @@ export default function Profile() {
                 social={social}
                 career={career}
                 exp={exp}
+                skills={skills}
               />
             </Reveal>
           )
