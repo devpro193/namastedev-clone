@@ -36,6 +36,8 @@ const TabsTrigger = React.forwardRef<
   />
 ));
 
+TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
+
 const NewTabsTrigger = React.forwardRef<
   React.ElementRef<typeof TabsPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>
