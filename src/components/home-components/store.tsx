@@ -13,36 +13,20 @@ export default function Store() {
         <CourseTabMenu
           data={[
             {
-              title: "Popular courses",
+              title: "AI and Blockchain",
               courses: [
                 {
-                  title: "Basic of Web Developments",
-                  imgSrc: "/fullstack.png",
+                  title: "Complete BLOCKCHAIN  and WEB3 course",
+                  imgSrc: "/courses/blockchain.jpg",
                 },
                 {
-                  title: "Java Spring Boot 2",
-                  imgSrc: "/fullstack.png",
-                },
-                {
-                  title: "Basic of Web Developments",
-                  imgSrc: "/fullstack.png",
-                },
-                {
-                  title: "Java Spring Boot 2",
-                  imgSrc: "/fullstack.png",
-                },
-                {
-                  title: "Basic of Web Developments",
-                  imgSrc: "/fullstack.png",
-                },
-                {
-                  title: "Java Spring Boot 2",
-                  imgSrc: "/fullstack.png",
+                  title: "AI - CHAT GPT FULL stack course",
+                  imgSrc: "/courses/ai.jpg",
                 },
               ],
             },
             {
-              title: "New Courses",
+              title: "Full Stack Development",
               courses: [
                 {
                   title: "Basic of Web Developments",
@@ -51,7 +35,7 @@ export default function Store() {
               ],
             },
             {
-              title: "New Courses",
+              title: "Job",
               courses: [
                 {
                   title: "Basic of Web Developments",
@@ -60,7 +44,7 @@ export default function Store() {
               ],
             },
             {
-              title: "New Courses",
+              title: "Package",
               courses: [
                 {
                   title: "Basic of Web Developments",
@@ -69,7 +53,7 @@ export default function Store() {
               ],
             },
             {
-              title: "New Courses",
+              title: "Programming language",
               courses: [
                 {
                   title: "Basic of Web Developments",
@@ -78,7 +62,7 @@ export default function Store() {
               ],
             },
             {
-              title: "New Courses",
+              title: "Project",
               courses: [
                 {
                   title: "Basic of Web Developments",

@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../framer/reveal";
+import { Badge } from "../ui/badge";
 
 export function CourseTabMenu({
   data,
@@ -45,14 +46,44 @@ export function CourseTabMenu({
             value={`chapter${i + 1}`}
           >
             <Reveal>
-              <div className="grid lg:grid-rows-2 lg:grid-flow-col max-lg:grid-cols-1 gap-4 max-lg:text-center max-lg:place-items-center lg:w-[640px] overflow-x-scroll horizontal-scroll p-3">
+              <div className="grid lg:grid-rows-2 lg:grid-flow-col max-lg:grid-cols-1 gap-4 max-lg:place-items-center lg:w-[640px] overflow-x-scroll horizontal-scroll p-2">
                 {courses.map(({ title, imgSrc }, index) => (
                   <Link
                     key={index}
                     href={"/courses/mern-cohort"}
-                    className="flex-1 lg:w-[300px] max-lg:max-w-[550px] shadow-[0_2px_40px_0_rgba(0,0,0,.2)]"
+                    className="flex-1 lg:w-[300px] max-lg:max-w-[550px]"
                   >
-                    <div className="max-lg:m-auto flex lg:flex-col max-lg:items-center max-lg:justify-center lg:p-[2rem_1.5rem_2.5rem] p-8 gap-4 rounded-t-xl bg-second h-fit">
+                    <div className="max-lg:m-auto flex flex-col max-lg:items-center max-lg:justify-center gap-2 rounded-xl bg-second p-2 h-fit shadow-[0_2px_40px_0_rgba(0,0,0,.2)] lg:hover:shadow-2xl">
+                      <Image
+                        className="rounded-lg w-full"
+                        src={imgSrc}
+                        width={280}
+                        height={280}
+                        alt="fullstack"
+                      />
+                      <Badge
+                        variant={"secondary"}
+                        className="bg-prime/60 rounded w-fit"
+                      >
+                        $400
+                      </Badge>
+                      <span className="text-sm font-semibold">{title}</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </Reveal>
+          </TabsContent>
+        ))}
+      </div>
+    </Tabs>
+  );
+}
+
+// previous example
+
+{
+  /* <div className="max-lg:m-auto flex lg:flex-col max-lg:items-center max-lg:justify-center lg:p-[2rem_1rem_0.5rem] p-8 gap-4 rounded-t-xl bg-second h-fit shadow-[0_2px_40px_0_rgba(0,0,0,.2)] lg:hover:shadow-2xl">
                       <Image
                         src={imgSrc}
                         width={35}
@@ -65,14 +96,5 @@ export function CourseTabMenu({
                       <span>140+ Hrs of Content</span>
                       <span>300+ Problems</span>
                       <span>10k+ Learners</span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </Reveal>
-          </TabsContent>
-        ))}
-      </div>
-    </Tabs>
-  );
+                    </div> */
 }

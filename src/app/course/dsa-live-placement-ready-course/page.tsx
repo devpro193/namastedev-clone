@@ -206,7 +206,7 @@ let course = [
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
-  title: "Solve, Save, and Revise DSA",
+  title: "Learn DSA and Get Ready for Placement",
   description:
     "A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com",
   openGraph: {

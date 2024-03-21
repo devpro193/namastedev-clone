@@ -4,7 +4,6 @@ import * as React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-// import { Icons } from "@/components/icons";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -37,7 +36,7 @@ export const navTitles: {
           "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
       },
       {
-        title: "Solve, Save, and Revise DSA",
+        title: "DSA Live Placement",
         href: "/course/dsa-live-placement-ready-course",
         description:
           "A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com",
