@@ -150,11 +150,8 @@ export default function Mentor() {
           </Reveal>
           <div className="py-2" />
           <Reveal>
-            <AnimatedButton
-              type="ext"
-              link="https://nas.io/checkout-global?communityId=645b3af827dc2f33a1b21449&communityCode=30DAYSCODINGDISCORD&requestor=signupRequestor&fromWidget=1"
-            >
-              Join Community
+            <AnimatedButton link="/mentorship">
+              Join 1:1 Mentorship
             </AnimatedButton>
           </Reveal>
         </div>
@@ -176,11 +173,8 @@ export default function Mentor() {
 
       <div className="lg:hidden">
         <Reveal>
-          <AnimatedButton
-            type="ext"
-            link="https://nas.io/checkout-global?communityId=645b3af827dc2f33a1b21449&communityCode=30DAYSCODINGDISCORD&requestor=signupRequestor&fromWidget=1"
-          >
-            Join Community
+          <AnimatedButton type="ext" link="/mentorship">
+            Join 1:1 Mentorship
           </AnimatedButton>
         </Reveal>
       </div>

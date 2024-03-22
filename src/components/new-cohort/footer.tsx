@@ -19,7 +19,7 @@ export default function Footer() {
           "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
       },
       {
-        title: "Solve, Save, and Revise DSA",
+        title: "DSA Live Placement",
         href: "/course/dsa-live-placement-ready-course",
         description:
           "A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com",
@@ -144,7 +144,7 @@ export default function Footer() {
             <Reveal>
               <div className="flex text-sm gap-4 flex-col max-w-64">
                 <span className="text-muted-foreground uppercase">
-                  Resourse
+                  Resource
                 </span>
                 <Link
                   className="lg:hover:text-head transition-all"

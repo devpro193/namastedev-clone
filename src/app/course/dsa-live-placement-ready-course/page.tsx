@@ -1,10 +1,11 @@
 import Hero from "@/components/new-cohort/hero";
 import type { Metadata } from "next";
-import Testimonials from "@/components/new-cohort/testimonials";
+import Testimonials from "@/components/mentorship-comp/testimonials";
 import Companies from "@/components/new-cohort/companies";
 import Course from "@/components/new-cohort/course";
 import NewMentor from "@/components/new-cohort/new-mentor";
 import Highlights from "@/components/new-cohort/highligths";
+import Faqs from "@/components/mentorship-comp/faq";
 
 let course = [
   {
@@ -230,6 +231,7 @@ export default function Home() {
       <Companies />
       <Highlights />
       <Testimonials />
+      <Faqs />
     </main>
   );
 }

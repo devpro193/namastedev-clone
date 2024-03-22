@@ -27,7 +27,7 @@ export default function JoinUs() {
   ];
 
   return (
-    <div className="m-auto grid grid-cols-1 place-items-center p-10 lg:p-20 max-w-[75rem]">
+    <div className="m-auto grid grid-cols-1 place-items-center px-10 lg:px-20 max-w-[75rem]">
       <div className="flex flex-col items-start gap-6 rounded-xl border border-[#e4e7ec] dark:border-prime bg-white dark:bg-second p-5 lg:px-8 lg:py-7">
         <div className="flex flex-col items-start gap-3 self-stretch">
           <Reveal>

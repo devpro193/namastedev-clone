@@ -350,14 +350,6 @@ export default function Profile() {
         },
         {
           latest: "February, 2024",
-          joined: "July, 2021",
-          duration: "2y 8m",
-          company: "Newton School",
-          designation: "Student Mentor",
-          imgSrc: "/newtonschool_logo.jfif",
-        },
-        {
-          latest: "February, 2024",
           joined: "June, 2021",
           duration: "2y 9m",
           company: "MakeMyTrip",
@@ -406,7 +398,7 @@ export default function Profile() {
   ];
 
   return (
-    <div className="m-auto grid grid-cols-1 place-items-center p-10 lg:p-20 gap-10 max-w-[75rem]">
+    <div className="m-auto grid grid-cols-1 place-items-center px-10 pt-10 lg:pt-20 lg:px-20 gap-10 max-w-[75rem]">
       <Reveal>
         <span className="flex items-center justify-center gap-4 relative">
           <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />

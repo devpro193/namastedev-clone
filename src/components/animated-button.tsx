@@ -1,4 +1,3 @@
-import { space_mono } from "@/lib/font";
 import { Button } from "./ui/button";
 import React from "react";
 import Link from "next/link";

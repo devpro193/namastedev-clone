@@ -28,15 +28,15 @@ export default function Career({ details }: { details: Career[] }) {
                 <section className="relative flex min-w-[100px] items-center border-[#e4e7ec]/[.70] dark:border-prime/70 text-base sm:min-w-[120px] md:py-5 lg:justify-end lg:border-r lg:py-3 xl:min-w-[160px]">
                   <div className="absolute bottom-[42%] right-[-6px] hidden h-[12px] w-[12px] rounded-full border-[#8E8E93] dark:border-head bg-[#e4e7ec]/[.70] dark:bg-prime/70 lg:block" />
                   <div className="hidden items-end pr-6 lg:flex lg:flex-col">
-                    <span className="whitespace-nowrap text-right text-[13px]">
+                    <span className="whitespace-nowrap text-right ">
                       {latest}
                     </span>
                     <span className="whitespace-nowrap text-right text-[13px]">
                       {joined}
                     </span>
-                    <span className="whitespace-nowrap text-right text-[10px] font-semibold leading-[15px] text-muted-foreground">
+                    {/* <span className="whitespace-nowrap text-right text-[10px] font-semibold leading-[15px] text-muted-foreground">
                       {duration}
-                    </span>
+                    </span> */}
                   </div>
                 </section>
 
@@ -70,9 +70,9 @@ export default function Career({ details }: { details: Career[] }) {
                   <span className="whitespace-nowrap text-right text-[13px]">
                     {joined}
                   </span>
-                  <span className="whitespace-nowrap text-right text-[10px] pb-0.5 pl-1 font-semibold leading-[15px] text-muted-foreground">
+                  {/* <span className="whitespace-nowrap text-right text-[10px] pb-0.5 pl-1 font-semibold leading-[15px] text-muted-foreground">
                     ( {duration} )
-                  </span>
+                  </span> */}
                 </section>
               </div>
             </Reveal>

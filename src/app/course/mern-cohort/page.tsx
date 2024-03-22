@@ -1,10 +1,11 @@
 import Hero from "@/components/new-cohort/hero";
 import type { Metadata } from "next";
-import Testimonials from "@/components/new-cohort/testimonials";
+import Testimonials from "@/components/mentorship-comp/testimonials";
 import Companies from "@/components/new-cohort/companies";
 import Course from "@/components/new-cohort/course";
 import Highlights from "@/components/new-cohort/highligths";
 import NewMentor from "@/components/new-cohort/new-mentor";
+import Faqs from "@/components/mentorship-comp/faq";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -78,6 +79,7 @@ export default function Home() {
       <Companies />
       <Highlights />
       <Testimonials />
+      <Faqs />
     </main>
   );
 }

@@ -10,7 +10,7 @@ function TestimonyImages({ imageUrl }: { imageUrl: string }) {
         alt="instrutor"
         width={600}
         height={600}
-        className="object-cover h-full w-full"
+        className="object-cover h-80 w-80 rounded-md object-center"
       />
     </div>
   );
@@ -18,11 +18,16 @@ function TestimonyImages({ imageUrl }: { imageUrl: string }) {
 
 export default function Highlights() {
   const images = [
-    "https://i.ibb.co/F3PjZxG/review1.jpg",
-    "https://i.ibb.co/bdj2xq6/review2.jpg",
-    "https://i.ibb.co/SRB5r0S/review3.jpg",
-    "https://i.ibb.co/yXNwxWY/review4.jpg",
-    "https://i.ibb.co/bmbL8gk/review5.jpg",
+    // "https://i.ibb.co/F3PjZxG/review1.jpg",
+    // "https://i.ibb.co/bdj2xq6/review2.jpg",
+    // "https://i.ibb.co/SRB5r0S/review3.jpg",
+    // "https://i.ibb.co/yXNwxWY/review4.jpg",
+    // "https://i.ibb.co/bmbL8gk/review5.jpg",
+    "https://i.ibb.co/wrfhr1m/IMG-7687.png",
+    "https://i.ibb.co/0rNJjfr/IMG-7689.png",
+    "https://i.ibb.co/fXZqDvj/IMG-7690.png",
+    "https://i.ibb.co/jHNQVQL/IMG-7691.png",
+    "https://i.ibb.co/3dYxTMz/IMG-7692.png",
   ];
   return (
     <div className="grid place-items-center gap-8 max-w-[90rem] m-auto py-8">
@@ -45,7 +50,7 @@ export default function Highlights() {
       </div>
 
       <Reveal>
-        <Link className="text-sm" href={"/testimonials"}>
+        <Link className="text-sm" href={"/wall-of-love"}>
           <button
             className={`font-jakarta flex items-center font-semibold gap-1 border-white border transition-all px-6 py-3 rounded-md`}
           >

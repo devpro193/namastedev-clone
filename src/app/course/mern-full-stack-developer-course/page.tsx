@@ -1,12 +1,12 @@
 import Achievements from "@/components/course-components/achievements";
 import Companies from "@/components/course-components/companies";
 import Course from "@/components/course-components/course";
-import Faq from "@/components/course-components/faq";
+import Faqs from "@/components/mentorship-comp/faq";
 import Hero from "@/components/course-components/hero";
 import Instructor from "@/components/course-components/instructor";
 import Mission from "@/components/course-components/mission";
 import Projects from "@/components/course-components/projects";
-import Testimonials from "@/components/course-components/testimonials";
+import Testimonials from "@/components/mentorship-comp/testimonials";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function Home() {
         <Projects />
         <Companies />
         <Testimonials />
-        <Faq />
+        <Faqs />
       </div>
     </main>
   );

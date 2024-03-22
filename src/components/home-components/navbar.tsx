@@ -39,16 +39,14 @@ export default function Navbar() {
 
           <section className="flex items-center gap-3">
             {/* <ModeToggle /> */}
-            <button className="hover:bg-prime/30 rounded-lg p-1 transition-all">
+            {/* <button className="hover:bg-prime/30 rounded-lg p-1 transition-all">
               <Gift className="max-phone:h-5 max-phone:w-5 h-6 w-6 stroke-[1.5] stroke-black dark:stroke-white" />
-            </button>
+            </button> */}
             <Link
-              href={
-                "https://nas.io/checkout-global?communityId=645b3af827dc2f33a1b21449&communityCode=30DAYSCODINGDISCORD&requestor=signupRequestor&fromWidget=1"
-              }
+              href={"/mentorship"}
               className="font-jakarta flex items-center font-semibold gap-2 hover:bg-prime bg-prime/80 transition-all px-4 py-3 max-phone:py-2 rounded-md"
             >
-              <span className="text-sm max-phone:text-xs">Join Community</span>
+              <span className="text-sm max-phone:text-xs">Join Mentorship</span>
               {/* <ArrowRight className="max-md:hidden h-4 w-4" /> */}
             </Link>
             <button

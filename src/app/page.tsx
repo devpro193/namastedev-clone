@@ -3,9 +3,11 @@ import Companies from "@/components/new-cohort/companies";
 import Course from "@/components/home-components/course";
 import Highlights from "@/components/new-cohort/highligths";
 import Mentor from "@/components/new-cohort/mentor";
-import Testimonials from "@/components/new-cohort/testimonials";
+import Testimonials from "@/components/mentorship-comp/testimonials";
 import type { Metadata } from "next";
 import Store from "@/components/home-components/store";
+import Faqs from "@/components/mentorship-comp/faq";
+import Program from "@/components/program";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -26,14 +28,16 @@ export default function Home() {
         heroImage="bg-[url('/main/hero_section_fullstack.png')]"
         subTitle="Lifetime Validity Courses + Certificates"
         subDesc="Whether you're a beginner looking to dive into programming or an experienced developer seeking to enhance your skills, our courses & mentors helps to all levels of proficiency."
-        ytId="dao2HaGzc3M"
+        ytId="SKhJ7HFvq0A"
       />
       <Course />
       <Store />
       <Mentor />
       <Companies />
+      <Program />
       <Highlights />
       <Testimonials />
+      <Faqs />
     </main>
   );
 }
