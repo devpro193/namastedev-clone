@@ -55,7 +55,7 @@ export default function Program() {
 
         <div className="lg:w-3/5 w-full shrink-0 flex-1 flex flex-col gap-2">
           {title.map((e, i) => (
-            <Reveal>
+            <Reveal key={i}>
               <div className="flex items-start gap-3 p-3 bg-gradient-to-r from-head/40 to-transparent rounded-lg shadow-inner">
                 <LucideCheckCircle className="w-4 h-4 translate-y-2 stroke-prime shrink-0" />
                 <p className="text-lg" key={i}>
