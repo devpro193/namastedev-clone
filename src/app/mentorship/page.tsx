@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-background dark:bg-bg min-h-svh transition-all">
+    <main className="bg-background bg-bg min-h-svh transition-all">
       <Hero
         title=" Join 30DC Private Mentorship Community"
         desc="Learn from Aryan, Deepanshu, and the 30DC team to get placed this season."

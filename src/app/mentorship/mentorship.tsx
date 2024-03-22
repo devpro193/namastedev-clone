@@ -152,7 +152,7 @@ export default function Mentorship() {
   ];
   return (
     <div className="m-auto grid grid-cols-1 place-items-center px-10 lg:px-20 max-w-[75rem]">
-      <div className="relative flex flex-col items-start gap-5 rounded-xl border border-[#e4e7ec] dark:border-prime bg-white dark:bg-second p-5 lg:p-8">
+      <div className="relative flex flex-col items-start gap-5 rounded-xl border border-prime bg-second p-5 lg:p-8">
         <div className="flex flex-col items-start gap-3 self-stretch">
           <Reveal>
             <span className="self-stretch text-xl font-semibold leading-[30px]">
@@ -169,11 +169,11 @@ export default function Mentorship() {
           </Reveal>
         </div>
 
-        <div className="relative ml-10 flex w-[calc(100%-40px)] flex-col items-start gap-5 divide-y divide-[#E4E7EC] dark:divide-prime pb-5">
+        <div className="relative ml-10 flex w-[calc(100%-40px)] flex-col items-start gap-5 divide-y divide-prime pb-5">
           {mentorsipPath.map(({ title, topics, svg }, i) => (
             <Reveal key={i}>
               <div className="flex w-full items-start gap-3 pt-5 lg:gap-4">
-                <section className=" z-10 -ml-10 flex items-center justify-center rounded-full bg-gray-50 dark:bg-prime p-1">
+                <section className=" z-10 -ml-10 flex items-center justify-center rounded-full bg-prime p-1">
                   {svg}
                 </section>
 
@@ -186,7 +186,7 @@ export default function Mentorship() {
                     {topics.map((e, i) => (
                       <button
                         key={i}
-                        className="flex items-center justify-center gap-2 rounded-md border px-3 py-2 duration-200 border-[#e4e7ec] dark:border-prime dark:bg-second bg-white box-border"
+                        className="flex items-center justify-center gap-2 rounded-md border px-3 py-2 duration-200 border-prime bg-second box-border"
                       >
                         {e}
                       </button>
@@ -196,7 +196,7 @@ export default function Mentorship() {
               </div>
             </Reveal>
           ))}
-          <div className="absolute -left-[26px] top-0 h-full w-px bg-[#edeef2] dark:bg-prime/70"></div>
+          <div className="absolute -left-[26px] top-0 h-full w-px bg-prime/70"></div>
         </div>
       </div>
     </div>

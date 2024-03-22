@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <Unveal>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center bg-bg">
         <div
           className={`p-[.875rem_6.25rem] max-sm:p-[0.5rem_1rem] text-white flex gap-6 justify-between items-center w-full max-w-[90rem]`}
         >

@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${localJakarta.variable} font-jakarta`}>
+      <body className={`${localJakarta.variable} font-jakarta bg-bg`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <MobileMenu />
           <Banner />

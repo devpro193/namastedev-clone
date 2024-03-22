@@ -4,14 +4,14 @@ type Faq = { question: string; answer: string };
 
 function Faq({ question, answer }: Faq) {
   return (
-    <div className=" flex flex-col items-start justify-center gap-5 rounded-xl border border-[#e4e7ec] dark:border-head bg-white dark:bg-second p-5 lg:px-8 lg:py-7">
+    <div className=" flex flex-col items-start justify-center gap-5 rounded-xl border-head bg-second p-5 lg:px-8 lg:py-7">
       <section className="flex flex-col items-start gap-4 self-stretch">
         <Reveal>
-          <span className="flex items-start gap-4 self-stretch text-base font-semibold leading-6 text-[#101828] dark:text-white">
+          <span className="flex items-start gap-4 self-stretch text-base font-semibold leading-6 text-white">
             {question}
           </span>
         </Reveal>
-        <hr className="h-px w-full border-[#f2f4f7] dark:border-prime" />
+        <hr className="h-px w-full border-prime" />
         <Reveal>
           <p className="w-full text-sm leading-5 text-muted-foreground">
             {answer}

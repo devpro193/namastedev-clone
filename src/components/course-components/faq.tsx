@@ -11,10 +11,10 @@ function Collapsible({ title, answer }: { title: string; answer: string }) {
     <Reveal>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger className="dark:bg-background rounded-md border-2 p-3 font-semibold text-lg">
+          <AccordionTrigger className="bg-background rounded-md border-2 p-3 font-semibold text-lg">
             {title}
           </AccordionTrigger>
-          <AccordionContent className="dark:bg-second rounded-b-md bg-indigo-100/50 p-4 items-start text-foreground/70">
+          <AccordionContent className="bg-second rounded-b-md bg-indigo-100/50 p-4 items-start text-foreground/70">
             {answer}
           </AccordionContent>
         </AccordionItem>

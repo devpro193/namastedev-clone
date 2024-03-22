@@ -28,6 +28,7 @@ type Profile = {
   }[];
   exp: number;
   skills: string[];
+  cover: string;
 };
 
 function ProfileCard({
@@ -40,13 +41,16 @@ function ProfileCard({
   career,
   exp,
   skills,
+  cover,
 }: Profile) {
   return (
     <Reveal>
       <div
-        className={`relative flex flex-col border-[#f2f4f7] dark:border-prime bg-second rounded-lg overflow-hidden shadow-inner transition-all duration-500 w-full items-start gap-7 border pb-6`}
+        className={`relative flex flex-col border-prime bg-second rounded-lg overflow-hidden shadow-inner transition-all duration-500 w-full items-start gap-7 border pb-6`}
       >
-        <div className="w-full relative max-md:min-h-30 max-lg:min-h-40 lg:min-h-44 bg-gradient-to-r from-prime/20 via-head/20 to-prime/20 animate-gradient bg-[length:200%_auto0] flex items-end justify-end">
+        <div
+          className={`w-full relative max-md:min-h-30 max-lg:min-h-40 lg:min-h-44 bg-[${cover}] flex items-end justify-end`}
+        >
           <Reveal>
             <section className="flex gap-2 p-3 max-phone:grid max-phone:grid-cols-2">
               {social.linkedin && (
@@ -198,7 +202,7 @@ function ProfileCard({
         </div>
 
         {/* Skills */}
-        <div className="flex flex-col gap-5 rounded-xl bg-white dark:bg-second px-5 lg:px-8 w-full">
+        <div className="flex flex-col gap-5 rounded-xl bg-second px-5 lg:px-8 w-full">
           <Reveal>
             <span className="self-stretch text-xl font-semibold leading-[30px] lg:pb-6">
               Skills
@@ -210,7 +214,7 @@ function ProfileCard({
               {skills.map((skill, i) => (
                 <button
                   key={i}
-                  className="flex items-center justify-center gap-2 rounded-xl border px-3 py-2 duration-200 border-[#e4e7ec] dark:border-prime dark:bg-second bg-white box-border"
+                  className="flex items-center justify-center gap-2 rounded-xl border px-3 py-2 duration-200 border-prime bg-second box-border"
                 >
                   {skill}
                 </button>
@@ -323,6 +327,7 @@ export default function Profile() {
         "Android StudioAndroid Studio",
         "Back-End Web Development",
       ],
+      cover: "url('/main/hero_section_course.webp')",
     },
     {
       name: "Deepanshu Udhwani",
@@ -394,6 +399,7 @@ export default function Profile() {
         "Data Structures",
         "Software Development",
       ],
+      cover: "url('/main/hero_section_fullstack.png')",
     },
   ];
 
@@ -422,6 +428,7 @@ export default function Profile() {
               career,
               exp,
               skills,
+              cover,
             },
             i
           ) => (
@@ -436,6 +443,7 @@ export default function Profile() {
                 career={career}
                 exp={exp}
                 skills={skills}
+                cover={cover}
               />
             </Reveal>
           )
