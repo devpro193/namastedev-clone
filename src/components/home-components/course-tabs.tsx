@@ -64,12 +64,6 @@ export function CourseTabMenu({
                         alt="fullstack"
                       />
                       <span className="text-sm font-semibold inline">
-                        <Badge
-                          variant={"secondary"}
-                          className="bg-prime/60 rounded w-fit mr-2"
-                        >
-                          $400
-                        </Badge>
                         {title}
                       </span>
                     </div>

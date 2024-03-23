@@ -202,7 +202,7 @@ function ProfileCard({
         </div>
 
         {/* Skills */}
-        <div className="flex flex-col gap-5 rounded-xl bg-second px-5 lg:px-8 w-full">
+        <div className="max-lg:hidden flex flex-col gap-5 rounded-xl bg-second px-5 lg:px-8 w-full">
           <Reveal>
             <span className="self-stretch text-xl font-semibold leading-[30px] lg:pb-6">
               Skills
@@ -214,7 +214,7 @@ function ProfileCard({
               {skills.map((skill, i) => (
                 <button
                   key={i}
-                  className="flex items-center justify-center gap-2 rounded-xl border px-3 py-2 duration-200 border-prime bg-second box-border"
+                  className="flex items-center justify-center gap-2 rounded-full border px-3 py-2 duration-200 border-prime bg-second box-border"
                 >
                   {skill}
                 </button>
@@ -288,44 +288,44 @@ export default function Profile() {
       skills: [
         "Algorithms",
         "Full-Stack Development",
-        "User Experience",
-        "Artificial Intelligence ",
-        "User Interface Design",
-        "Statistics",
+        // "User Experience",
+        // "Artificial Intelligence ",
+        // "User Interface Design",
+        // "Statistics",
         "Data Structures",
         "Web Applications",
         "Object-Oriented Programming",
         "Machine Learning",
-        "Data Analysis",
+        // "Data Analysis",
         "Java",
         "JavaScript",
-        "Android",
+        // "Android",
         "Python ",
         "HTML5",
         "CSS",
-        "XML",
+        // "XML",
         "Node.js",
         "Kotlin",
         "React Native",
-        "Ruby on Rails",
-        "Github",
+        // "Ruby on Rails",
+        // "Github",
         "React.js",
         "Next.js",
-        "Ruby",
-        "Firebase",
-        "RESTful WebServices",
-        "Flutter",
+        // "Ruby",
+        // "Firebase",
+        // "RESTful WebServices",
+        // "Flutter",
         "SQL",
         "MongoDB",
-        "PHP",
-        "MySQL",
-        "Git",
-        "REST",
-        "Matlab",
-        "Retrofit",
-        "Mobile Experiences",
-        "Android StudioAndroid Studio",
-        "Back-End Web Development",
+        // "PHP",
+        // "MySQL",
+        // "Git",
+        // "REST",
+        // "Matlab",
+        // "Retrofit",
+        // "Mobile Experiences",
+        // "Android StudioAndroid Studio",
+        // "Back-End Web Development",
       ],
       cover: "url('/main/hero_section_course.webp')",
     },
@@ -358,7 +358,7 @@ export default function Profile() {
           joined: "June, 2021",
           duration: "2y 9m",
           company: "MakeMyTrip",
-          designation: "Software Engineer",
+          designation: "Senior Software Engineer",
           imgSrc: "/makemytrip_logo.jfif",
         },
         {

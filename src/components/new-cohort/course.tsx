@@ -30,38 +30,40 @@ export default function Course({
         <div className="flex max-lg:flex-col gap-3 max-lg:items-center max-lg:gap-10 min-h-96">
           <TabMenu course={course} />
 
-          <Reveal width="fit-content">
-            <div className="lg:ml-[4.5rem] max-lg:m-auto flex flex-col items-start lg:p-[2rem_1.5rem_2.5rem] p-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-8 rounded-xl bg-second h-fit">
-              <section className="flex flex-col gap-2">
-                <span className="bg-gradient-to-t from-bg to-second/80 rounded-lg p-4 w-fit">
-                  <MapIcon className="h-10 w-10 stroke-prime" />
+          <div className="max-lg:p-8">
+            <Reveal width="fit-content">
+              <div className="lg:ml-[4.5rem] max-lg:m-auto flex flex-col items-start lg:p-[2rem_1.5rem_2.5rem] p-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-8 rounded-xl bg-second h-fit">
+                <section className="flex flex-col gap-2">
+                  <span className="bg-gradient-to-t from-bg to-second/80 rounded-lg p-4 w-fit">
+                    <MapIcon className="h-10 w-10 stroke-prime" />
+                  </span>
+                  <span className="text-lg font-semibold">
+                    Explore our detailed curriculum!
+                  </span>
+                  <p className="text-sm max-w-sm">
+                    Understand the in depth concepts and tools you will learn
+                    throughout the program.
+                  </p>
+                </section>
+                <span className="max-lg:mx-auto">
+                  {/* <NewRazorpay id={"buy-course"} /> */}
+                  <AnimatedButton link="https://rzp.io/l/kZPObNXZ">
+                    <section className="flex gap-2 items-center">
+                      <span className="tracking-wide">Buy Full Course</span>
+                      <Key className="h-5 w-5" />
+                    </section>
+                  </AnimatedButton>
                 </span>
-                <span className="text-lg font-semibold">
-                  Explore our detailed curriculum!
-                </span>
-                <p className="text-sm max-w-sm">
-                  Understand the in depth concepts and tools you will learn
-                  throughout the program.
-                </p>
-              </section>
-              <span className="max-lg:mx-auto">
-                {/* <NewRazorpay id={"buy-course"} /> */}
-                <AnimatedButton link="https://rzp.io/l/kZPObNXZ">
-                  <section className="flex gap-2 items-center">
-                    <span className="tracking-wide">Buy Full Course</span>
-                    <Key className="h-5 w-5" />
-                  </section>
-                </AnimatedButton>
-              </span>
-              {/* <div
+                {/* <div
                       className="razorpay-embed-btn"
                       data-url="https://pages.razorpay.com/pl_NlXmnJkIOZFVcc/view"
                       data-text="Pay Now"
                       data-color="#254246"
                       data-size="large"
                     ></div> */}
-            </div>
-          </Reveal>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </Reveal>
 
