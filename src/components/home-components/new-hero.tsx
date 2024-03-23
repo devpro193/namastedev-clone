@@ -22,7 +22,7 @@ export default function Hero({
   return (
     <Reveal>
       <div className={`w-full grid ${heroImage} min-h-96 bg-repeat-x`}>
-        <div className="tab:p-[11.5rem_2.5rem_5.75rem] max-tab:pt-[5rem] max-tab:pb-[4.5rem] m-auto max-w-4xl grid gap-5 place-items-center phone:text-center text-white">
+        <div className="tab:p-[6.5rem_2.5rem_6.75rem] max-tab:pt-[5rem] max-tab:pb-[4.5rem] m-auto max-w-4xl grid gap-5 place-items-center phone:text-center text-white">
           <h1
             className={`font-jakarta phone:text-[3.5rem] text-[2.5rem] font-extrabold bg-gradient-to-r from-lime-300 to-green-800 text-transparent bg-clip-text leading-tight px-2 max-phone:px-6`}
           >
@@ -35,7 +35,7 @@ export default function Hero({
 
           <div className="p-[.5rem_1.75rem_.5rem_1.00rem] rounded-[3.125rem] flex max-lg:flex-col max-lg:w-full lg:flex-wrap items-center gap-5 my-2 mb-1">
             <Link
-              href={"/course/mern-cohort"}
+              href={"/mentorship"}
               className={`font-jakarta flex items-center justify-between font-semibold gap-3 hover:bg-prime/80 border-2 border-prime/60 transition-all px-4 py-3 rounded-full max-lg:w-full`}
             >
               <span className="text-sm">Mentorship</span>

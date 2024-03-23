@@ -53,7 +53,7 @@ function Profile({
             </div>
           </div>
 
-          <p className="text-base p-6">{desc}</p>
+          <p className="text-base p-6 max-lg:text-left">{desc}</p>
         </div>
       </div>
       <Link className="mx-auto mb-6" href={link} target="_blank">

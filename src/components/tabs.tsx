@@ -19,7 +19,7 @@ export function TabMenu({
       <TabsList className="text-muted-foreground lg:grid lg:place-items-start flex flex-wrap gap-3 h-fit max-h-80 overflow-y-scroll scroll">
         {course.map((_, i) => (
           <TabsTrigger key={i} value={`chapter${i + 1}`}>
-            <span>Chapter {i + 1}</span>
+            <span>Week {i + 1}</span>
           </TabsTrigger>
         ))}
       </TabsList>
