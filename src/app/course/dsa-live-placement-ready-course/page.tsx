@@ -224,7 +224,8 @@ export default function Home() {
         subTitle="Solve, Save, and Revise DSA"
         subDesc="Master dsa through practicing algorithms under expert's guidance from industry professionals. A placement driven course."
         ytId="tJkZA9JoZCw"
-        heroImage="bg-[url('/main/hero_section_dsa.png')]"
+        heroImage="https://i.ibb.co/q5k6zZz/dsa.jpg"
+        // heroImage="https://i.ibb.co/SdZJSMh/algo.gif"
       />
       <Course course={course} />
       <NewMentor />

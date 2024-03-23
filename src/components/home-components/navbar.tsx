@@ -25,7 +25,7 @@ export default function Navbar() {
                 alt="logo"
                 width={50}
                 height={50}
-                className="max-phone:h-6 max-phone:w-6"
+                className="max-phone:h-8 max-phone:w-8 shadow-xl"
               />
               <span className="max-phone:hidden text-[1.6rem] font-medium">
                 30DC
@@ -44,7 +44,7 @@ export default function Navbar() {
             </button> */}
             <Link
               href={"/mentorship"}
-              className="font-jakarta flex items-center font-semibold gap-2 hover:bg-prime bg-prime/80 transition-all px-4 py-3 max-phone:py-2 rounded-md"
+              className="font-jakarta flex items-center font-semibold gap-2 hover:bg-prime bg-prime/80 transition-all px-4 py-3 rounded-md"
             >
               <span className="text-sm max-phone:text-xs">Join Mentorship</span>
               {/* <ArrowRight className="max-md:hidden h-4 w-4" /> */}

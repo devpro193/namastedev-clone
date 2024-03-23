@@ -72,7 +72,7 @@ export default function Home() {
         subTitle="Build fullstack engineering skills with confidence"
         subDesc="Achieve mastery in fullstack engineering through practical projects and expert feedback from industry professionals in this comprehensive program."
         ytId="iQR3fb3yJko"
-        heroImage="bg-[url('/main/hero_section_course.webp')]"
+        heroImage="https://i.ibb.co/mBy9mz1/react.jpg"
       />
       <Course course={course} />
       <NewMentor />
