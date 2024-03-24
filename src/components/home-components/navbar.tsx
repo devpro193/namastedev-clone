@@ -46,7 +46,7 @@ export default function Navbar() {
               href={"/mentorship"}
               className="font-jakarta flex items-center font-semibold gap-2 hover:bg-prime bg-prime/80 transition-all px-4 py-3 rounded-md"
             >
-              <span className="text-sm max-phone:text-xs">Join Mentorship</span>
+              <span className="text-sm">Join Mentorship</span>
               {/* <ArrowRight className="max-md:hidden h-4 w-4" /> */}
             </Link>
             <button

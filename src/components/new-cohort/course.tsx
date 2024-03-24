@@ -32,7 +32,7 @@ export default function Course({
 
           <div className="max-lg:p-8">
             <Reveal width="fit-content">
-              <div className="lg:ml-[4.5rem] max-lg:m-auto flex flex-col items-start lg:p-[2rem_1.5rem_2.5rem] p-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-8 rounded-xl bg-second h-fit">
+              <div className="lg:ml-[2.5rem] max-lg:m-auto flex flex-col items-start lg:p-[2rem_1.5rem_2.5rem] p-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-8 rounded-xl bg-second h-fit">
                 <section className="flex flex-col gap-2">
                   <span className="bg-gradient-to-t from-bg to-second/80 rounded-lg p-4 w-fit">
                     <MapIcon className="h-10 w-10 stroke-prime" />
