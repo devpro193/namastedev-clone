@@ -64,3 +64,33 @@
 .horizontal-scroll::-webkit-scrollbar-thumb {
   background: #ffffff60;
 }
+
+.container {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  gap: 10;
+  /* height: clamp(3em, 10vw, 6em); */
+  overflow: hidden;
+}
+
+.loop-text {
+  font-size: clamp(0.5rem, 8vw, 1.2rem);
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  padding: 0 0.25em;
+}
+
+.loop-text {
+  animation: loopText 2s infinite linear;
+}
+
+@keyframes loopText {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
