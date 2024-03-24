@@ -82,7 +82,7 @@
 }
 
 .loop-text {
-  animation: loopText 2s infinite linear;
+  animation: loopText 4s infinite linear;
 }
 
 @keyframes loopText {
