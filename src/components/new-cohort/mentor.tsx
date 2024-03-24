@@ -94,7 +94,7 @@ export default function Mentor() {
         </Reveal>
       </div>
 
-      <div className="flex max-phone:flex-col items-center max-phone:gap-28 max-lg:gap-20 phone:h-full gap-7 justify-evenly pt-24">
+      <div className="flex max-sm:flex-col items-center max-sm:gap-28 max-lg:gap-20 sm:h-full gap-7 justify-evenly pt-24">
         <Reveal>
           <Profile
             name="Aryan Singh"

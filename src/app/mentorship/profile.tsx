@@ -327,7 +327,7 @@ export default function Profile() {
         // "Android StudioAndroid Studio",
         // "Back-End Web Development",
       ],
-      cover: "url('/main/hero_section_course.webp')",
+      cover: "url('/main/hero_section_fullstack.png')",
     },
     {
       name: "Deepanshu Udhwani",
