@@ -23,13 +23,13 @@ export default function Hero({
   return (
     <Reveal>
       <div
-        className={`w-full grid relative overflow-hidden min-h-[500px] bg-transparent`}
+        className={`w-full grid relative overflow-hidden min-h-[500px] bg-zinc-950`}
       >
         <Image
           alt="community image"
           fill
           src={heroImage}
-          className="object-cover opacity-20 pointer-events-none"
+          className="object-cover opacity-10 pointer-events-none"
         />
         <div className="relative tab:p-[6.5rem_5.5rem_6.75rem] max-tab:pt-[5rem] max-tab:pb-[4.5rem] m-auto max-w-4xl grid gap-7 place-items-center phone:text-center max-phone:place-items-start text-white bg-transparent">
           <h1
