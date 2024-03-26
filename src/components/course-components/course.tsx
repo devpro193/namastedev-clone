@@ -688,9 +688,9 @@ export default function Course({ imageSrc, courseLink }: Props) {
 
             <section className="flex items-end gap-2">
               <span className={"font-jakarta text-lg"}>
-                ₹<span className="text-2xl">2499</span>
+                ₹<span className="text-2xl">2999</span>
                 <span className="text-sm text-muted-foreground ml-1 line-through">
-                  ₹3000
+                   ₹7500
                 </span>
               </span>
 

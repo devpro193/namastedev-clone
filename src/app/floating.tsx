@@ -8,12 +8,12 @@ export default function Floating() {
       <Reveal>
         <section className="flex flex-col gap-1">
           <span className={"font-jakarta text-lg"}>
-            ₹<span className="text-2xl">2499</span>
+            ₹<span className="text-2xl">2999</span>
           </span>
 
           <div className="flex gap-2 text-sm font-semibold">
             <span className="text-muted-foreground ml-1 line-through">
-              ₹3000
+              ₹7500
             </span>
             <span
               className={"font-jakarta text-secondary-foreground rounded py-0"}

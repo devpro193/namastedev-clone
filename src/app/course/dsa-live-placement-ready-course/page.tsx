@@ -9,201 +9,128 @@ import Faqs from "@/components/mentorship-comp/faq";
 
 let course = [
   {
-    title: "Introduction to DSA, Patterns, Questions",
-    topics: [
-      "Introduction to the course",
-      "How this course works",
-      "How to solve DSA problems",
+    "week": 1,
+    "title": "Foundations of DSA: Arrays and Hashing",
+    "topics": [
+      "Introduction to Data Structures and Algorithms",
+      "Complexity Analysis",
+      "Arrays and String manipulation",
+      "Introduction to Hashing",
+      "Problem-solving using Arrays and Hashmaps"
     ],
   },
   {
-    title: "Important guides,links, questions, resources",
-    topics: [
-      "Complete Revision DSA video (1.5 hrs)",
-      "DSA revision complete guide (pdf) (98 pages)",
-      "150-DSA-questions (9 pages)",
-      "Recursion and Backtracking guide (pdf) (15 pages)",
-      "Dynamic programming guide (pdf) (10 pages)",
-      "Graphs guide (pdf) (17 pages)",
-      "Tree traversals guide (pdf) (14 pages)",
-      "Complete tech job guide (26 pages)",
-      "Facebook generic interview question list",
-      "DSA revision slides and sheets",
+    "week": 2,
+    "title": "Enhancing Array Techniques: Two Pointers",
+    "topics": [
+      "Two Pointers technique",
+      "Problems involving sorting and searching",
+      "Multi-pointer problems in multidimensional arrays",
+      "Case studies: Two Pointer technique in real-world scenarios"
     ],
   },
   {
-    title: "Time complexity, Big-O notation",
-    topics: [
-      "Big O Introduction",
-      "Big-O Space Complexity",
-      "Big O of Array and Objects",
-      "Big-O Exercises Time Complexity",
+    "week": 3,
+    "title": "Stacks and Linked Lists",
+    "topics": [
+      "Introduction to Stacks",
+      "Stack operations and problem-solving",
+      "Singly and Doubly Linked Lists",
+      "Linked List operations and algorithms"
     ],
   },
   {
-    title: "Arrays, Hashmaps - Introduction and Questions",
-    topics: [
-      "Arrays(insertion , deletion , traversing)",
-      "Big O of Array and Objects",
-      "Arrays Questions",
-      "Arrays - Longest String",
-      "Array - find Zero Triplets",
-      "Arrays - Find Max Min",
-      "Arrays - Remove Given Element",
-      "Hashtable questions",
-      "Hash Table - Two Sum",
-      "Hash Table - Find Duplicates",
-      "Hash Table - Item In Common",
+    "week": 4,
+    "title": "Deep Dive into Linked Lists and Sliding Windows",
+    "topics": [
+      "Advanced problems on Linked Lists",
+      "Introduction to the Sliding Window technique",
+      "Applying Sliding Window in complex problems",
+      "Integration of Linked Lists with other data structures"
     ],
   },
   {
-    title: "Arrays, Pointers, Sliding window revision",
-    topics: [
-      "Quick revision - Arrays",
-      "Two Pointers - Introduction",
-      "Slow and fast pointer - Introduction",
-      "Two pointer and Sliding window revision",
-      "Arrays and Hashmaps generic revision sheet",
+    "week": 5,
+    "title": "Mastering Searching: Binary Search",
+    "topics": [
+      "Understanding Binary Search",
+      "Variants of Binary Search",
+      "Binary Search in multi-dimensional data",
+      "Binary Search in problem-solving"
     ],
   },
   {
-    title: "Binary search",
-    topics: [
-      "Binary search introduction",
-      "Binary search quick revision and resources",
-      "Binary search revision sheet and template",
+    "week": 6,
+    "title": "Trees and Backtracking",
+    "topics": [
+      "Introduction to Trees",
+      "Tree Traversal and Manipulation",
+      "Introduction to Backtracking",
+      "Backtracking problems and techniques"
     ],
   },
   {
-    title: "Linked lists",
-    topics: [
-      "Singly Linked Lists Complete video",
-      "Doubly Linked Lists Complete video",
-      "Linked lists questions",
-      "Linked list revision guide (pdf) (10 pages)",
-      "Linked list quick revision (video)",
-      "Linked lists generic revision sheet",
-      "Linked list questions - solutions",
-      "Singly Linked Lists - Reverse",
-      "Singly Linked Lists - Remove Duplicate",
-      "Singly Linked Lists - Remove Duplicate Unsorted Array",
-      "Singly Linked Lists - Find Middle",
-      "Singly Linked Lists - Detect Cycle Start",
-      "Doubly Linked Lists - Detect Cycle",
-      "Doubly Linked Lists - Reverse a List",
-      "Doubly Linked Lists - Swap First and Last",
+    "week": 7,
+    "title": "Advanced Trees and Tries",
+    "topics": [
+      "Binary Search Trees (BST)",
+      "Balanced Trees: AVL and Red-Black Trees",
+      "Introduction to Tries",
+      "Trie operations and applications"
     ],
   },
   {
-    title: "Recursion, Backtracking",
-    topics: [
-      "Recursion - Introduction",
-      "Recursion + Call Stack - Deep understanding",
-      "Recursion, Backtracking intro (live class)",
-      "Backtracking revision video",
-      "Recursion and Backtracking (pdf guide) (15 pages)",
-      "Recursion and backtracking generic revision sheet",
-      "Backtracking questions sheet",
-      "Backtracking questions",
-      "Backtracking - subsets",
-      "Backtracking - subsets 2",
-      "Backtracking - permutations",
-      "Backtracking - combination sum",
+    "week": 8,
+    "title": "Heap, Priority Queue, and Graph Theory",
+    "topics": [
+      "Introduction to Heap and Priority Queue",
+      "Heap operations and problems",
+      "Fundamentals of Graph Theory",
+      "Graph representation and traversal"
     ],
   },
   {
-    title: "Dynamic programming",
-    topics: [
-      "Recursion and Backtracking generic revision sheet",
-      "Dynamic Programming generic revision sheet",
-      "Dynamic programming revision (video)",
-      "DP questions list",
-      "Dynamic programming complete guide (10 pages)",
+    "week": 9,
+    "title": "Advanced Graph Algorithms",
+    "topics": [
+      "Shortest path algorithms (Dijkstra's, Bellman-Ford)",
+      "Graph problems and cycle detection",
+      "Network flow problems",
+      "Real-world applications of graph algorithms"
     ],
   },
   {
-    title: "Stacks, Queues",
-    topics: [
-      "Stacks revision sheet",
-      "Queues revision sheet",
-      "Stack - Introduction",
-      "Stack - Constructor",
-      "Stack - Push",
-      "Stack - Pop",
-      "Queue - Introduction",
-      "Queue - Enqueue",
-      "Queue - Dequeue",
-      "Stacks questions",
-      "Stack _ Reverse String",
-      "Stack _ Balanced",
-      "Stacks _ Sort Stack",
+    "week": 10,
+    "title": "Dynamic Programming",
+    "topics": [
+      "Understanding 1-D Dynamic Programming",
+      "Introduction to 2-D Dynamic Programming",
+      "DP strategies and techniques",
+      "Practice problems on DP"
     ],
   },
   {
-    title: "Graphs - Introduction",
-    topics: [
-      "Graphs - Introduction",
-      "Adjacency List - Introduction",
-      "Adjacency Matrix - Introduction",
-      "Adjacency List - Add Edge",
-      "Adjacency List - Remove Edge",
-      "Adjacency List - Add Vertex",
-      "Adjacency List - Remove Vertex",
+    "week": 11,
+    "title": "Specialized Techniques and Topics",
+    "topics": [
+      "Bit Manipulation techniques",
+      "Greedy algorithms",
+      "Interval problems",
+      "Problem-solving using Bit Manipulation and Greedy algorithms"
     ],
   },
   {
-    title: "Graphs - algorithms and questions",
-    topics: [
-      "Graphs questions list",
-      "Graphs generic revision sheet",
-      "Graphs complete (17 pages)",
-      "Graphs revision part 1 (video)",
+    "week": 12,
+    "title": "Finalizing with Math, Geometry, and Revision",
+    "topics": [
+      "Math and geometric algorithms",
+      "Comprehensive revision of all topics",
+      "Advanced problem-solving",
+      "Mock interviews and final tips"
     ],
-  },
-  {
-    title: "Trees - Binary, BST, BFS, DFS",
-    topics: [
-      "Tree Traversal Guide - BFS and DFS",
-      "Binary Search Tree Full Video",
-      "Breadth First Search - detailed video",
-      "Depth First Search - detailed video",
-      "Trees generic revision sheet",
-      "Complete question list - trees",
-      "Trees orders - in, post, pre (pdf guide) (14 pages)",
-    ],
-  },
-  {
-    title: "Tries, Priority Queue",
-    topics: [
-      "Tries revision (video)",
-      "Priority queue revision (video)",
-      "Trie visualization",
-      "Questions - heaps",
-      "Article - tries",
-    ],
-  },
-  {
-    title: "Sorting",
-    topics: [
-      "Merge Sort",
-      "Insertion Sort",
-      "Selection Sort",
-      "Bubble Sort",
-      "Quick Sort",
-      "Sorting summary",
-    ],
-  },
-  {
-    title: "Revising DSA using Chat GPT",
-    topics: [
-      "Introduction to Chat GPT prompts",
-      "Prompt for explaining code",
-      "Prompt for similar DSA questions",
-      "Prompt for new DSA questions",
-      "Prompt for multiple solutions for DSA question",
-    ],
-  },
-];
+  }
+]
+
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
@@ -219,7 +146,7 @@ export default function Home() {
   return (
     <main className="bg-background bg-bg min-h-svh transition-all">
       <Hero
-        title="Get Placed Faster with Live DSA Classes"
+        title="Get Placed Faster with Live DSA Classes starting from April 20th"
         desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
         subTitle="Crack Top Tech Product Companies"
         subDesc="Master DSA through practicing algorithms under expert's guidance from industry professionals. A placement driven course."

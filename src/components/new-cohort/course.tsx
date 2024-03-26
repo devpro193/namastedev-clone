@@ -49,7 +49,7 @@ export default function Course({
                   {/* <NewRazorpay id={"buy-course"} /> */}
                   <AnimatedButton link="https://rzp.io/l/kZPObNXZ">
                     <section className="flex gap-2 items-center">
-                      <span className="tracking-wide">Buy Full Course</span>
+                      <span className="tracking-wide">Get Access & Early Bird Discount</span>
                       <Key className="h-5 w-5" />
                     </section>
                   </AnimatedButton>
