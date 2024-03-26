@@ -42,7 +42,11 @@ export default function Hero({
             </p>
           </div> */}
 
-          <Link className="max-phone:mx-6" href={"/mentorship"} target="_blank">
+          <Link
+            className="max-phone:mx-6"
+            href={"https://rzp.io/l/kZPObNXZ"}
+            target="_blank"
+          >
             <Button>
               <span className="px-5 flex gap-2 items-center">
                 Join Now <ArrowRight className="h-4 w-4" />

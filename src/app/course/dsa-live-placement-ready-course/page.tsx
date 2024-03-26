@@ -11,8 +11,8 @@ let course = [
   {
     title: "Introduction to DSA, Patterns, Questions",
     topics: [
-      "Welcome to our course. DM me for any help!",
-      "Revision focused course for all learners",
+      "Introduction to the course",
+      "How this course works",
       "How to solve DSA problems",
     ],
   },
@@ -222,7 +222,7 @@ export default function Home() {
         title="Get Placed Faster with Live DSA Classes"
         desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
         subTitle="Crack Top Tech Product Companies"
-        subDesc="Master dsa through practicing algorithms under expert's guidance from industry professionals. A placement driven course."
+        subDesc="Master DSA through practicing algorithms under expert's guidance from industry professionals. A placement driven course."
         ytId="tJkZA9JoZCw"
         heroImage="https://i.ibb.co/q5k6zZz/dsa.jpg"
         // heroImage="https://i.ibb.co/SdZJSMh/algo.gif"
