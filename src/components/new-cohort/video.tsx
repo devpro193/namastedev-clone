@@ -14,7 +14,7 @@ export default function Video({
       <div className="lg:w-2/4 grid gap-5 shrink">
         <Reveal>
           <span className="text-prime font-semibold uppercase">
-            In 3-Months - Starting from April 20th
+
           </span>
         </Reveal>
         <Reveal>

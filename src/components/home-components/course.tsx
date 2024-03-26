@@ -10,7 +10,7 @@ export default function Course() {
         <span className="flex items-center gap-4 relative">
           <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-r from-0% from-transparent to-100% to-prime" />
           <h2 className="font-jakarta phone:shrink-0 text-[2rem] font-extrabold text-center">
-            Course Glance
+           Services at Glance
           </h2>
           <hr className="max-phone:hidden h-0.5 max-lg:w-20 w-60 max-w-60 rounded bg-gradient-to-l from-0% from-transparent to-100% to-prime" />
         </span>
@@ -18,15 +18,14 @@ export default function Course() {
 
       <Reveal>
         <span className="text-prime font-semibold uppercase">
-          Premium Courses
+          Our Offerings
         </span>
       </Reveal>
 
       <div className="flex w-full max-lg:flex-col lg:gap-6 justify-center max-lg:items-center max-lg:gap-10 max-lg:max-w-[550px] px-10">
         <Link
-          target="_blank"
           href={
-            "https://courses.30dayscoding.com/courses/All-courses-package-652a1994e4b05a145bae5cd0"
+            "/mentorship"
           }
           className="flex-1 max-lg:w-full lg:max-w-[450px] hover:opacity-90"
         >
@@ -42,12 +41,12 @@ export default function Course() {
                 />
               </span>
               <span className="text-xl font-semibold line-clamp-2">
-                All 10 courses package - (Lifetime Validity)
+               Mentorship
               </span>
             </div>
             <div className="max-lg:m-auto flex items-center justify-between p-2 px-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-4 rounded-b-xl bg-second h-fit text-xs">
               <span className="rounded-full p-2 bg-prime/50">
-                300+ Problems
+               1:1 sessions & Doubt solving by Deepanshu and Aryan
               </span>
               <span className="p-2 flex items-center">
                 See More <ChevronRight className="h-3 w-3" />
@@ -57,9 +56,9 @@ export default function Course() {
         </Link>
 
         <Link
-          target="_blank"
+
           href={
-            "https://courses.30dayscoding.com/courses/Full-stack-package-652a0a17e4b0db14394522ed"
+            "/course/dsa-live-placement-ready-course"
           }
           className="flex-1 max-lg:w-full lg:max-w-[450px] hover:opacity-90"
         >
@@ -69,13 +68,12 @@ export default function Course() {
                 <Image src={"/data.webp"} width={35} height={35} alt="dsa" />
               </span>
               <span className="text-xl font-semibold line-clamp-2">
-                Full stack package - MERN and Next JS - Projects (Lifetime
-                validity).
+                DSA Live Classes
               </span>
             </div>
             <div className="max-lg:m-auto flex items-center justify-between p-2 px-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-4 rounded-b-xl bg-second h-fit text-xs">
               <span className="rounded-full p-2 bg-prime/50">
-                200+ Problems
+                 12 weeks - Everything from A-Z
               </span>
               <span className="p-2 flex items-center">
                 See More <ChevronRight className="h-3 w-3" />
