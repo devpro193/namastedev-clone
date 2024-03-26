@@ -5,7 +5,6 @@ import {
   Tabs,
   TabsContent,
   TabsList,
-  TabsTrigger,
 } from "@/components/ui/tabs";
 import { LucideCheckCircle } from "lucide-react";
 
@@ -22,10 +21,10 @@ export function TabMenu({
       defaultValue="chapter1"
       className="flex shrink-0 max-lg:flex-col gap-2 text-lg max-lg:w-[93svw]"
     >
-      <TabsList className="text-muted-foreground lg:grid lg:place-items-start flex justify-start gap-3 h-fit max-h-80 lg:overflow-y-scroll scroll max-lg:overflow-x-scroll horizontal-scroll">
+      <TabsList className="text-muted-foreground lg:grid lg:place-items-start flex justify-start mx-auto max-w-[90vw] gap-3 h-fit max-h-80 lg:overflow-y-scroll scroll max-lg:overflow-x-scroll horizontal-scroll">
         {course.map((_, i) => (
           <NewTabsTrigger key={i} value={`chapter${i + 1}`}>
-            <span>Milestone {i + 1}</span>
+            <span>Week {i + 1}</span>
           </NewTabsTrigger>
         ))}
       </TabsList>

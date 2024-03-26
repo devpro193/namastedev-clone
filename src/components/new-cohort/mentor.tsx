@@ -76,8 +76,8 @@ export default function Mentor() {
       <div className="lg:hidden flex flex-col gap-5 text-center max-w-2xl mx-auto">
         <Reveal>
           <span className="text-4xl font-bold text-center">
-            Most affordable courses + Experts from{" "}
-            <span className="text-prime">FAANG</span> and Big tech
+            Faculty and Experts from <span className="text-prime">FAANG</span>{" "}
+            and Big tech
           </span>
         </Reveal>
         <Reveal>
@@ -132,8 +132,8 @@ export default function Mentor() {
         <div className="max-lg:hidden flex flex-col gap-5 items-center text-center max-w-2xl px-6">
           <Reveal>
             <span className="text-4xl font-bold">
-              Most affordable courses + Experts from{" "}
-              <span className="text-prime">FAANG</span> and Big tech
+              Faculty and Experts from <span className="text-prime">FAANG</span>{" "}
+              and Big tech
             </span>
           </Reveal>
           <Reveal>
@@ -148,12 +148,12 @@ export default function Mentor() {
               </span>
             </p>
           </Reveal>
-          <div className="py-2" />
+          {/* <div className="py-2" />
           <Reveal>
             <AnimatedButton link="/mentorship">
               Join 1:1 Mentorship
             </AnimatedButton>
-          </Reveal>
+          </Reveal> */}
         </div>
         <Reveal>
           <Profile
@@ -171,13 +171,13 @@ export default function Mentor() {
         </Reveal>
       </div>
 
-      <div className="lg:hidden">
+      {/* <div className="lg:hidden">
         <Reveal>
           <AnimatedButton type="ext" link="/mentorship">
             Join 1:1 Mentorship
           </AnimatedButton>
         </Reveal>
-      </div>
+      </div> */}
     </div>
   );
 }

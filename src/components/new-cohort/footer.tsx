@@ -12,12 +12,12 @@ export default function Footer() {
       //   description:
       //     "A complete mern full stack development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
       // },
-      {
-        title: "Live Mern Cohort",
-        href: "/course/mern-cohort",
-        description:
-          "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
-      },
+      // {
+      //   title: "Live MERN Cohort",
+      //   href: "/course/mern-cohort",
+      //   description:
+      //     "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
+      // },
       {
         title: "DSA Live Placement",
         href: "/course/dsa-live-placement-ready-course",
@@ -31,7 +31,7 @@ export default function Footer() {
           "A complete mern full stack development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
       },
       {
-        title: "DSA Mastery Course",
+        title: "Master DSA Course",
         href: "https://courses.30dayscoding.com/courses/DSA-revision-placement-course-64f93394e4b0e75ce98af312",
         description:
           "A full dsa mastry course from 30 days coding. Checkout on www.courses.30dayscoding.com",
@@ -155,7 +155,7 @@ export default function Footer() {
             <Reveal>
               <div className="flex text-sm gap-4 flex-col max-w-64">
                 <span className="text-muted-foreground uppercase">
-                  Resource
+                  Resources
                 </span>
                 <Link
                   className="lg:hover:text-head transition-all"

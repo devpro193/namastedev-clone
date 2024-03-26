@@ -207,7 +207,7 @@ let course = [
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://namastedev-clone.vercel.app"),
-  title: "Learn DSA and Get Ready for Placement",
+  title: "Get Placed Faster with Live DSA Classes",
   description:
     "A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com",
   openGraph: {
@@ -219,9 +219,9 @@ export default function Home() {
   return (
     <main className="bg-background bg-bg min-h-svh transition-all">
       <Hero
-        title="Learn DSA and Get Ready for Placement"
+        title="Get Placed Faster with Live DSA Classes"
         desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
-        subTitle="Solve, Save, and Revise DSA"
+        subTitle="Crack Top Tech Product Companies"
         subDesc="Master dsa through practicing algorithms under expert's guidance from industry professionals. A placement driven course."
         ytId="tJkZA9JoZCw"
         heroImage="https://i.ibb.co/q5k6zZz/dsa.jpg"

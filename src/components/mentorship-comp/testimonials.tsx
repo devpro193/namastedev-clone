@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Testimonial({ name, review }: TestimonialType) {
   return (
-    <div className="flex flex-col p-6 gap-4 h-fit bg-second w-[23.75rem] rounded-lg">
+    <div className="lg:hover:scale-105 transition-all duration-200 flex flex-col p-6 gap-4 h-fit bg-second w-[23.75rem] rounded-lg">
       <span className="font-jakarta font-bold">{name}</span>
       <p className="leading-6 text-sm font-normal">{review}</p>
     </div>
@@ -101,14 +101,14 @@ export default function Testimonials() {
 
       <div className="py-12 relative flex flex-col gap-7 overflow-hidden bg-gradient-to-tr">
         <Reveal>
-          <div className="relative flex gap-5 animate-loop-scroll w-fit">
+          <div className="relative flex gap-5 animate-[loop-scroll_40s_infinite_linear] hover:[animation-play-state:paused] w-fit">
             {testimonials.map(({ name, review }, i) => (
               <Testimonial key={i} name={name} review={review} />
             ))}
           </div>
         </Reveal>
 
-        <div className="h-full w-full absolute z-10 bg-gradient-to-r from-bg max-lg:from-0% from-5% via-bg/10 via-50% to-bg max-lg:to-100% to-95%"></div>
+        <div className="pointer-events-none h-full w-full absolute z-10 bg-gradient-to-r from-bg max-lg:from-0% from-5% via-bg/10 via-50% to-bg max-lg:to-100% to-95%"></div>
       </div>
 
       <div className="m-auto">

@@ -20,7 +20,7 @@ function Profile({
   desc: string;
 }) {
   return (
-    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] lg:h-[580px] w-72 max-sm:w-full max-sm:max-w-96">
+    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] lg:h-[700px] w-72 max-sm:w-full max-sm:max-w-96">
       <div className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] absolute p-2 bg-gradient-to-t from-prime/80 to-second/80 rounded-full">
         <div className="h-36 w-36 overflow-hidden rounded-full flex items-center justify-center">
           <Image
@@ -76,8 +76,8 @@ export default function NewMentor() {
       <div className="flex flex-col gap-5 text-center max-w-2xl mx-auto">
         <Reveal>
           <span className="text-4xl font-bold text-center">
-            Most affordable courses + Experts from{" "}
-            <span className="text-prime">FAANG</span> and Big tech
+            Faculty and Experts from <span className="text-prime">FAANG</span>{" "}
+            and Big tech
           </span>
         </Reveal>
         <Reveal>
@@ -94,7 +94,7 @@ export default function NewMentor() {
         </Reveal>
       </div>
 
-      <div className="flex flex-wrap max-phone:flex-col lg:items-start items-center max-phone:gap-28 max-lg:gap-20 phone:h-full gap-16 justify-evenly pt-24">
+      <div className="flex flex-wrap max-phone:flex-col lg:items-start max-phone:gap-28 max-lg:gap-20 phone:h-full gap-16 justify-evenly pt-24">
         <Reveal>
           <Profile
             name="Aryan Singh"
@@ -132,7 +132,7 @@ export default function NewMentor() {
         {/* <div className="max-lg:hidden flex flex-col gap-5 items-center text-center max-w-2xl px-8">
           <Reveal>
             <span className="text-4xl font-bold">
-              Most affordable courses + Experts from{" "}
+              Faculty and Experts from{" "}
               <span className="text-prime">FAANG</span> and Big tech
             </span>
           </Reveal>
@@ -170,11 +170,11 @@ export default function NewMentor() {
       </div>
 
       {/* <div className="lg:hidden"> */}
-      <Reveal>
+      {/* <Reveal>
         <AnimatedButton type="ext" link="/mentorship">
           Join 1:1 Mentorship
         </AnimatedButton>
-      </Reveal>
+      </Reveal> */}
       {/* </div> */}
     </div>
   );

@@ -13,7 +13,9 @@ export default function Video({
     <div className="m-auto flex max-lg:flex-col items-start justify-between p-10 lg:p-20 gap-10 max-w-[75rem]">
       <div className="lg:w-2/4 grid gap-5 shrink">
         <Reveal>
-          <span className="text-prime font-semibold uppercase">In 30-Days</span>
+          <span className="text-prime font-semibold uppercase">
+            In 3-Months
+          </span>
         </Reveal>
         <Reveal>
           <span className="text-4xl font-bold">{title}</span>

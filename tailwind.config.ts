@@ -92,7 +92,7 @@ const config = {
         },
         'loop-scroll': {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(-75%)" },
         },
         'loop-scroll-reverse': {
           from: { transform: "translateX(-100%)" },

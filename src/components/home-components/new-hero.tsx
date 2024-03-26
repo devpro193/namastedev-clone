@@ -46,7 +46,7 @@ export default function Hero({
               href={"/course/dsa-live-placement-ready-course"}
               className={`font-jakarta flex items-center justify-between font-semibold gap-3 hover:bg-prime/80 bg-prime/35 border-2 border-prime/60 transition-all px-4 py-3 rounded-full max-lg:w-full`}
             >
-              <span className="text-sm">Live Cohort</span>
+              <span className="text-sm">Live Classes</span>
               <Radio className="max-lg:hidden w-4 h-4" />
               <ArrowRight className="lg:hidden w-4 h-4" />
             </Link>

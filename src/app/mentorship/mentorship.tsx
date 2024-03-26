@@ -7,7 +7,7 @@ export default function Mentorship() {
       topics: [
         "Help in Goal Setting",
         "Sharing Roadmap",
-        "Sharing Important Resourse",
+        "Sharing Important Resourses",
         "Regular Check-in",
       ],
       svg: (
@@ -34,7 +34,7 @@ export default function Mentorship() {
       title: "Stage 2: Getting your up to speed in your technical skills",
       topics: [
         "DSA",
-        "Frontend Architecture",
+        "Front-end Architecture",
         "Teamwork",
         "Next JS",
         "React JS",
@@ -43,8 +43,6 @@ export default function Mentorship() {
         "User Experience",
         "JavaScript",
         "Problem Solving",
-        "DSA",
-        "Git",
         "REST",
         "APIs",
         "Servers",
@@ -74,7 +72,7 @@ export default function Mentorship() {
       ),
     },
     {
-      title: "Stage 3: Practicing and improving your interview skills",
+      title: "Stage 3: Getting Up to Speed",
       topics: [
         "Provide Mock Interview Practice",
         "Help in Answering Structure",
@@ -127,7 +125,7 @@ export default function Mentorship() {
       ),
     },
     {
-      title: "Stage 5: Applying for jobs and getting the correct offer",
+      title: "Stage 5: Applying for jobs and getting the right offer",
       topics: ["Job Application Strategy"],
       svg: (
         <svg
@@ -156,7 +154,7 @@ export default function Mentorship() {
         <div className="flex flex-col items-start gap-3 self-stretch">
           <Reveal>
             <span className="self-stretch text-xl font-semibold leading-[30px]">
-              1:1 Long Term Mentorship Program Path
+              One-on-One Long Term Mentorship Program Path
             </span>
           </Reveal>
           <Reveal>

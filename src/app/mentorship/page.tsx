@@ -29,15 +29,15 @@ export default function Home() {
       <Video
         title={"1:1 Live Query Seesions"}
         desc={
-          "List all your queries about industies and latest jobs forms experts themselves with live interation and dobut clear session"
+          "Resolve all your queries related to the industry and latest jobs with the help of our experts with live interactions and doubt clearing sessions."
         }
         youtubeId={"ylUk7kImBeE"}
       />
       <Mentorship />
       <Video
-        title={"Best Practices for Developers by our Mentors"}
+        title={"Best Practices for Developers by Our Mentors"}
         desc={
-          "Learn all the latest technologies from experts themselves with live interation and dobut clear session"
+          "Explore the latest technologies wit the help of our experts with live interactions and doubt clearing sessions."
         }
         youtubeId={"KMufzzSF6SE"}
       />
@@ -45,7 +45,7 @@ export default function Home() {
       <Video
         title={"1:1 Live Session with our Mentors"}
         desc={
-          "Learn all the latest technologies from experts themselves with live interation and dobut clear session"
+          "Explore the latest technologies with the help of our experts with live interactions and doubt clearing sessions."
         }
         youtubeId={"gIx8D2pyXVI"}
       />

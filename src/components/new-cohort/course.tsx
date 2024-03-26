@@ -67,7 +67,7 @@ export default function Course({
         </div>
       </Reveal>
 
-      <Reveal>
+      {/* <Reveal>
         <Link
           className="text-sm"
           href={"https://courses.30dayscoding.com/s/store"}
@@ -78,7 +78,7 @@ export default function Course({
             Check More Courses
           </button>
         </Link>
-      </Reveal>
+      </Reveal> */}
     </div>
   );
 }

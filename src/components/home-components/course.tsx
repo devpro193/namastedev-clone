@@ -18,7 +18,7 @@ export default function Course() {
 
       <Reveal>
         <span className="text-prime font-semibold uppercase">
-          Premium Course
+          Premium Courses
         </span>
       </Reveal>
 

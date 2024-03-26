@@ -70,7 +70,7 @@ export default function Home() {
         title="LIVE Full Stack Web Development (MERN & NEXT) Cohort"
         desc="Learn from Aryan, Abhinav, Deepanshu, and the 30DC team to get placed this season."
         subTitle="Build fullstack engineering skills with confidence"
-        subDesc="Achieve mastery in fullstack engineering through practical projects and expert feedback from industry professionals in this comprehensive program."
+        subDesc="Achieve excellence in Fullstack Engineering through practical projects and expert feedback from industry professionals in this comprehensive program."
         ytId="iQR3fb3yJko"
         heroImage="https://i.ibb.co/mBy9mz1/react.jpg"
       />

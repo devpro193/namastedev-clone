@@ -64,11 +64,11 @@ export default function Career({ details }: { details: Career[] }) {
 
                 <section className="flex items-end gap-2 pr-6 lg:hidden lg:flex-col">
                   <span className="whitespace-nowrap text-right text-[13px]">
-                    {latest}
+                    {joined}
                   </span>
                   -
                   <span className="whitespace-nowrap text-right text-[13px]">
-                    {joined}
+                    {latest}
                   </span>
                   {/* <span className="whitespace-nowrap text-right text-[10px] pb-0.5 pl-1 font-semibold leading-[15px] text-muted-foreground">
                     ( {duration} )

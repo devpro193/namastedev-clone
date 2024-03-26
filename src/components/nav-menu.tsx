@@ -108,10 +108,6 @@ export const navTitles: {
       },
     ],
   },
-  {
-    title: "Mentorship",
-    href: "/mentorship",
-  },
 ];
 
 export function NavMenu() {
