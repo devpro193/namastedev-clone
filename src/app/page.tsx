@@ -27,7 +27,7 @@ export default function Home() {
         desc="The most affordable premium courses. Projects, Guides, and Certificates included."
         heroImage="bg-[url('/main/hero_section_fullstack.png')]"
         subTitle="Lifetime Validity Courses + Certificates"
-        subDesc="Whether you're a beginner looking to dive into programming or an experienced developer seeking to enhance your skills, our courses & mentors helps to all levels of proficiency."
+        subDesc="Whether you're a beginner looking to dive into programming or an experienced developer seeking skill enhancement, our mentors' guidance and courses are well-designed for all levels of proficiency."
         ytId="SKhJ7HFvq0A"
       />
       <Course />

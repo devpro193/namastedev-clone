@@ -109,7 +109,7 @@ export default function NewMentor() {
                 path: "/umassamherst_logo.jfif",
               },
             ]}
-            desc="Our lead mentor Aryan Singh, a visionary software engineer at Google, leading 30 Days Coding. With roles in tech giants and projects like Blocktrain and DSA Revision, Aryan combines professional expertise with a passion for mentoring."
+            desc="Our lead mentor Aryan Singh, a visionary software engineer at Google, leads 30 Days Coding with a resilience hardly seen before. With roles in tech giants and projects like Blocktrain and DSA Revision, Aryan combines professional expertise with a passion for mentoring. His zeal to impart guidance to people stuck in the 'How do I brush my technical skills for this job?' phase, has led to him joining hands with Deepanshu Udhwani, resulting in the birth of 30 Days Coding."
           />
         </Reveal>
         <Reveal>
@@ -164,7 +164,7 @@ export default function NewMentor() {
               { name: "Alibaba Cloud", path: "/alibaba.jfif" },
               { name: "Thapar Institute of Engineering", path: "/thapar.jfif" },
             ]}
-            desc="Deepanshu Udhwani, drawing from experience at MakeMyTrip, Alibaba Cloud, and startups, founded 30 Days Coding. With a background in Computer Science and an MBA in Information Systems."
+            desc="Deepanshu Udhwani, drawing from experience at MakeMyTrip, Alibaba Cloud, and various startups, founded 30 Days Coding to solve a simple problem faced by engineers across the globe - 'How do I prepare for this interview?' With a background in Computer Science and Marketing, he knows the exact composition of techical and non-technical aspects required for getting to your dream job."
           />
         </Reveal>
       </div>

@@ -36,7 +36,7 @@ export default function Hero({
           <div className="p-[.5rem_1.75rem_.5rem_1.00rem] rounded-[3.125rem] flex max-lg:flex-col max-lg:w-full lg:flex-wrap items-center gap-5 my-2 mb-1">
             <Link
               href={"/mentorship"}
-              className={`font-jakarta flex items-center justify-between font-semibold gap-3 hover:bg-prime/80 bg-prime/35 border-2 border-prime/60 transition-all px-4 py-3 rounded-full max-lg:w-full lg:animate-pulse`}
+              className={`font-jakarta flex items-center justify-between font-semibold gap-3 hover:bg-prime/80 bg-prime/35 border-2 border-prime/60 transition-all px-4 py-3 rounded-full max-lg:w-full`}
             >
               <span className="text-sm">Mentorship</span>
               <GraduationCap className="max-lg:hidden w-4 h-4" />
@@ -44,7 +44,7 @@ export default function Hero({
             </Link>
             <Link
               href={"/course/dsa-live-placement-ready-course"}
-              className={`font-jakarta flex items-center justify-between font-semibold gap-3 hover:bg-prime/80 bg-prime/35 border-2 border-prime/60 transition-all px-4 py-3 rounded-full max-lg:w-full lg:animate-pulse`}
+              className={`font-jakarta flex items-center justify-between font-semibold gap-3 hover:bg-prime/80 bg-prime/35 border-2 border-prime/60 transition-all px-4 py-3 rounded-full max-lg:w-full`}
             >
               <span className="text-sm">Live Cohort</span>
               <Radio className="max-lg:hidden w-4 h-4" />
@@ -53,7 +53,7 @@ export default function Hero({
             <Link
               target="_blank"
               href={"https://courses.30dayscoding.com/s/store"}
-              className={`font-jakarta flex items-center justify-between font-semibold gap-3 hover:bg-prime/80 bg-prime/35 border-2 border-prime/60 transition-all px-4 py-3 rounded-full max-lg:w-full lg:animate-pulse`}
+              className={`font-jakarta flex items-center justify-between font-semibold gap-3 hover:bg-prime/80 bg-prime/35 border-2 border-prime/60 transition-all px-4 py-3 rounded-full max-lg:w-full`}
             >
               <span className="text-sm">Courses</span>
               <School className="max-lg:hidden w-4 h-4" />

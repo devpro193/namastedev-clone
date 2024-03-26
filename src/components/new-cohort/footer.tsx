@@ -137,7 +137,7 @@ export default function Footer() {
                 {cousre.href.map(({ title, href }, i) => (
                   <Link
                     key={i}
-                    className="lg:hover:text-head transition-all"
+                    className="lg:hover:text-prime transition-all"
                     href={href}
                   >
                     {title}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Reveal from "../framer/reveal";
+import { ChevronRight } from "lucide-react";
 
 export default function Course() {
   return (
@@ -40,14 +41,17 @@ export default function Course() {
                   alt="fullstack"
                 />
               </span>
-              <span className="text-xl font-semibold">
+              <span className="text-xl font-semibold line-clamp-2">
                 All 10 courses package - (Lifetime Validity)
               </span>
             </div>
-            <div className="max-lg:m-auto flex items-center justify-between p-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-4 rounded-b-xl bg-prime/60 h-fit text-xs">
-              <span>140+ Hrs of Content</span>
-              <span>300+ Problems</span>
-              <span>10k+ Learners</span>
+            <div className="max-lg:m-auto flex items-center justify-between p-2 px-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-4 rounded-b-xl bg-second h-fit text-xs">
+              <span className="rounded-full p-2 bg-prime/50">
+                300+ Problems
+              </span>
+              <span className="p-2 flex items-center">
+                See More <ChevronRight className="h-3 w-3" />
+              </span>
             </div>
           </Reveal>
         </Link>
@@ -64,14 +68,18 @@ export default function Course() {
               <span className="rounded-full shrink-0 p-4 w-fit">
                 <Image src={"/data.webp"} width={35} height={35} alt="dsa" />
               </span>
-              <span className="text-xl font-semibold">
-                Full stack package - MERN, Next JS, Projects (LIFETIME Validity)
+              <span className="text-xl font-semibold line-clamp-2">
+                Full stack package - MERN and Next JS - Projects (Lifetime
+                validity).
               </span>
             </div>
-            <div className="max-lg:m-auto flex items-center justify-between p-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-4 rounded-b-xl bg-prime/60 h-fit text-xs">
-              <span>140+ Hrs of Content</span>
-              <span>300+ Problems</span>
-              <span>10k+ Learners</span>
+            <div className="max-lg:m-auto flex items-center justify-between p-2 px-4 shadow-[0_2px_40px_0_rgba(0,0,0,.2)] gap-4 rounded-b-xl bg-second h-fit text-xs">
+              <span className="rounded-full p-2 bg-prime/50">
+                200+ Problems
+              </span>
+              <span className="p-2 flex items-center">
+                See More <ChevronRight className="h-3 w-3" />
+              </span>
             </div>
           </Reveal>
         </Link>

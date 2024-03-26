@@ -22,7 +22,7 @@ export default function Store() {
                 },
                 {
                   title:
-                    "Full stack package - MERN, Next JS, Projects (LIFETIME Validity)",
+                    "Full stack package - MERN, Next JS, Projects (Lifetime Validity)",
                   imgSrc: "/courses/course2.jpg",
                   link: "https://courses.30dayscoding.com/courses/Full-stack-package-652a0a17e4b0db14394522ed",
                 },
@@ -32,13 +32,13 @@ export default function Store() {
                   link: "https://courses.30dayscoding.com/courses/DSA-revision-placement-course-64f93394e4b0e75ce98af312",
                 },
                 {
-                  title: "Mern FullStack Web Development",
+                  title: "MERN FullStack Web Development",
                   imgSrc: "/courses/mern.jpg",
                   link: "https://courses.30dayscoding.com/courses/AI-full-stack-project-development-course-64eebe76e4b002b964b5645d",
                 },
                 {
                   title:
-                    "Idea to MVP, India builder, Saas, Solopreneur course (lifetime)",
+                    "Idea to MVP, India builder, Saas, Solopreneur course - (Lifetime Validity)",
                   imgSrc: "/courses/cohort.jpg",
                   link: "https://courses.30dayscoding.com/courses/Idea-to-MVP-full-stack-project-course-6525cb14e4b07ef99d14b75b",
                 },
@@ -48,27 +48,27 @@ export default function Store() {
                   link: "https://courses.30dayscoding.com/courses/NEXT-JS-full-stack-web-development-course-64eebe15e4b06aa775217381-64eebe15e4b06aa775217381",
                 },
                 {
-                  title: "Complete BLOCKCHAIN  and WEB3 course",
+                  title: "Complete Blockchain and Web3 course",
                   imgSrc: "/courses/blockchain.jpg",
                   link: "https://courses.30dayscoding.com/courses/Blockchain-developer-course-64eec408e4b002b964b568be",
                 },
                 {
-                  title: "AI - CHAT GPT FULL stack course",
+                  title: "ChatGPT Full Stack Course",
                   imgSrc: "/courses/ai.jpg",
                   link: "https://courses.30dayscoding.com/courses/AI-full-stack-project-development-course-64eebe76e4b002b964b5645d",
                 },
                 {
-                  title: "Complete JavaScript Course (Lifetime)",
+                  title: "Complete JavaScript Course - (Lifetime Validity)",
                   imgSrc: "/courses/javascript.jpg",
                   link: "https://courses.30dayscoding.com/courses/Complete-Javascript-course-for-developers-652da487e4b0dce56ddde296",
                 },
                 {
-                  title: "Complete Python Course (Lifetime)",
+                  title: "Complete Python Course - (Lifetime Validity)",
                   imgSrc: "/courses/python.jpg",
                   link: "https://courses.30dayscoding.com/courses/Complete-Python-course-for-developers-652da4c5e4b010a575e0254b",
                 },
                 {
-                  title: "Complete Java Course (Lifetime)",
+                  title: "Complete Java Course - (Lifetime Validity)",
                   imgSrc: "/courses/java.jpg",
                   link: "https://courses.30dayscoding.com/courses/Complete-Java-course-659ef388e4b0f601f93531b8",
                 },
@@ -78,12 +78,12 @@ export default function Store() {
               title: "AI and Blockchain",
               courses: [
                 {
-                  title: "Complete BLOCKCHAIN  and WEB3 course",
+                  title: "Complete Blockchain and Web3 Course",
                   imgSrc: "/courses/blockchain.jpg",
                   link: "https://courses.30dayscoding.com/courses/Blockchain-developer-course-64eec408e4b002b964b568be",
                 },
                 {
-                  title: "AI - CHAT GPT FULL stack course",
+                  title: "ChatGPT Full Stack Course",
                   imgSrc: "/courses/ai.jpg",
                   link: "https://courses.30dayscoding.com/courses/AI-full-stack-project-development-course-64eebe76e4b002b964b5645d",
                 },
@@ -93,13 +93,13 @@ export default function Store() {
               title: "Full Stack Development",
               courses: [
                 {
-                  title: "Mern FullStack Web Development",
+                  title: "MERN FullStack Web Development",
                   imgSrc: "/courses/mern.jpg",
                   link: "https://courses.30dayscoding.com/courses/AI-full-stack-project-development-course-64eebe76e4b002b964b5645d",
                 },
                 {
                   title:
-                    "Idea to MVP, India builder, Saas, Solopreneur course (lifetime)",
+                    "Idea to MVP, India builder, Saas, Solopreneur course - (Lifetime Validity)",
                   imgSrc: "/courses/cohort.jpg",
                   link: "https://courses.30dayscoding.com/courses/Idea-to-MVP-full-stack-project-course-6525cb14e4b07ef99d14b75b",
                 },
@@ -130,7 +130,7 @@ export default function Store() {
                 },
                 {
                   title:
-                    "Full stack package - MERN, Next JS, Projects (LIFETIME Validity)",
+                    "Full stack package - MERN, Next JS, Projects - (Lifetime Validity)",
                   imgSrc: "/courses/course2.jpg",
                   link: "https://courses.30dayscoding.com/courses/Full-stack-package-652a0a17e4b0db14394522ed",
                 },
@@ -140,17 +140,17 @@ export default function Store() {
               title: "Programming language",
               courses: [
                 {
-                  title: "Complete JavaScript Course (Lifetime)",
+                  title: "Complete JavaScript Course - (Lifetime Validity)",
                   imgSrc: "/courses/javascript.jpg",
                   link: "https://courses.30dayscoding.com/courses/Complete-Javascript-course-for-developers-652da487e4b0dce56ddde296",
                 },
                 {
-                  title: "Complete Python Course (Lifetime)",
+                  title: "Complete Python Course - (Lifetime Validity)",
                   imgSrc: "/courses/python.jpg",
                   link: "https://courses.30dayscoding.com/courses/Complete-Python-course-for-developers-652da4c5e4b010a575e0254b",
                 },
                 {
-                  title: "Complete Java Course (Lifetime)",
+                  title: "Complete Java Course - (Lifetime Validity)",
                   imgSrc: "/courses/java.jpg",
                   link: "https://courses.30dayscoding.com/courses/Complete-Java-course-659ef388e4b0f601f93531b8",
                 },
@@ -161,7 +161,7 @@ export default function Store() {
               courses: [
                 {
                   title:
-                    "Idea to MVP, India builder, Saas, Solopreneur course (lifetime)",
+                    "Idea to MVP, India builder, Saas, Solopreneur course - (Lifetime Validity)",
                   imgSrc: "/courses/cohort.jpg",
                   link: "https://courses.30dayscoding.com/courses/Idea-to-MVP-full-stack-project-course-6525cb14e4b07ef99d14b75b",
                 },

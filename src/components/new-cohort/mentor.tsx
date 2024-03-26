@@ -20,7 +20,7 @@ function Profile({
   desc: string;
 }) {
   return (
-    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] phone:h-[580px] w-72 max-sm:w-full max-sm:max-w-96">
+    <div className="mx-auto flex flex-col rounded-2xl text-center justify-between bg-second relative z-[1] phone:h-[700px] w-72 max-sm:w-full max-sm:max-w-96">
       <div className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] absolute p-2 bg-gradient-to-t from-prime/80 to-second/80 rounded-full">
         <div className="h-36 w-36 overflow-hidden rounded-full flex items-center justify-center">
           <Image
@@ -109,7 +109,7 @@ export default function Mentor() {
                 path: "/umassamherst_logo.jfif",
               },
             ]}
-            desc="Our lead mentor Aryan Singh, a visionary software engineer at Google, leading 30 Days Coding. With roles in tech giants and projects like Blocktrain and DSA Revision, Aryan combines professional expertise with a passion for mentoring."
+            desc="Our lead mentor Aryan Singh, a visionary software engineer at Google, leads 30 Days Coding with a resilience hardly seen before. With roles in tech giants and projects like Blocktrain and DSA Revision, Aryan combines professional expertise with a passion for mentoring. His zeal to impart guidance to people stuck in the 'How do I brush my technical skills for this job?' phase, has led to him joining hands with Deepanshu Udhwani, resulting in the birth of 30 Days Coding."
           />
         </Reveal>
         {/* <Reveal>
@@ -166,7 +166,7 @@ export default function Mentor() {
               { name: "Alibaba Cloud", path: "/alibaba.jfif" },
               { name: "Thapar Institute of Engineering", path: "/thapar.jfif" },
             ]}
-            desc="Deepanshu Udhwani, drawing from experience at MakeMyTrip, Alibaba Cloud, and startups, founded 30 Days Coding. With a background in Computer Science and an MBA in Information Systems."
+            desc="Deepanshu Udhwani, drawing from experience at MakeMyTrip, Alibaba Cloud, and various startups, founded 30 Days Coding to solve a simple problem faced by engineers across the globe - 'How do I prepare for this interview?' With a background in Computer Science and Marketing, he knows the exact composition of techical and non-technical aspects required for getting to your dream job."
           />
         </Reveal>
       </div>
