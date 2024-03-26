@@ -44,11 +44,7 @@ export default function Hero({
             href={"https://courses.30dayscoding.com/s/store"}
             target="_blank"
           >
-            <Button>
-              {/*<span className="px-5 flex gap-2 items-center">*/}
-              {/*  Apply Now <ArrowRight className="h-4 w-4" />*/}
-              {/*</span>*/}
-            </Button>
+
           </Link>
         </div>
       </div>
