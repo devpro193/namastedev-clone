@@ -79,14 +79,14 @@ export default function Testimonial() {
                 <span className="flex flex-col items-center gap-4 animate-show">
                   <Link
                     href={"https://www.instagram.com/singh.aryan.45/"}
-                    target="_blank"
+                    
                     className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-prime relative inline-block before:transition-all"
                   >
                     <span className="relative text-white">@singh.aryan.45</span>
                   </Link>
                   <Link
                     href={"https://www.instagram.com/itsudhwani/"}
-                    target="_blank"
+                    
                     className="before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-white relative inline-block before:transition-all w-fit"
                   >
                     <span className="relative text-prime">@itsudhwani</span>

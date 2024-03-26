@@ -75,7 +75,7 @@ export default function Footer() {
             <Reveal>
               <section className="flex gap-4">
                 <Link
-                  target="_blank"
+                  
                   href={"https://www.linkedin.com/company/30dc/"}
                 >
                   <svg
@@ -88,7 +88,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  target="_blank"
+                  
                   href={"https://www.instagram.com/30dayscoding/"}
                 >
                   <svg
@@ -101,7 +101,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  target="_blank"
+                  
                   href={
                     "https://www.youtube.com/channel/UCdu8HnchmMbDqbbC4GdPrjw"
                   }
@@ -115,7 +115,7 @@ export default function Footer() {
                   </svg>
                 </Link>
 
-                <Link target="_blank" href={"https://twitter.com/30dayscoding"}>
+                <Link  href={"https://twitter.com/30dayscoding"}>
                   <svg
                     className="h-6 w-6 fill-white stroke-white transition-all lg:hover:fill-prime"
                     xmlns="http://www.w3.org/2000/svg"

@@ -56,7 +56,7 @@ function Profile({
           <p className="text-base max-lg:text-left p-6">{desc}</p>
         </div>
       </div>
-      <Link className="mx-auto mb-6" href={link} target="_blank">
+      <Link className="mx-auto mb-6" href={link} >
         <svg
           className="h-6 w-6 fill-white stroke-white my-3"
           xmlns="http://www.w3.org/2000/svg"

@@ -56,7 +56,7 @@ function ProfileCard({
               {social.linkedin && (
                 <Link
                   href={social.linkedin ?? "#"}
-                  target="_blank"
+                  
                   className="rounded-md p-1.5 bg-prime/30 h-fit"
                 >
                   <svg
@@ -72,7 +72,7 @@ function ProfileCard({
               {social.instagram && (
                 <Link
                   href={social.instagram ?? "#"}
-                  target="_blank"
+                  
                   className="rounded-md p-1.5 bg-prime/30 h-fit"
                 >
                   <svg
@@ -88,7 +88,7 @@ function ProfileCard({
               {social.youtube && (
                 <Link
                   href={social.youtube ?? "#"}
-                  target="_blank"
+                  
                   className="rounded-md p-1.5 bg-prime/30 h-fit"
                 >
                   <svg
@@ -104,7 +104,7 @@ function ProfileCard({
               {social.twitter && (
                 <Link
                   href={social.twitter ?? "#"}
-                  target="_blank"
+                  
                   className="rounded-md p-1.5 bg-prime/30 h-fit"
                 >
                   <svg

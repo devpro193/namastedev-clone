@@ -131,7 +131,7 @@ export function Testimonial({
           </div>
 
           <Reveal>
-            <Link href={link} target="_blank">
+            <Link href={link} >
               <Social />
             </Link>
           </Reveal>

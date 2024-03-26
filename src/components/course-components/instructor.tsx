@@ -56,7 +56,7 @@ export default function Instructor() {
 
                 <Link
                   href={"https://www.instagram.com/singh.aryan.45/"}
-                  target="_blank"
+                  
                 >
                   <svg
                     className="h-8 w-8 fill-pink-600 dark:hover:fill-pink-600 dark:fill-foreground transition-all hover:scale-110"
@@ -71,7 +71,7 @@ export default function Instructor() {
                   href={
                     "https://www.youtube.com/channel/UCdu8HnchmMbDqbbC4GdPrjw"
                   }
-                  target="_blank"
+                  
                 >
                   <svg
                     className="h-8 w-8 fill-red-700 dark:hover:fill-red-700 dark:fill-foreground transition-all hover:scale-110"
