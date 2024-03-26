@@ -63,7 +63,7 @@ export default function Hero() {
     <div className="grid place-items-center gap-8">
       <Reveal>
         <h1 className="font-jakarta max-phone:text-[2rem] text-[2.5rem] font-extrabold text-center">
-          Hear straight from our learners
+          What do our learners have to say?
         </h1>
       </Reveal>
       <Reveal>

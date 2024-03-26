@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <Unveal>
       <div className={`relative font-jakarta tab:min-h-10`}>
-        <div className="min-h-8" />
+        <div className="min-h-20" />
 
         <div className="flex bg-bg items-center justify-center text-lg text-white min-h-8 fixed top-0 lg:top-8 w-full z-20 py-2">
           <div
