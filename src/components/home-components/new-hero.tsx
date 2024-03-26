@@ -51,7 +51,7 @@ export default function Hero({
               <ArrowRight className="lg:hidden w-4 h-4" />
             </Link>
             <Link
-              target="_blank"
+              
               href={"https://courses.30dayscoding.com/s/store"}
               className={`font-jakarta flex items-center justify-between font-semibold gap-3 hover:bg-prime/80 bg-prime/35 border-2 border-prime/60 transition-all px-4 py-3 rounded-full max-lg:w-full`}
             >

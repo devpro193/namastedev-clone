@@ -52,7 +52,7 @@ export default function Hero({
           <Link
             className="max-phone:mx-6"
             href={"https://rzp.io/l/SyV8Ft2WF"}
-            target="_blank"
+            
           >
             <Button>
               <span className="px-5 flex gap-2 items-center">

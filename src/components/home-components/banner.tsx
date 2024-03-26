@@ -8,7 +8,7 @@ export default function Banner() {
         <div className="min-h-8" />
         <Link
           href={"/course/dsa-live-placement-ready-course"}
-          // target="_blank"
+          // 
           className={`bg-gradient-to-r from-second via-head to-second animate-gradient bg-[length:200%_auto] font-bold flex items-center justify-center text-lg text-white min-h-8 fixed top-0 w-full z-30 py-2`}
         >
           <p className="tracking-wide text-center">

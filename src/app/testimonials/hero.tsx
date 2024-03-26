@@ -42,7 +42,7 @@ export function VideoTestimony({
 
         <Link
           href={linkedinUrl}
-          target="_blank"
+          
           className="rounded-md p-1.5 bg-prime/30 h-fit"
         >
           <svg

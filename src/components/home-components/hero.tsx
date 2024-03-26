@@ -42,7 +42,7 @@ export default function Hero({
 
           <Link
             href={"https://courses.30dayscoding.com/s/store"}
-            target="_blank"
+            
           >
 
           </Link>
