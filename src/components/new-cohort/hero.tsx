@@ -51,7 +51,7 @@ export default function Hero({
 
           <Link
             className="max-phone:mx-6"
-            href={"https://courses.30dayscoding.com/s/store"}
+            href={"https://rzp.io/l/SyV8Ft2WF"}
             target="_blank"
           >
             <Button>

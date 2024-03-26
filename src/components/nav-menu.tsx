@@ -30,29 +30,29 @@ export const navTitles: {
       //   description:
       //     "A complete mern full stack development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
       // },
+      // {
+      //   title: "Live Mern Cohort",
+      //   href: "/course/mern-cohort",
+      //   description:
+      //     "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
+      // },
       {
-        title: "Live Mern Cohort",
-        href: "/course/mern-cohort",
-        description:
-          "A live mern stack development cohort from 30 days coding. Checkout on www.courses.30dayscoding.com",
-      },
-      {
-        title: "DSA Live Placement",
+        title: "DSA Live Course",
         href: "/course/dsa-live-placement-ready-course",
         description:
           "A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com",
+      },
+      {
+        title: "Recorded DSA Mastery Course",
+        href: "https://courses.30dayscoding.com/courses/DSA-revision-placement-course-64f93394e4b0e75ce98af312",
+        description:
+            "A full dsa mastery course from 30 days coding. Checkout on www.courses.30dayscoding.com",
       },
       {
         title: "MERN FullStack Course",
         href: "https://courses.30dayscoding.com/courses/MERN-full-stack-web-development-64eebdb8e4b0a14befedc15d",
         description:
           "A complete mern full stack development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
-      },
-      {
-        title: "DSA Mastery Course",
-        href: "https://courses.30dayscoding.com/courses/DSA-revision-placement-course-64f93394e4b0e75ce98af312",
-        description:
-          "A full dsa mastry course from 30 days coding. Checkout on www.courses.30dayscoding.com",
       },
       {
         title: "Next JS FullStack",
