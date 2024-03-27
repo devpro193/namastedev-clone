@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "A well organised platform for multiple development course for 30 days coding challenge. Checkout on www.courses.30dayscoding.com",
   openGraph: {
-    images: "https://30dc.graphy.com/logo.png?v=2",
+    images: "/home.jpg",
   },
 };
 

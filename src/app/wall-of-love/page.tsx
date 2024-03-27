@@ -74,9 +74,38 @@ export default function Testimonial() {
             </Reveal>
 
             <Reveal>
-              <span className="flex gap-2  h-10 p-2 overflow-y-hidden">
+              <span className="flex flex-wrap gap-2 h-10 p-2 justify-center">
                 <p>DM us on Instagram</p>
-                <span className="flex flex-col items-center gap-4 animate-show">
+                <Link
+                  target="_blank"
+                  href={"https://www.instagram.com/singh.aryan.45/"}
+                  className="inline-flex items-center lg:hover:-translate-y-0.5 transition-all"
+                >
+                  <Image
+                    src="https://i.ibb.co/YRBGz7v/instructor.jpg"
+                    alt="intructor instagram"
+                    width={10}
+                    height={10}
+                    className="self-center w-5 h-5 rounded-full mx-1"
+                  />
+                  <span className="underline">Aryan Singh</span>
+                </Link>
+
+                <Link
+                  target="_blank"
+                  href={"https://www.instagram.com/itsudhwani/"}
+                  className="inline-flex items-center lg:hover:-translate-y-0.5 transition-all"
+                >
+                  <Image
+                    height={10}
+                    width={10}
+                    src="https://i.ibb.co/8mFwp1C/instructor2.jpg"
+                    alt="intructor instagram"
+                    className="self-center w-5 h-5 rounded-full mx-1"
+                  />
+                  <span className="underline">Deepanshu</span>
+                </Link>
+                {/* <span className="flex flex-col items-center gap-4 animate-show">
                   <Link
                     href={"https://www.instagram.com/singh.aryan.45/"}
                     
@@ -91,7 +120,7 @@ export default function Testimonial() {
                   >
                     <span className="relative text-prime">@itsudhwani</span>
                   </Link>
-                </span>
+                </span> */}
               </span>
             </Reveal>
           </div>

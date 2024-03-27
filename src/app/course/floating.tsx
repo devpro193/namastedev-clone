@@ -41,7 +41,7 @@ export default async function Floating() {
           </div>
         </Link> */}
 
-        <AnimatedButton link="https://rzp.io/l/kZPObNXZ">
+        <AnimatedButton link="https://rzp.io/l/SyV8Ft2WF">
           <section className="flex gap-2 items-center">
             <span className="tracking-wide">Buy Now</span>
             <Key className="h-5 w-5" />

@@ -137,7 +137,7 @@ export const metadata: Metadata = {
   description:
     "A live dsa placement ready course from 30 days coding. Checkout on www.courses.30dayscoding.com",
   openGraph: {
-    images: "/dsa.jpg",
+    images: "/dsa-cohort.jpg",
   },
 };
 
