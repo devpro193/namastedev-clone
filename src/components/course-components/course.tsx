@@ -690,7 +690,7 @@ export default function Course({ imageSrc, courseLink }: Props) {
               <span className={"font-jakarta text-lg"}>
                 ₹<span className="text-2xl">2999</span>
                 <span className="text-sm text-muted-foreground ml-1 line-through">
-                   ₹7500
+                  ₹7500
                 </span>
               </span>
 
@@ -699,7 +699,7 @@ export default function Course({ imageSrc, courseLink }: Props) {
                   "font-jakarta text-secondary-foreground rounded py-0"
                 }
               >
-                17% off
+                40% off
               </span>
             </section>
 

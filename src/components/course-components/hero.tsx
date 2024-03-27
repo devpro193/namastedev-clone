@@ -61,7 +61,7 @@ export default function Hero({ title, courseLink, youtube }: Props) {
                 <span className={"font-jakarta text-xl"}>
                   ₹<span className="text-3xl">2999</span>
                   <span className="text-sm text-muted-foreground ml-1 line-through">
-                     ₹7500
+                    ₹7500
                   </span>
                 </span>
 
@@ -70,7 +70,7 @@ export default function Hero({ title, courseLink, youtube }: Props) {
                     "font-jakarta text-secondary-foreground rounded py-0"
                   }
                 >
-                  17% off
+                  40% off
                 </span>
               </section>
             </Reveal>
