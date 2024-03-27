@@ -701,6 +701,7 @@ export default function Course({ imageSrc, courseLink }: Props) {
               >
                 40% off
               </span>
+
             </section>
 
             <AnimatedButton type="ext" link={courseLink}>
