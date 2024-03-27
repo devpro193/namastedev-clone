@@ -18,14 +18,14 @@ export default function Floating() {
             <span
               className={"font-jakarta text-secondary-foreground rounded py-0"}
             >
-              17% off
+              40% off
             </span>
           </div>
         </section>
       </Reveal>
 
       <Reveal>
-        <Link href={"https://courses.30dayscoding.com/s/store"} >
+        <Link href={"https://courses.30dayscoding.com/s/store"}>
           <div className="group relative">
             <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[200%_auto] animate-[gradient_2s_linear_infinite] opacity-75 blur group-hover:opacity-100"></div>
             <Button

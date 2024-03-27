@@ -13,12 +13,12 @@ export default async function Floating() {
 
           <div className="flex gap-2 text-sm font-semibold">
             <span className="text-muted-foreground ml-1 line-through">
-               ₹7500
+              ₹7500
             </span>
             <span
               className={`font-jakarta text-secondary-foreground rounded py-0`}
             >
-              17% off
+              40% off
             </span>
           </div>
         </section>
