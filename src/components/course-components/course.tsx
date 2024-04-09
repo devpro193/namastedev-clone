@@ -747,3 +747,4 @@ export default function Course({ imageSrc, courseLink }: Props) {
     </div>
   );
 }
+
